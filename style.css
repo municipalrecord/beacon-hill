@@ -61,11 +61,13 @@ table.card thead th{white-space:nowrap}
    header read "CHAMBERWHERE THIS MEMBER SITS" and the body "every rowHouse".
    The gap belongs on the following cell, in the head and the body alike. */
 table.card thead th:not(.n),
-table.card tbody td:not(.n){padding-left:18px}
+table.card tbody td:not(.n),
+table.card tbody th:not(.n){padding-left:18px}
 table.card thead th:first-child,
 table.card tbody td:first-child,
 table.card tbody th:first-child{padding-left:0}
 .den{color:var(--ink-faint);font-size:.85em}
+.tbar{display:inline-block;height:9px;background:var(--dem);vertical-align:middle}
 .sess{font:400 12px/1.5 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin:26px 0 4px}
 .strip{display:block}.strip .ax{stroke:var(--rule);stroke-width:1}.strip .tk{stroke:var(--ink-faint);stroke-width:1;opacity:.35}.strip .me{fill:var(--verdigris);stroke:var(--paper);stroke-width:2}
 .idx a{display:block;padding:6px 0;border-bottom:1px solid var(--rule-soft);text-decoration:none}
