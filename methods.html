@@ -1,0 +1,198 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How the record card is counted</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"><link rel="stylesheet" href="style.css"></head><body><div class="wrap">
+<div class="rule2"></div>
+<div class="mast"><div><a href="index.html"><b>The Beacon Hill FYI</b></a></div><div><a href="house/index.html">House</a> &nbsp;·&nbsp; <a href="senate/index.html">Senate</a> &nbsp;·&nbsp; <a href="committees/index.html">Committees</a> &nbsp;·&nbsp; <a href="explore/index.html">The data</a></div></div>
+<div class="rule1" style="border-top:1px solid var(--ink)"></div>
+<h1>How the record card is counted</h1>
+<p>Every member page carries a small table of counts. This page says exactly what each column means, what it is divided by, and what it cannot tell you. None of it is a grade. The record does not say which side of a vote was the right side, and neither does this site.</p>
+<h2>The columns</h2>
+<table><tbody>
+<tr><th>Roll calls</th><td>Roll calls on which the member's name appears at all, in any column. This is the denominator for everything else. A member seated mid-session has a smaller one.</td></tr>
+<tr><th>Yea or nay</th><td>Roll calls where the member answered yea or nay.</td></tr>
+<tr><th>Present</th><td>Roll calls where the member was recorded present without voting. In the House this is a deliberate act: under Rule 52 the member must tell the Clerk in person after the vote is ordered and before it is announced.</td></tr>
+<tr><th>Not voting, or Absent</th><td>House sheets print an X; the Senate feed lists the member as absent. In the House an X is often an arranged absence: under Rule 48 a member gives the Clerk written notice and the Clerk disables their voting station. The record does not distinguish an arranged absence from any other kind, so neither does this column.</td></tr>
+<tr><th>After roll</th><td>House votes the sheet marks with an asterisk, recorded after the roll had closed. The Senate has no equivalent: under Rule 57 no member may vote after the decision is announced.</td></tr>
+<tr><th>Divided</th><td>Of the member's yea or nay votes, how many were on a roll call that had at least one vote on each side. The last three columns are computed on these only.</td></tr>
+<tr><th>With majority</th><td>On divided roll calls, how often the member's answer matched the side with more votes. A tie counts as neither.</td></tr>
+<tr><th>With chair</th><td>On divided roll calls where the presiding officer answered yea or nay, how often the member matched. In the House the chair is the row printed "Mr. Speaker." In the Senate it is the President, who is not called under Rule 57 and appears only when choosing to vote, so this denominator is small.</td></tr>
+<tr><th>With own party</th><td>On divided roll calls, how often the member matched the majority of yea-or-nay voters from their own party on that roll call. An unenrolled member has no party majority and shows n/a.</td></tr>
+</tbody></table>
+<h2>The frame beside each number</h2>
+<p>A figure on its own says nothing; 97 percent with the majority is unremarkable in a chamber where the median is 98 and striking in one where it is 60. So each measure sits beside three things computed from the same session of the same chamber: the <strong>chamber median</strong>, the figure of the member in the middle when every member's figure is lined up; the <strong>own party median</strong>, the same for members of this member's party, shown only when at least three of them qualify; and the <strong>chamber range</strong>, the lowest and highest figures any member posted.</p>
+<p>The strip draws every qualifying member as a tick on a line from 0 to 100 percent and this member as a dot. It is a picture of the distribution, not an order: there is no first place on it, and no member is numbered. It answers "is this usual" without answering "who is best," which the record cannot say.</p>
+<p>A member enters the chamber's median, range and strip for a measure only with at least 20 roll calls (for participation measures) or 10 divided votes (for the agreement measures). Below that the member's own figure is still printed, marked "too few to place," because a rate over five votes is a coincidence with a percent sign on it.</p>
+<h2>What it cannot tell you</h2>
+<p>The House records roughly 150 votes a year and on about 43 percent of them nobody is on the losing side. The Senate records more and divides more. So a House member's "with majority" figure is computed over a few dozen votes a session, and the rules decide which votes those are: the ones sixteen members chose to force, or that Rule 33F required. The number is a fact about the member's answers on the record that exists. It is not a fact about the member's answers on everything the chamber decided, most of which left no names.</p>
+<p>House sheets from before 2018 are photographs of paper, so those roll calls carry the Clerk's tally but no names, and the Senate's data feed has no roll calls for 2011 to 2012. A member who served across those years has a record card that starts later than their service did.</p>
+<p>Committee votes, which sort members into Favorable, Adverse, Reserve Right and No Action, are not on the card yet. They will be listed as the committee printed them, in those four words, not folded into any of the columns above.</p>
+<h1 id="committee-votes">How committee votes get published, and when they started</h1>
+<p>Nearly every bill dies in committee, so for most bills the committee vote is the
+only vote there ever is. Two House rules govern it. Rule 17B requires the vote and
+its posting; Joint Rule 1D decides who votes, and since 2025 that is the House
+members of a joint committee for a House member's bill and the Senate members for a
+Senate member's bill, so most of what is published is a branch poll rather than a
+vote of the whole joint committee.</p>
+
+<h2>Where these come from</h2>
+<p>The legislature publishes each committee vote twice. The bill's own record in the
+legislature's data feed carries it with members identified by their member codes,
+which is what this site reads. The website shows the same vote on a Committee Vote
+tab that only answers to a background request, which is kept here as a cross-check.
+Where the two disagree, the feed has more: this session it carried 533 votes the tab
+did not return.</p>
+<p>A committee sorts every one of its members into four groups, and those are the
+committee's own words: <strong>Favorable</strong>, <strong>Adverse</strong>,
+<strong>Reserve Right</strong> and <strong>No Action</strong>. The last two have no
+equivalent in a floor vote. Reserving a right is not an abstention and taking no
+action is not an absence, and neither is folded into anything else on this site. The
+data feed calls the fourth one "NoVoteRecorded" where the website prints "No Action";
+they are the same group, and the website's wording is used here because it is the one
+a committee member sees.</p>
+
+<h2>How many bills have one</h2>
+<div class="cardwrap"><table class="card"><thead><tr><th>Session</th>
+<th class="n">Bills with a published committee vote</th><th class="n">Bills filed</th>
+<th class="n">Share</th></tr></thead><tbody><tr><th scope="row">2025 to 2026</th><td class="n">4,357</td><td class="n">11,458</td><td class="n">38%</td></tr><tr><th scope="row">2023 to 2024</th><td class="n">84</td><td class="n">9,877</td><td class="n">under 1%</td></tr><tr><th scope="row">2021 to 2022</th><td class="n">101</td><td class="n">10,184</td><td class="n">1%</td></tr><tr><th scope="row">2019 to 2020</th><td class="n">239</td><td class="n">9,565</td><td class="n">2%</td></tr><tr><th scope="row">2017 to 2018</th><td class="n">323</td><td class="n">8,909</td><td class="n">4%</td></tr><tr><th scope="row">2015 to 2016</th><td class="n">346</td><td class="n">8,887</td><td class="n">4%</td></tr><tr><th scope="row">2013 to 2014</th><td class="n">314</td><td class="n">8,204</td><td class="n">4%</td></tr></tbody></table></div>
+<p>The denominator is every bill filed, because that is what Rule 17B's "any
+legislation in committee" reaches. A session still sitting will rise.</p>
+
+<h2>What changed in February 2025</h2>
+<p>The jump is not a change in how votes are published. It is a change in how many
+votes are taken on the record, and it was made in one sentence when the House adopted
+its rules for this session on February 25, 2025.</p>
+<p>The rule the House operated under through 2024 read:</p>
+<blockquote><p>Whenever any member of a House committee present at the committee
+meeting so requests, the vote to give any legislation a favorable or adverse report
+shall be a recorded vote of the full committee.</p>
+<cite>House Rule 17B, as adopted for the 193rd General Court</cite></blockquote>
+<p>The rule today reads:</p>
+<blockquote><p>The vote on any legislation in committee shall be a recorded vote of
+the full committee.</p><cite>House Rule 17B, as adopted February 25, 2025</cite></blockquote>
+<p>Under the old rule a committee recorded a vote only if a member in the room asked
+for one, and only on a favorable or adverse report. The votes that survive from those
+years are the times somebody asked. Under the new rule every vote on every bill is
+recorded. The same amendment deleted a sentence limiting what the posted record had to
+contain: an aggregate tally of those voting yes, not voting or reserving their rights,
+and names only for those voting no.</p>
+
+<h2>The machinery was already there</h2>
+<p>It would be easy to assume the older records were written up later, once the new
+rule created a place to put them. They were not. The Internet Archive holds a capture
+of one bill's Committee Vote tab from September 23, 2023, eighteen months before the
+rule changed, and it shows what the site shows now: the committee, the date, the
+question, and every member named under all four headings. The tab itself is older
+still, appearing on bill pages captured in 2019, 2021 and 2022 for a vote taken in
+February 2017. So the publishing was in place and mostly idle; what changed was how
+often a vote was taken that had to be published.</p>
+<p>One caution for anyone repeating this check. Several archived captures of these
+pages come back at a fifth of their real size with no tabs at all. Those are truncated
+captures, not evidence that a tab was missing, and reading them as absence would give
+the opposite answer.</p>
+
+<h2>What is still unknown</h2>
+<p>Why the House made the change, and whether the Senate's own Rule 12, which asks for
+committee votes to be posted "as soon as practicable" alongside a summary of the bill,
+is being met on the same terms. Neither question is answered by the record, and
+neither is guessed at here.</p>
+
+<h1 id="amendments">Amendments, and the ones the feed cannot produce</h1>
+<p>A roll call on an amendment names only a number: "On adoption of amendment #6".
+The amendment's own record names the member who moved it, gives its title and text,
+and says whether it carried, so a vote page here shows all of that above the names.
+On a budget this is most of the story: the FY2026 budget drew 522 amendments, of which
+479 were consolidated, meaning folded into one of the consolidated amendments that
+House Rule 33F then requires a roll call on. Nine in ten amendments to that bill never
+got a vote of their own.</p>
+<p>Each amendment is a separate fetch, and not all of them come back.
+47,690 were retrieved across the five sessions with bills on this site;
+28,522 more are listed on the bill's own record but return an error when
+asked for. That is a gap in the legislature's data rather than in this crawl: for one
+Senate bill this session the feed lists stubs for amendments 2, 3 and 4, the API says
+each cannot be found, and the legislature's own website shows the bill had exactly one
+Senate amendment. Renumbering, withdrawals and consolidation would explain much of it.
+This site counts only the amendments it actually received, and does not treat a stub as
+evidence that an amendment existed.</p>
+
+<h1 id="missing-bills">Bills the feed does not have</h1>
+<p>Senate Bill No. 3 is the Senate Ways and Means budget. The Senate debates it over
+three days at the end of May in the first year of each session, and it draws more
+roll calls than almost anything else the chamber does.</p>
+<p>For the 192nd and 193rd General Courts, the legislature's data feed does not have
+it. Asking for that bill returns nothing at all, in either session, under every form
+of the number. Every neighbouring bill is there: S1, S2, and S4 through S9 all
+answer normally in both sessions. S3 is the one gap, and it is the same gap twice.</p>
+<p>The votes themselves are not missing. Fifteen roll calls in 2021 and thirty in 2023
+name S3 as the bill, and those roll calls are on this site with every name attached.
+What is missing is the bill they were about: its title, its sponsor, its text and its
+amendments.</p>
+<p>The 188th General Court has a different shape of the same problem. Its bills run out
+of the feed at House No. 4577, and nothing above that answers. The House was plainly
+still legislating past it: roll call 415 of 2014 is a motion to postpone consideration
+of House No. 4728, the bill to reduce gun violence, and that vote is on this site. The
+bill it names is not, because the feed does not carry it.</p>
+<p>Wherever this happens, the bill number is shown as plain text rather than a link,
+because there is no page to link to. That is the honest rendering, and these are the
+state's gaps rather than this crawl's.</p>
+
+<h1 id="house-scans">The House roll calls this site cannot read</h1>
+<p>The House does not publish its roll calls as data. It publishes them as one bound
+volume of printed sheets per year, and this site reads those sheets. From 2018 on the
+sheets are set as text and can be read directly. Before that they are photographs of
+paper, and a photograph of about a hundred and sixty names in four columns is not
+something a parser can read without optical character recognition.</p>
+<p>So for 2009 through 2017 this site has 2,257 roll call sheets and knows, for
+every one of them, the roll call number, the day it was taken, the question the House
+was voting on, and the tally the Clerk printed. What it does not know, on 2,256 of
+them, is who voted which way. That half is deliberately blank rather than estimated. Recognition on the
+vote column has so far disagreed with the Clerk's own tally, and a name list that
+cannot be reconciled to the printed count is not published here.</p>
+<p>Exactly one of the 2,257 was printed digitally rather than scanned. Its 160
+names are readable and reconcile to the Clerk's tally, so it appears on the site with
+the rest: No. 277 of 2016, on passing the energy diversity bill, 154 to 1.</p>
+
+<h2>Where the oldest of them come from</h2>
+<p>The legislature's own site serves these volumes back to 2011 and no further. Ask it
+for 2010 and it answers with an empty page rather than an error, which is easy to read
+as the record simply stopping there. It does not stop there.</p>
+<p>The State Library of Massachusetts holds the printed journals and publishes them
+free at its own repository, and its holdings include the Yea and Nay Supplement for the
+186th General Court. That volume carries 513 roll call sheets from January 2009
+to July 2010 that the legislature does not serve at all. They are on this site, cited to
+the Library rather than to the legislature, because the Library is where that record
+actually is. Their names are photographs too.</p>
+
+<h2>What the printed headers show</h2>
+<p>Reading 2,257 headers turns up four things worth stating plainly, because each
+one would otherwise look like an error on this site rather than a feature of the record.</p>
+<ul>
+<li><strong>69 sheets in 2015 were taken on a different day than the
+sitting they belong to.</strong> They print as, for example, "Tuesday, April 28 [being
+the legislative sitting of April 27]". Both dates are kept. Collapsing them to one
+would move those votes onto the wrong day.</li>
+<li><strong>65 sheets in 2017 carry a misspelled month.</strong>
+The heading for the October 4 override session was set once as "Ocotober" and reran
+across every sheet of that sitting. The corrected date is used, and the House's
+spelling is kept beside it so the correction is visible rather than silent.</li>
+<li><strong>One roll call was struck by the House.</strong> No. 214 of 2012 was
+expunged by order, so its sheet carries that order instead of a tally. There is
+nothing to reconcile and nothing is inferred.</li>
+<li><strong>3 sheets in 2015 were reissued as corrected</strong>
+by the House itself, and say so above the question.</li>
+</ul>
+<p>Two sheets, No. 117 of 2011 and No. 303 of 2014, carry dates that run backwards
+against their roll call numbers. In 2014 it looks like a transposed pair, but that is
+a guess, and a guess written into the record would stop the next person looking. Both
+are flagged and left exactly as printed, pending someone reading the House Journal for
+those days.</p>
+
+<h1 id="hearings">Public hearings</h1>
+<p>Every bill page shows the public hearings the bill received, with the committee, the
+room and the date. The date is the one that matters procedurally: House Rule 27 counts
+its reporting deadline from the day a bill is heard, not from when it was filed or
+referred, so the hearing sets the clock that ends in a report or a study order.</p>
+<p>There is no hearings endpoint in the legislature's data service. Each committee
+record lists the event numbers of its hearings, and each event carries its own agenda
+of bills, so the hearings here are assembled from those two. A hearing that a committee
+record does not list will not appear.</p>
+
+</div></body></html>

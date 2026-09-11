@@ -1,0 +1,684 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Yeas and Nays</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+
+<style>
+:root{
+  --paper:#f1e8d6;
+  --paper-2:#e8dcc4;
+  --ink:#1c1814;
+  --ink-soft:#4e4538;
+  --ink-faint:#8a7d6a;
+  --ink-ghost:#b8bdb7;
+  --rule:#c9bda6;
+  --rule-soft:#ddd2bc;
+  --verdigris:#2f4f3f;
+  --verdigris-deep:#22554d;
+  --verdigris-bg:#dfe9e5;
+  --brass:#8a6a2c;
+  --brass-bg:#ece5d3;
+  --nay:#9b2b1f;
+  /* chart marks: validated pair for this surface (OKLCH C >= .10, CVD dE 9+, normal dE 21+) */
+  --c1:#058b76;
+  --c2:#b5502e;
+  /* party marks, validated the same way */
+  --dem:#27497e;
+  --rep:#9b2b1f;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#2a2420;
+    --paper-2:#332c26;
+    --ink:#efe6d5;
+    --ink-soft:#c2b49c;
+    --ink-faint:#9c8f7b;
+    --ink-ghost:#3b4246;
+    --rule:#4a4138;
+    --rule-soft:#3b332c;
+    --verdigris:#8fb89f;
+    --verdigris-deep:#8fcabd;
+    --verdigris-bg:#16292a;
+    --brass:#d6b269;
+    --brass-bg:#2a2417;
+    --nay:#e0796a;
+    --c1:#33a08c;
+    --c2:#bf6244;
+    --dem:#8fadde;
+    --rep:#e0796a;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#2a2420;
+  --paper-2:#332c26;
+  --ink:#efe6d5;
+  --ink-soft:#c2b49c;
+  --ink-faint:#9c8f7b;
+  --ink-ghost:#3b4246;
+  --rule:#4a4138;
+  --rule-soft:#3b332c;
+  --verdigris:#8fb89f;
+  --verdigris-deep:#8fcabd;
+  --verdigris-bg:#16292a;
+  --brass:#d6b269;
+  --brass-bg:#2a2417;
+  --nay:#e0796a;
+  --c1:#33a08c;
+  --c2:#bf6244;
+  --dem:#8fadde;
+  --rep:#e0796a;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif"Segoe UI",Helvetica,Arial,sans-serif;
+  font-weight:300;font-size:17px;line-height:1.64;
+  -webkit-font-smoothing:antialiased;
+}
+.mono{font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif}
+.serif{font-family:"Adobe Caslon Pro","Libre Caslon Display",Georgia,"Times New Roman",serif}
+
+/* ================= masthead ================= */
+.mast{
+  max-width:1120px;margin:0 auto;padding:26px 28px 0;
+  display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;align-items:baseline;
+  font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-soft);
+}
+.mast b{color:var(--verdigris);font-weight:500}
+
+/* ================= hero ================= */
+.hero{position:relative;overflow:hidden;margin-top:22px;border-top:1.5px solid var(--ink);border-bottom:1px solid var(--rule)}
+.field{
+  position:absolute;inset:0;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));
+  gap:0 22px;padding:22px 28px;
+  font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:11.5px;line-height:1.85;
+  color:var(--ink-ghost);
+  -webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,.9) 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,0) 100%);
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.9) 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,0) 100%);
+  pointer-events:none;user-select:none;
+}
+.field span{display:flex;justify-content:space-between;white-space:nowrap;overflow:hidden}
+.field i{font-style:normal;font-weight:500;opacity:0;transition:opacity .9s ease}
+.field i.y{color:var(--verdigris)}
+.field i.n{color:var(--ink-faint)}
+.field i.x,.field i.p{color:var(--brass)}
+.field.lit i{opacity:1}
+@media (prefers-reduced-motion:reduce){.field i{transition:none;opacity:1}}
+
+.hero-in{position:relative;max-width:1120px;margin:0 auto;padding:118px 28px 62px}
+.eyebrow{font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--verdigris);margin:0 0 20px}
+h1{
+  font-family:"Adobe Caslon Pro","Libre Caslon Display",Georgia,"Times New Roman",serif;font-weight:200;
+  font-size:clamp(3.6rem,10.5vw,8.2rem);line-height:.94;letter-spacing:-.028em;
+  margin:0;text-wrap:balance;
+}
+h1 em{font-style:italic;font-weight:200;color:var(--verdigris)}
+.dek{
+  font-family:"Adobe Caslon Pro","Libre Caslon Display",Georgia,"Times New Roman",serif;font-weight:300;
+  font-size:clamp(1.3rem,2.6vw,1.8rem);line-height:1.38;letter-spacing:-.005em;
+  color:var(--ink);max-width:30ch;margin:34px 0 0;text-wrap:balance;
+}
+.dek em{font-style:italic;color:var(--ink-soft)}
+
+/* ================= page column ================= */
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px 110px}
+.standfirst{max-width:64ch;font-size:1.06rem;margin:0;padding:48px 0 0}
+.standfirst::first-letter{
+  font-family:"Adobe Caslon Pro","Libre Caslon Display",Georgia,"Times New Roman",serif;font-weight:300;font-size:3.6em;line-height:.8;
+  float:left;margin:8px 10px 0 0;color:var(--verdigris);
+}
+
+/* stat strip */
+.strip{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:1px;background:var(--rule);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  margin:52px 0 0;
+}
+.stat{background:var(--paper);padding:26px 22px 24px}
+.stat .n{
+  font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;font-weight:600;font-size:2.9rem;line-height:.95;
+  letter-spacing:-.035em;display:block;color:var(--ink);
+}
+.stat.accent .n{color:var(--verdigris)}
+.stat .l{display:block;margin-top:12px;font-size:12.5px;line-height:1.45;color:var(--ink-soft);max-width:22ch}
+
+/* ================= sections ================= */
+section{padding:72px 0;border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:0}
+.grid{display:grid;grid-template-columns:1fr;gap:6px 48px;align-items:start}
+@media(min-width:900px){.grid{grid-template-columns:168px minmax(0,66ch)}}
+.gut{position:sticky;top:28px}
+.gut .big{
+  font-family:"Adobe Caslon Pro","Libre Caslon Display",Georgia,"Times New Roman",serif;font-weight:200;font-style:italic;
+  font-size:clamp(3.2rem,5vw,4.6rem);line-height:.9;letter-spacing:-.04em;color:var(--verdigris);
+  display:block;
+}
+.gut .big.sm{font-size:clamp(2rem,3.4vw,2.7rem);font-style:normal;letter-spacing:-.02em;line-height:1.05;padding-top:6px}
+.gut .lab{
+  display:block;margin-top:12px;font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:11px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);line-height:1.5;
+}
+h2{
+  font-family:"Adobe Caslon Pro","Libre Caslon Display",Georgia,"Times New Roman",serif;font-weight:300;
+  font-size:clamp(1.8rem,3.6vw,2.55rem);line-height:1.1;letter-spacing:-.018em;
+  margin:0 0 22px;text-wrap:balance;
+}
+p{margin:0 0 18px;max-width:66ch}
+p:last-child{margin-bottom:0}
+strong{font-weight:600}
+
+/* quoted rule */
+blockquote{
+  position:relative;margin:30px 0 30px;padding:6px 0 6px 34px;
+  font-family:"Adobe Caslon Pro","Libre Caslon Display",Georgia,"Times New Roman",serif;font-weight:300;font-size:1.34rem;line-height:1.42;letter-spacing:-.005em;
+  color:var(--ink);
+}
+blockquote::before{
+  content:"\201C";position:absolute;left:-4px;top:-18px;
+  font-family:"Adobe Caslon Pro","Libre Caslon Display",Georgia,"Times New Roman",serif;font-style:italic;font-weight:200;
+  font-size:4.4rem;line-height:1;color:var(--verdigris);
+}
+blockquote p{margin:0;max-width:56ch}
+blockquote cite{
+  display:block;margin-top:14px;font-style:normal;
+  font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--verdigris);
+}
+
+/* seat grid */
+.chamber{margin:30px 0 0;padding:26px 26px 22px;border:1px solid var(--rule);background:var(--paper-2)}
+.seats{display:grid;grid-template-columns:repeat(20,1fr);gap:7px;max-width:520px}
+.seat{aspect-ratio:1;border-radius:50%;background:var(--ink-ghost)}
+.seat.on{background:var(--verdigris)}
+.chamber .cap{margin:18px 0 0;font-size:13.5px;line-height:1.55;color:var(--ink-soft);max-width:none}
+.chamber .cap b{font-family:"Adobe Caslon Pro","Libre Caslon Display",Georgia,"Times New Roman",serif;font-weight:500;font-size:1.25em;color:var(--verdigris)}
+
+/* the sheet */
+figure{margin:30px 0 0}
+.sheet{border:1px solid var(--ink);background:var(--paper);font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;overflow-x:auto;box-shadow:0 1px 0 var(--rule)}
+.sheet-head{padding:16px 18px 13px;border-bottom:1px solid var(--rule)}
+.sheet-head .org{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+.sheet-head .q{font-size:12.5px;margin-top:8px;line-height:1.55}
+.sheet-head .tal{font-size:12.5px;margin-top:4px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.sheet-body{padding:14px 18px 16px;display:grid;grid-template-columns:repeat(4,minmax(120px,1fr));gap:2px 16px;font-size:12px}
+.cell{display:flex;justify-content:space-between;gap:8px;white-space:nowrap;border-bottom:1px dotted var(--rule-soft);padding:2px 0}
+.cell .nm{overflow:hidden;text-overflow:ellipsis}
+.v{font-weight:500}
+.v.y{color:var(--verdigris)}
+.v.n{color:var(--nay)}
+.v.x,.v.p{color:var(--brass)}
+.sheet-foot{padding:9px 18px 11px;border-top:1px solid var(--rule);font-size:10.5px;letter-spacing:.1em;color:var(--ink-faint);text-transform:uppercase}
+figcaption{margin-top:12px;font-size:13px;color:var(--ink-soft);max-width:66ch}
+
+/* code key */
+.keys{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:30px 0 0}
+.key{background:var(--paper);padding:18px 20px}
+.key .g{font-family:"Adobe Caslon Pro","Libre Caslon Display",Georgia,"Times New Roman",serif;font-weight:300;font-size:2.4rem;line-height:.9}
+.key .t{display:block;margin-top:10px;font-size:12.5px;font-weight:600;letter-spacing:.02em}
+.key .d{display:block;margin-top:5px;font-size:12.5px;line-height:1.55;color:var(--ink-soft)}
+
+/* committee buckets */
+.buckets{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:30px 0 0}
+.bk{background:var(--paper);padding:20px 20px 18px}
+.bk .bt{display:block;font-family:"Adobe Caslon Pro","Libre Caslon Display",Georgia,"Times New Roman",serif;font-weight:300;font-size:1.5rem;line-height:1.05;letter-spacing:-.01em}
+.bk .bd{display:block;margin-top:9px;font-size:12.5px;line-height:1.55;color:var(--ink-soft)}
+.bk.odd{background:var(--brass-bg)}
+.bk.odd .bt{color:var(--brass);font-style:italic}
+
+/* chart */
+.chart{margin:30px 0 0;position:relative}
+.chart .ttl{font-size:13px;font-weight:600;color:var(--ink);margin:0 0 2px;max-width:none}
+.chart .sub{font-size:12.5px;color:var(--ink-soft);margin:0 0 10px;max-width:none}
+.chartwrap{overflow-x:auto;position:relative}
+svg{display:block}
+.bar{fill:var(--c1);transition:opacity .12s}
+.bar.s2{fill:var(--c2)}
+g.yr.lift .bar{opacity:.72}
+.band{fill:transparent;cursor:default;outline:none}
+.band:focus-visible{outline:2px solid var(--c1);outline-offset:-2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 12px;font-size:12.5px;color:var(--ink-soft)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{width:12px;height:12px;border-radius:2px;display:inline-block}
+.tip .row{display:flex;align-items:center;gap:8px;margin-top:3px}
+.tip .row i{width:12px;height:2px;display:inline-block}
+.tip .row b{display:inline;font-size:13px;min-width:3ch;text-align:right}
+.tip .yr{font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.75}
+.axis{font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:11px;fill:var(--ink-faint)}
+.axis.val{fill:var(--ink-soft);font-weight:500}
+.gl{stroke:var(--rule-soft);stroke-width:1}
+.base{stroke:var(--rule);stroke-width:1}
+.tip{
+  position:absolute;pointer-events:none;display:none;
+  background:var(--ink);color:var(--paper);padding:7px 10px 8px;
+  font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:12px;line-height:1.35;white-space:nowrap;
+  box-shadow:0 2px 10px rgba(0,0,0,.18);transform:translate(-50%,-100%);
+}
+.tip b{display:block;font-size:15px;font-weight:500}
+.tip.on{display:block}
+details.tbl{margin-top:14px;font-size:13px}
+details.tbl summary{cursor:pointer;color:var(--ink-soft);font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+details.tbl summary:focus-visible{outline:2px solid var(--verdigris);outline-offset:3px}
+table{border-collapse:collapse;margin-top:12px;font-variant-numeric:tabular-nums;font-size:13px}
+th,td{text-align:left;padding:5px 22px 5px 0;border-bottom:1px solid var(--rule-soft)}
+th{font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);font-weight:500}
+td.n{text-align:right;padding-right:0}
+
+/* seat map */
+.seatmap{margin:30px 0 0;position:relative}
+.seatmap .ttl{font-size:13px;font-weight:600;color:var(--ink);margin:0 0 2px;max-width:none}
+.seatmap .sub{font-size:12.5px;color:var(--ink-soft);margin:0 0 10px;max-width:none}
+.seatmap .legend{margin:0 0 6px}
+.seatmap .legend b{font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;font-weight:600;color:var(--ink);font-size:15px;margin-right:2px}
+.seatmap .legend i{border-radius:50%}
+.hemi{overflow-x:auto;position:relative}
+.hemi svg{display:block;margin:0 auto}
+.pseat{stroke:var(--paper);stroke-width:2px;outline:none;cursor:default}
+.pseat.d{fill:var(--dem)}
+.pseat.r{fill:var(--rep)}
+.pseat.o{fill:var(--ink-ghost)}
+.pseat:hover,.pseat:focus-visible{stroke:var(--ink);stroke-width:2px}
+.seatmap .tip{transform:translate(-50%,-100%)}
+.seatmap .tip small{display:block;font-size:11px;opacity:.75;margin-top:2px}
+
+/* footer */
+footer{padding:72px 0 0;border-top:1.5px solid var(--ink);margin-top:0}
+.srcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:24px 36px;margin:26px 0 0}
+.src{font-size:13.5px;line-height:1.6}
+.src .st{font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--verdigris);display:block;margin-bottom:6px}
+a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--verdigris);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:2px solid var(--verdigris);outline-offset:3px}
+.note{margin-top:40px;padding-top:22px;border-top:1px solid var(--rule);font-size:12.5px;line-height:1.6;color:var(--ink-faint);max-width:72ch}
+</style></head><body>
+
+<div class="mast">
+  <div><a href="index.html" style="color:inherit;text-decoration:none">Massachusetts House of Representatives &nbsp;·&nbsp; <b>Rules of the House</b></a> &nbsp;·&nbsp; <a href="index.html" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--rule)">Members and votes</a></div>
+  <div>194th General Court &nbsp;·&nbsp; amended Feb. 25, 2025 &nbsp;·&nbsp; <a href="../senate/rules.html" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--rule)">The Senate</a></div>
+</div>
+
+<header class="hero">
+  <div class="field" id="field" aria-hidden="true"></div>
+  <script>
+  (function(){
+    var rows=[["Mr. Speaker","N"],["Galvin","N"],["McMurtry","N"],["Sylvia","N"],["Arciero","N"],["Garballey","N"],["Mendes","N"],["Tarsky","N"],["Arena-DeRosa","N"],["Garcia","N"],["Meschino","N"],["Turco","N"],["Armini","N"],["Garry","Y"],["Michlewitz","N"],["Tyler *","N"],["Arriaga","N"],["Gentile","N"],["Moakley","N"],["Ultrino","N"],["Ashe","N"],["Giannino","N"],["Montaño","N"],["Uyterhoeven","N"],["Ayers","N"],["Gómez","N"],["Moran F.","N"],["Vargas","N"],["Badger","N"],["González","N"],["Moran J.","N"],["Vitolo","N"],["Barber","N"],["Gordon","N"],["Moran M.","N"],["Walsh","N"],["Barrett","N"],["Gregoire","N"],["Murphy","N"],["Wells","N"],["Biele","N"],["Haggerty","X"],["Murray","N"],["Williams","N"],["Blais","X"],["Hamilton","N"],["Nguyen","N"],["Worrell","N"],["Cabral","N"],["Hawkins","N"],["O'Day","N"],["Zlotnik","N"],["Cahill","N"],["Hendricks","N"],["Ouellette","N"],["Jones","Y"],["Cataldo","N"],["Higgins","N"],["Owens","N"],["Ferguson","Y"],["Chan","N"],["Hogan","N"],["Paulino","N"],["Frost","Y"],["Ciccolo","N"],["Holmes","N"],["Peisch","N"],["Berthiaume","Y"],["Connolly","N"],["Honan","N"],["Philips","N"],["Boldyga","X"],["Consalvo","N"],["Hong","N"],["Plouffe","N"],["Chaisson","Y"],["Cruz","N"],["Howard","N"],["Puppolo","N"],["DeCoste","Y"],["Cusack","N"],["Hunt","N"],["Ramos, A.","N"],["Gaskey","Y"],["Davis","N"],["Kassner","N"],["Ramos, O.","N"],["Howitt","Y"],["Day","N"],["Kearney","N"],["Reid","N"],["Kane","Y"],["Decker","N"],["Keefe","X"],["Reyes","N"],["Lombardo","Y"],["Diggs","N"],["Kerans","N"],["Robertson","Y"],["Marsi","Y"],["Doherty","N"],["Kilcoyne","N"],["Rogers, D.","N"],["McKenna","Y"],["Domb","N"],["Kushmerek","N"],["Rogers, J.","N"],["Muradian","Y"],["Donaghue","N"],["LaNatra","X"],["Roy","N"],["Orrall","Y"],["Donahue","N"],["Lawn","X"],["Ryan","N"],["Pease","Y"],["Donato","N"],["LeBoeuf","N"],["Sabadosa","N"],["Smola","Y"],["DuBois","N"],["Lewis","N"],["Sangiolo","N"],["Soter","Y"],["Duffy","N"],["Linsky","N"],["Saunders","N"],["Sullivan-Almeida","Y"],["Elliott","N"],["Lipper-Garabedian","N"],["Scanlon","N"],["Sweezey","Y"],["Farley-Bouvier","N"],["Livingstone","N"],["Scarsdale","N"],["Thurber","Y"],["Ferrante","N"],["Luddy","N"],["Schwartz","N"],["Vaughn","Y"],["Finn","N"],["MacGregor","N"],["Sena","N"],["Vieira","Y"],["Fiola","N"],["Madaro","N"],["Shand","N"],["Wong","Y"],["Flanagan","N"],["Mahoney","N"],["Silvia","N"],["Xiarhos","Y"],["Fluker-Reid","N"],["Markey","N"],["Sousa","N"],["Whipps","X"],["Gallagher","N"],["McGonagle","N"],["Stanley","N"]];
+    var f=document.getElementById('field'),h='';
+    for(var i=0;i<rows.length;i++){h+='<span>'+rows[i][0].replace(/&/g,'&amp;').replace(/</g,'&lt;')+'<i class="'+rows[i][1].toLowerCase()+'">'+rows[i][1]+'</i></span>';}
+    f.innerHTML=h;
+    var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(rm){f.classList.add('lit');}else{setTimeout(function(){f.classList.add('lit');},350);}
+  })();
+  </script>
+
+  <div class="hero-in">
+    <p class="eyebrow">Why you cannot find out how your representative voted</p>
+    <h1>Yeas and <em>Nays</em></h1>
+    <p class="dek">Most of what the Massachusetts House does leaves no record of how anybody voted. <em>That is not an oversight. It is written down.</em></p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <p class="standfirst">The House adopts a set of rules for itself at the start of every two year session, numbered 1 to 101. Almost nobody outside the building reads them. They are worth reading, because they decide what the public is allowed to find out, and they answer a question people ask constantly without knowing where to look.</p>
+
+  <div class="strip">
+    <div class="stat accent"><span class="n">1,373</span><span class="l">recorded House votes in nine years, 2018 through 2026</span></div>
+    <div class="stat"><span class="n">16</span><span class="l">members it takes to force one, out of 160</span></div>
+    <div class="stat"><span class="n">43%</span><span class="l">of those votes had nobody at all on the losing side</span></div>
+    <div class="stat"><span class="n">1</span><span class="l">vote in nine years closer than 60 to 40</span></div>
+  </div>
+
+  <section id="chamber">
+    <div class="grid">
+      <div class="gut"><span class="big sm">160</span><span class="lab">Who holds<br>the seats</span></div>
+      <div>
+        <h2>The chamber, seat by seat</h2>
+        <p>Every rule on this page turns on a count. Ten percent of members elected, a majority of those present, the whole of the minority party. This is the chamber those counts are taken from, as the legislature's own member records list it today: the 158 members on the most recent roll call sheet, dated 07/22/2026. 2 seats were vacant that day.</p>
+        <div class="seatmap">
+          <p class="ttl">Massachusetts House of Representatives, 194th General Court</p>
+          <p class="sub">Hover or tab to a seat for the member and district.</p>
+          <div class="legend" id="seatLegend" aria-hidden="true"></div>
+          <div class="hemi" id="hemiWrap">
+            <svg id="hemi" viewBox="0 0 560 300" width="560" height="300" role="img" aria-label="Seat map of the House by party."></svg>
+            <div class="tip" id="seatTip" aria-hidden="true"></div>
+          </div>
+          <details class="tbl">
+            <summary>Show as a list</summary>
+            <table><thead><tr><th>Member</th><th>Party</th><th>District</th></tr></thead><tbody id="seatBody"></tbody></table>
+          </details>
+        </div>
+        <style>
+.tiles{margin:34px 0 0}
+.tiles .ttl{font-size:13px;font-weight:600;color:var(--ink);margin:0 0 2px;max-width:none}
+.tiles .sub{font-size:12.5px;color:var(--ink-soft);margin:0 0 14px;max-width:none}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.tile{background:var(--paper);padding:20px 20px 18px}
+.tile .q{font-size:13px;line-height:1.4;color:var(--ink);min-height:2.8em;margin:0}
+.tile .big{font-family:var(--disp);font-weight:400;font-size:2.8rem;line-height:1;letter-spacing:.01em;color:var(--ink);margin:12px 0 0;font-variant-numeric:lining-nums tabular-nums}
+.tile .big small{display:block;font-size:12px;font-weight:400;letter-spacing:.02em;color:var(--ink-soft);margin:6px 0 0}
+.tile .party{display:flex;flex-wrap:wrap;gap:4px 16px;margin:10px 0 0;font-size:13px;color:var(--ink-soft)}
+.tile .party b{font-weight:600;color:var(--ink)}
+.tile .party i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.tile .low{margin:10px 0 0;font-size:12px;line-height:1.45;color:var(--ink-faint)}
+</style><div class="tiles"><p class="ttl">What those seats do, 2025 to 2026</p><p class="sub">Four questions about the record, answered for the member in the middle of the chamber, then for the middle Democrat and the middle Republican. Every member's own figures, and where they sit among all of them, are on their page.</p><div class="tgrid"><div class="tile"><p class="q">Answered yea or nay when the roll was called</p><div class="big">99%<small>the typical member</small></div><div class="party"><span><i style="background:var(--dem)"></i>Democrats <b>99%</b></span><span><i style="background:var(--rep)"></i>Republicans <b>100%</b></span></div><p class="low">126 of 161 members at 95% or more.<br>Democrat furthest from the rest: <a href="../house/members/A_S1.html">Alan Silvia</a> at 85%<br>Republican furthest from the rest: <a href="../house/members/NAG1.html">Nicholas A. Boldyga</a> at 86%</p></div><div class="tile"><p class="q">On the winning side, when the vote was split</p><div class="big">100%<small>the typical member</small></div><div class="party"><span><i style="background:var(--dem)"></i>Democrats <b>100%</b></span><span><i style="background:var(--rep)"></i>Republicans <b>35%</b></span></div><p class="low">133 of 161 members at 95% or more.<br>Democrat furthest from the rest: <a href="../house/members/CMG1.html">Colleen M. Garry</a> at 78%<br>Republican furthest from the rest: <a href="../house/members/JRG2.html">John R. Gaskey</a> at 9%</p></div><div class="tile"><p class="q">Voted the same way as the Speaker, when the vote was split</p><div class="big">100%<small>the typical member</small></div><div class="party"><span><i style="background:var(--dem)"></i>Democrats <b>100%</b></span><span><i style="background:var(--rep)"></i>Republicans <b>34%</b></span></div><p class="low">133 of 161 members at 95% or more.<br>Democrat furthest from the rest: <a href="../house/members/CMG1.html">Colleen M. Garry</a> at 78%<br>Republican furthest from the rest: <a href="../house/members/JRG2.html">John R. Gaskey</a> at 8%</p></div><div class="tile"><p class="q">Voted with most of their own party, when the vote was split</p><div class="big">100%<small>the typical member</small></div><div class="party"><span><i style="background:var(--dem)"></i>Democrats <b>100%</b></span><span><i style="background:var(--rep)"></i>Republicans <b>92%</b></span></div><p class="low">140 of 161 members at 95% or more.<br>Democrat furthest from the rest: <a href="../house/members/CMG1.html">Colleen M. Garry</a> at 78%<br>Republican furthest from the rest: <a href="../house/members/JRG2.html">John R. Gaskey</a> at 71%</p></div></div></div>
+        <script>
+        (function(){
+          var members=[["Ronald Mariano","D","3rd Norfolk"],["Christopher Richard Flanagan","D","1st Barnstable"],["Joseph W. McGonagle, Jr.","D","28th Middlesex"],["Andrew Tarr","D","5th Essex"],["Michael J. Moran","D","18th Suffolk"],["Brandy Fluker-Reid","D","12th Suffolk"],["Paul McMurtry","D","11th Norfolk"],["Joshua Tarsky","D","13th Norfolk"],["Kate Hogan","D","3rd Middlesex"],["Dennis C. Gallagher","D","8th Plymouth"],["Rita A. Mendes","D","11th Plymouth"],["Jeffrey Rosario Turco","D","19th Suffolk"],["Alice Hanlon Peisch","D","14th Norfolk"],["William C. Galvin","D","6th Norfolk"],["Joan Meschino","D","3rd Plymouth"],["Chynah Tyler","D","7th Suffolk"],["Frank A. Moran","D","17th Essex"],["Sean Garballey","D","23rd Middlesex"],["Aaron Michlewitz","D","3rd Suffolk"],["Steven Ultrino","D","33rd Middlesex"],["Paul J. Donato","D","35th Middlesex"],["Judith A. Garcia","D","11th Suffolk"],["Thomas W. Moakley","D","Barnstable, Dukes and Nantucket"],["Erika Uyterhoeven","D","27th Middlesex"],["James Arciero","D","2nd Middlesex"],["Colleen M. Garry","D","36th Middlesex"],["Samantha Montaño","D","15th Suffolk"],["Andres X. Vargas","D","3rd Essex"],["James C. Arena-DeRosa","D","8th Middlesex"],["Carmine Lawrence Gentile","D","13th Middlesex"],["John Francis Moran","D","9th Suffolk"],["Tommy Vitolo","D","15th Norfolk"],["Jennifer Balinsky Armini","D","8th Essex"],["Jessica Ann Giannino","D","16th Suffolk"],["James M. Murphy","D","4th Norfolk"],["Thomas P. Walsh","D","12th Essex"],["Shirley B. Arriaga","D","8th Hampden"],["Homar Gómez","D","2nd Hampshire"],["Brian W. Murray","D","10th Worcester"],["Richard G. Wells, Jr.","D","7th Norfolk"],["Brian M. Ashe","D","2nd Hampden"],["Carlos González","D","10th Hampden"],["Tram T. Nguyen","D","18th Essex"],["Bud L. Williams","D","11th Hampden"],["Bruce J. Ayers","D","1st Norfolk"],["Kenneth I. Gordon","D","21st Middlesex"],["James J. O'Day","D","14th Worcester"],["Christopher J. Worrell","D","5th Suffolk"],["Michelle L. Badger","D","1st Plymouth"],["Danielle W. Gregoire","D","4th Middlesex"],["Steven J. Ouellette","D","8th Bristol"],["Jonathan D. Zlotnik","D","2nd Worcester"],["Christine P. Barber","D","34th Middlesex"],["Richard M. Haggerty","D","30th Middlesex"],["Steven Owens","D","29th Middlesex"],["Bradley H. Jones, Jr.","R","20th Middlesex"],["John Barrett, III","D","1st Berkshire"],["Ryan M. Hamilton","D","15th Essex"],["Francisco E. Paulino","D","16th Essex"],["Kimberly N. Ferguson","R","1st Worcester"],["David Biele","D","4th Suffolk"],["James K. Hawkins","D","2nd Bristol"],["Edward R. Philips","D","8th Norfolk"],["Paul K. Frost","R","7th Worcester"],["Hannah Bowen","D","6th Essex"],["Christopher Hendricks","D","11th Bristol"],["Bridget Plouffe","D","9th Plymouth"],["David K. Muradian, Jr.","R","9th Worcester"],["Antonio F. D. Cabral","D","13th Bristol"],["Natalie M. Higgins","D","4th Worcester"],["Angelo J. Puppolo, Jr.","D","12th Hampden"],["David T. Vieira","R","3rd Barnstable"],["Daniel Cahill","D","10th Essex"],["Russell E. Holmes","D","6th Suffolk"],["Adrianne Pusateri Ramos","D","14th Essex"],["Donald R. Berthiaume, Jr.","R","5th Worcester"],["Simon Cataldo","D","14th Middlesex"],["Kevin G. Honan","D","17th Suffolk"],["Orlando Ramos","D","9th Hampden"],["Nicholas A. Boldyga","R","3rd Hampden"],["Tackey Chan","D","2nd Norfolk"],["Tara T. Hong","D","18th Middlesex"],["Sean Reid","D","11th Essex"],["Michael S. Chaisson","R","1st Bristol"],["Michelle L. Ciccolo","D","15th Middlesex"],["Daniel J. Hunt","D","13th Suffolk"],["Estela A. Reyes","D","4th Essex"],["David F. DeCoste","R","5th Plymouth"],["Mike Connolly","D","26th Middlesex"],["Kristin E. Kassner","D","2nd Essex"],["David Allen Robertson","D","19th Middlesex"],["John R. Gaskey","R","2nd Plymouth"],["Rob Consalvo","D","14th Suffolk"],["Patrick Joseph Kearney","D","4th Plymouth"],["David M. Rogers","D","24th Middlesex"],["Steven S. Howitt","R","4th Bristol"],["Manny Cruz","D","7th Essex"],["Mary S. Keefe","D","15th Worcester"],["John H. Rogers","D","12th Norfolk"],["Hannah Kane","R","11th Worcester"],["Mark J. Cusack","D","5th Norfolk"],["Sally P. Kerans","D","13th Essex"],["Jeffrey N. Roy","D","10th Norfolk"],["Marc T. Lombardo","R","22nd Middlesex"],["Leigh Davis","D","3rd Berkshire"],["Meghan K. Kilcoyne","D","12th Worcester"],["Daniel J. Ryan","D","2nd Suffolk"],["John J. Marsi","R","6th Worcester"],["Michael S. Day","D","31st Middlesex"],["Michael P. Kushmerek","D","3rd Worcester"],["Lindsay N. Sabadosa","D","1st Hampshire"],["Joseph D. McKenna","R","18th Worcester"],["Marjorie C. Decker","D","25th Middlesex"],["Kathleen R. LaNatra","D","12th Plymouth"],["Amy Mah Sangiolo","D","11th Middlesex"],["Norman J. Orrall","R","12th Bristol"],["Kip A. Diggs","D","2nd Barnstable"],["John J. Lawn, Jr.","D","10th Middlesex"],["Aaron L. Saunders","D","7th Hampden"],["Kelly W. Pease","R","4th Hampden"],["Mindy Domb","D","3rd Hampshire"],["David Henry Argosky LeBoeuf","D","17th Worcester"],["Adam J. Scanlon","D","14th Bristol"],["Todd M. Smola","R","1st Hampden"],["Kate Donaghue","D","19th Worcester"],["Jack Patrick Lewis","D","7th Middlesex"],["Margaret R. Scarsdale","D","1st Middlesex"],["Michael J. Soter","R","8th Worcester"],["Daniel M. Donahue","D","16th Worcester"],["David Paul Linsky","D","5th Middlesex"],["Greg Schwartz","D","12th Middlesex"],["Alyson M. Sullivan-Almeida","R","7th Plymouth"],["Michelle M. DuBois","D","10th Plymouth"],["Kate Lipper-Garabedian","D","32nd Middlesex"],["Danillo A. Sena","D","37th Middlesex"],["Kenneth P. Sweezey","R","6th Plymouth"],["Patricia A. Duffy","D","5th Hampden"],["Jay D. Livingstone","D","8th Suffolk"],["Dawne Shand","D","1st Essex"],["Justin Thurber","R","5th Bristol"],["Rodney M. Elliott","D","16th Middlesex"],["Hadley Luddy","D","4th Barnstable"],["Alan Silvia","D","7th Bristol"],["Marcus S. Vaughn","R","9th Norfolk"],["Tricia Farley-Bouvier","D","2nd Berkshire"],["William F. MacGregor","D","10th Suffolk"],["Priscila S. Sousa","D","6th Middlesex"],["Donald H. Wong","R","9th Essex"],["Lisa Field","D","3rd Bristol"],["Adrian C. Madaro","D","1st Suffolk"],["Thomas M. Stanley","D","9th Middlesex"],["Steven George Xiarhos","R","5th Barnstable"],["Michael J. Finn","D","6th Hampden"],["John J. Mahoney","D","13th Worcester"],["Mark D. Sylvia","D","10th Bristol"],["Susannah M. Whipps","O","2nd Franklin"],["Carole A. Fiola","D","6th Bristol"],["Christopher M. Markey","D","9th Bristol"]];
+          var svg=document.getElementById('hemi'),wrap=document.getElementById('hemiWrap'),tip=document.getElementById('seatTip'),leg=document.getElementById('seatLegend');
+          if(!members.length)return;
+          var ns='http://www.w3.org/2000/svg',W=560,cx=280,cy=282,rows=6,r0=110,gap=24,sr=8;
+          var N=members.length,radii=[],per=[],tot=0;
+          for(var i=0;i<rows;i++){radii.push(r0+i*gap);tot+=radii[i];}
+          var used=0;for(var i=0;i<rows;i++){per.push(i===rows-1?N-used:Math.round(N*radii[i]/tot));used+=per[i];}
+          var pos=[];
+          for(var i=0;i<rows;i++){for(var j=0;j<per[i];j++){var a=per[i]===1?Math.PI/2:Math.PI-Math.PI*j/(per[i]-1);pos.push({x:cx+radii[i]*Math.cos(a),y:cy-radii[i]*Math.sin(a),a:a,row:i});}}
+          pos.sort(function(p,q){return q.a-p.a||p.row-q.row;});
+          var order={D:0,O:1,R:2};
+          var sorted=members.slice().sort(function(m,n){return order[m[1]]-order[n[1]]||m[0].split(' ').pop().localeCompare(n[0].split(' ').pop());});
+          var counts={D:0,R:0,O:0};
+          sorted.forEach(function(m,i){
+            counts[m[1]]++;
+            var p=pos[i],c=document.createElementNS(ns,'circle');
+            c.setAttribute('class','pseat '+m[1].toLowerCase());c.setAttribute('cx',p.x.toFixed(1));c.setAttribute('cy',p.y.toFixed(1));c.setAttribute('r',sr);
+            c.setAttribute('tabindex','0');c.setAttribute('role','img');
+            var party=m[1]==='D'?'Democrat':m[1]==='R'?'Republican':'Unenrolled';
+            c.setAttribute('aria-label',m[0]+', '+party+', '+m[2]);
+            function show(){tip.textContent='';var b=document.createElement('b');b.textContent=m[0];tip.appendChild(b);var s=document.createElement('small');s.textContent=party+' · '+m[2];tip.appendChild(s);
+              var r=wrap.getBoundingClientRect(),s2=svg.getBoundingClientRect(),k=s2.width/W;tip.style.left=(s2.left-r.left+p.x*k)+'px';tip.style.top=(s2.top-r.top+(p.y-sr)*k-8)+'px';tip.classList.add('on');}
+            function hide(){tip.classList.remove('on');}
+            c.addEventListener('pointerenter',show);c.addEventListener('pointerleave',hide);c.addEventListener('focus',show);c.addEventListener('blur',hide);
+            svg.appendChild(c);
+          });
+          function key(n,label,cls){var s=document.createElement('span');var i=document.createElement('i');i.style.background='var(--'+cls+')';var b=document.createElement('b');b.textContent=String(n);s.appendChild(i);s.appendChild(b);s.appendChild(document.createTextNode(label));return s;}
+          leg.appendChild(key(counts.D,'Democrats','dem'));leg.appendChild(key(counts.R,'Republicans','rep'));if(counts.O)leg.appendChild(key(counts.O,'Unenrolled','ink-ghost'));
+          svg.setAttribute('aria-label','Seat map of the House by party: '+counts.D+' Democrats, '+counts.R+' Republicans'+(counts.O?', '+counts.O+' unenrolled':'')+'.');
+          document.addEventListener('DOMContentLoaded',function(){var tb=document.getElementById('seatBody');if(!tb)return;sorted.forEach(function(m){var tr=document.createElement('tr');[m[0],m[1]==='D'?'Democrat':m[1]==='R'?'Republican':'Unenrolled',m[2]].forEach(function(v){var td=document.createElement('td');td.textContent=v;tr.appendChild(td);});tb.appendChild(tr);});});
+        })();
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <section id="informal">
+    <div class="grid">
+      <div class="gut"><span class="big">44</span><span class="lab">Rule 44<br>Informal sessions</span></div>
+      <div>
+        <h2>There are two kinds of session, and only one of them can take a vote</h2>
+        <p>The Speaker decides when the House meets informally. An informal session is not a lesser version of a formal one. It is a different machine, and a great deal of real legislation passes through it.</p>
+        <blockquote>
+          <p>Formal debate, or the taking of the sense of the House by yeas and nays shall not be conducted during such informal session.</p>
+          <cite>House Rule 44</cite>
+        </blockquote>
+        <p>In an informal session a roll call is not merely unusual. It is prohibited. Business moves by voice, and the record shows that the House acted without showing who wanted it to. If you go looking for your representative's position on something that passed informally, there is nothing to find, and no amount of persistence will produce it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="threshold">
+    <div class="grid">
+      <div class="gut"><span class="big">52</span><span class="lab">Rule 52<br>Taking the yeas and nays</span></div>
+      <div>
+        <h2>In a formal session, one member cannot get a roll call. Sixteen can.</h2>
+        <p>The threshold is fixed by the House's own rule, and it is a share of everyone elected rather than everyone in the room.</p>
+        <blockquote>
+          <p>The sense of the House shall be taken by yeas and nays whenever required by ten percent of the members elected.</p>
+          <cite>House Rule 52</cite>
+        </blockquote>
+        <div class="chamber">
+          <div class="seats" id="seats" role="img" aria-label="160 seats, 16 of them highlighted: the number needed to force a roll call"></div>
+          <script>
+          (function(){var s=document.getElementById('seats'),h='';for(var i=0;i<160;i++){h+='<span class="seat'+(i<16?' on':'')+'"></span>';}s.innerHTML=h;})();
+          </script>
+          <p class="cap"><b>16 of 160.</b> Below that line, the House votes by voice and the record keeps no names. The rule also gives the Speaker up to twelve minutes before putting the question, and then holds the machine open between two and twenty two minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sheet">
+    <div class="grid">
+      <div class="gut"><span class="big sm">48<br>52</span><span class="lab">Rules 48 and 52<br>Reading the sheet</span></div>
+      <div>
+        <h2>When a roll call does happen, this is what it looks like</h2>
+        <p>The House prints one sheet per vote. Four columns of surnames, each with a single letter pressed against it. Below is the first recorded vote of the 2025 session, reproduced from the House's own published volume. It is the same vote that runs behind the title of this page.</p>
+
+        <figure>
+          <div class="sheet">
+            <div class="sheet-head">
+              <div class="org">Massachusetts House of Representatives</div>
+              <div class="q">H. 57 &nbsp; On adoption of amendment #6 &nbsp;&nbsp; Yea and Nay &nbsp; 02/06/2025 &nbsp; 02:35 PM</div>
+              <div class="tal">No. 1 &nbsp;&nbsp; 26 YEAS &nbsp; 126 NAYS &nbsp; 7 N/V</div>
+            </div>
+            <div class="sheet-body">
+              <div class="cell"><span class="nm">Mr. Speaker</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Galvin</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">McMurtry</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Sylvia</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Arciero</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Garballey</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Mendes</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Tarsky</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Arena-DeRosa</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Garcia</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Meschino</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Turco</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Armini</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Garry</span><span class="v y">Y</span></div>
+              <div class="cell"><span class="nm">Michlewitz</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Tyler *</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Arriaga</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Giannino</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Moakley</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Ultrino</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Ashe</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Haggerty</span><span class="v x">X</span></div>
+              <div class="cell"><span class="nm">Montaño</span><span class="v n">N</span></div>
+              <div class="cell"><span class="nm">Uyterhoeven</span><span class="v n">N</span></div>
+            </div>
+            <div class="sheet-foot">* = after vote &nbsp;&nbsp; P = present &nbsp;&nbsp; X = not voting</div>
+          </div>
+          <figcaption>An excerpt. This sheet runs to 159 names in the same four columns, one for every member the Clerk called that day.</figcaption>
+        </figure>
+
+        <div class="keys">
+          <div class="key"><span class="g" style="color:var(--verdigris)">Y</span><span class="t">Yea</span><span class="d">A vote in favor.</span></div>
+          <div class="key"><span class="g" style="color:var(--nay)">N</span><span class="t">Nay</span><span class="d">A vote against.</span></div>
+          <div class="key"><span class="g" style="color:var(--brass)">X</span><span class="t">Not voting</span><span class="d">Often an arranged absence. Under Rule 48 a member gives the Clerk written notice, and the Clerk then disables that member's voting station.</span></div>
+          <div class="key"><span class="g" style="color:var(--brass)">P</span><span class="t">Present</span><span class="d">A deliberate act, not a shrug. The member must tell the Clerk in person after the vote is ordered and before it is announced.</span></div>
+          <div class="key"><span class="g" style="color:var(--brass)">*</span><span class="t">After vote</span><span class="d">Recorded once the roll had already closed.</span></div>
+        </div>
+
+        <p style="margin-top:28px">That last mark is the one loose thread. The rule that allows a member to be recorded after the roll closes, within five minutes, sits inside the passage that applies when the electronic voting system has broken down. Asterisks appear on these sheets 965 times in nine years, which is far more often than the machines can plausibly have failed. Either the practice is broader than the text, or the marks come from somewhere the rules do not say. It is a fair question to put to the Clerk.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="committee">
+    <div class="grid">
+      <div class="gut"><span class="big sm">17B</span><span class="lab">Rule 17B<br>Committee votes</span></div>
+      <div>
+        <h2>Committee votes are required to be public. Finding one is another matter.</h2>
+        <p>Nearly every bill dies in committee, so the committee vote is often the only vote a bill ever gets. The rule on this is unambiguous.</p>
+        <blockquote>
+          <p>The vote on any legislation in committee shall be a recorded vote of the full committee. … The record of all such roll calls shall be posted on the official website of the General Court within 48 hours of the vote.</p>
+          <cite>House Rule 17B</cite>
+        </blockquote>
+        <p>They are posted. They are also close to invisible. A committee vote does not appear on the bill's page as it loads, and it is not in the legislature's public data feed. It lives behind a tab that only fills in if you click it. Technically published, practically hidden.</p>
+        <p>What you get when you find one is better than a floor vote, because it sorts every member of the committee into four groups rather than two.</p>
+        <div class="buckets">
+          <div class="bk"><span class="bt">Favorable</span><span class="bd">Move it forward.</span></div>
+          <div class="bk"><span class="bt">Adverse</span><span class="bd">Kill it.</span></div>
+          <div class="bk odd"><span class="bt">Reserve Right</span><span class="bd">Declining to commit either way, while keeping the option to argue later.</span></div>
+          <div class="bk odd"><span class="bt">No Action</span><span class="bd">Took no position at all.</span></div>
+        </div>
+        <p style="margin-top:28px">The last two have no equivalent on the floor, where a member has only yea, nay, present or absent. Reserving your right is not an abstention and it is not an absence. It is its own thing, and any tally that folds it into either one is describing something that did not happen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="chair">
+    <div class="grid">
+      <div class="gut"><span class="big">4</span><span class="lab">Rules 4, 5 and 18<br>The chair</span></div>
+      <div>
+        <h2>The Speaker's power is mostly the power to schedule</h2>
+        <p>The rules give the Speaker the ordinary gavel authority you would expect, and one sentence of unusual plainness about voting.</p>
+        <blockquote>
+          <p>In all cases the Speaker may vote.</p>
+          <cite>House Rule 4</cite>
+        </blockquote>
+        <p>That is the whole rule. There is no custom of the chair sitting out, and in practice the Speaker votes on nearly every roll call. The real leverage sits elsewhere. Rule 44 lets the Speaker decide when the House meets informally, which decides when a roll call is possible at all. Rule 5 lets the Speaker hand the chair to any member. Rule 18 puts the appointment and removal of the majority leadership in the Speaker's hands. Rule 1A stops the House from convening before ten in the morning or sitting past midnight, unless every member present agrees to keep going.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="consolidated">
+    <div class="grid">
+      <div class="gut"><span class="big sm">33F</span><span class="lab">Rule 33F<br>Consolidated amendments</span></div>
+      <div>
+        <h2>One guaranteed floor of record, added in 2017</h2>
+        <p>During a budget the House bundles hundreds of individual amendments into a handful of consolidated ones and adopts them together. A rule added on February 2, 2017 makes that bundling impossible to do quietly.</p>
+        <blockquote>
+          <p>No consolidated amendment shall be adopted except by a roll call vote.</p>
+          <cite>House Rule 33F</cite>
+        </blockquote>
+        <p>It is one sentence, and it is the reason a reliable share of every year's recorded votes are budget consolidations. When you see a rule that short, it usually means somebody once did the opposite.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="result">
+    <div class="grid">
+      <div class="gut"><span class="big sm" style="font-style:italic">Sum</span><span class="lab">Recorded votes<br>per year</span></div>
+      <div>
+        <h2>What all of it adds up to</h2>
+        <p>Nine years of the House's own published roll call volumes, counted. The 2020 spike is the pandemic year, when the House ran an unusual number of formal sessions and recorded budget votes item by item.</p>
+        <div class="chart">
+          <p class="ttl">Recorded roll call votes per year, and how many had a losing side</p>
+          <p class="sub">Massachusetts House of Representatives, 2018 to 2026. Hover or tab to a year for both counts.</p>
+          <div class="legend" aria-hidden="true">
+            <span><i style="background:var(--c1)"></i>Nobody on the losing side</span>
+            <span><i style="background:var(--c2)"></i>Divided</span>
+          </div>
+          <div class="chartwrap" id="chartwrap">
+            <svg id="chart" viewBox="0 0 700 262" width="700" height="262" role="img" aria-label="Stacked bar chart of recorded House votes per year, split into votes with nobody on the losing side and divided votes. 2018: 97 and 114. 2019: 54 and 88. 2020: 111 and 190. 2021: 62 and 59. 2022: 105 and 55. 2023: 31 and 39. 2024: 66 and 67. 2025: 27 and 89. 2026: 43 and 76."></svg>
+            <div class="tip" id="tip" aria-hidden="true"></div>
+          </div>
+          <script>
+          (function(){
+            // [year, nobody on the losing side, divided]
+            var data=[[2018,97,114],[2019,54,88],[2020,111,190],[2021,62,59],[2022,105,55],[2023,31,39],[2024,66,67],[2025,27,89],[2026,43,76]];
+            var svg=document.getElementById('chart'),wrap=document.getElementById('chartwrap'),tip=document.getElementById('tip');
+            var L=46,R=690,T=24,B=226,band=(R-L)/data.length,bw=22,max=300,GAP=2,ns='http://www.w3.org/2000/svg';
+            function y(v){return B-(v/max)*(B-T);}
+            function mk(n,a,txt){var e=document.createElementNS(ns,n);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;return e;}
+            function el(n,a,txt){var e=mk(n,a,txt);svg.appendChild(e);return e;}
+            [100,200,300].forEach(function(v){el('line',{class:'gl',x1:L,y1:y(v),x2:R,y2:y(v)});});
+            el('line',{class:'base',x1:L,y1:B,x2:R,y2:B});
+            [0,100,200,300].forEach(function(v){el('text',{class:'axis',x:L-6,y:y(v)+4,'text-anchor':'end'},String(v));});
+            // label only the extremes and the endpoint; the axis and the tooltip carry the rest
+            var label={2020:1,2023:1,2026:1};
+            data.forEach(function(d,i){
+              var cx=L+band*i+band/2,x=cx-bw/2,tot=d[1]+d[2],yU=y(d[1]),yT=y(tot);
+              var g=el('g',{class:'yr'});
+              var hit=mk('rect',{class:'band',x:L+band*i,y:T-8,width:band,height:B-T+8,tabindex:'0',role:'img','aria-label':tot+' recorded votes in '+d[0]+': '+d[1]+' with nobody on the losing side, '+d[2]+' divided'});
+              g.appendChild(hit);
+              // bottom segment: square at the baseline, square top (the gap does the separating)
+              g.appendChild(mk('rect',{class:'bar',x:x,y:yU,width:bw,height:B-yU}));
+              // top segment: sits above a 2px surface gap, 4px rounded data-end
+              var t=yT,b2=yU-GAP;
+              if(b2-t>4){g.appendChild(mk('path',{class:'bar s2',d:'M'+x+' '+b2+'V'+(t+4)+'Q'+x+' '+t+' '+(x+4)+' '+t+'H'+(x+bw-4)+'Q'+(x+bw)+' '+t+' '+(x+bw)+' '+(t+4)+'V'+b2+'Z'}));}
+              if(label[d[0]])g.appendChild(mk('text',{class:'axis val',x:cx,y:yT-7,'text-anchor':'middle'},String(tot)));
+              g.appendChild(mk('text',{class:'axis',x:cx,y:B+20,'text-anchor':'middle'},String(d[0])));
+              function row(v,name,color){var r=document.createElement('div');r.className='row';var i=document.createElement('i');i.style.background=color;var b=document.createElement('b');b.textContent=String(v);r.appendChild(i);r.appendChild(b);r.appendChild(document.createTextNode(name));return r;}
+              function show(){
+                tip.textContent='';
+                var yr=document.createElement('div');yr.className='yr';yr.textContent=d[0]+' · '+tot+' recorded';tip.appendChild(yr);
+                tip.appendChild(row(d[1],'nobody on the losing side','var(--c1)'));
+                tip.appendChild(row(d[2],'divided','var(--c2)'));
+                var r=wrap.getBoundingClientRect(),s=svg.getBoundingClientRect(),k=s.width/700;
+                tip.style.left=(s.left-r.left+cx*k)+'px';tip.style.top=(s.top-r.top+yT*k-10)+'px';tip.classList.add('on');g.classList.add('lift');
+              }
+              function hide(){tip.classList.remove('on');g.classList.remove('lift');}
+              hit.addEventListener('pointerenter',show);hit.addEventListener('pointerleave',hide);
+              hit.addEventListener('focus',show);hit.addEventListener('blur',hide);
+            });
+          })();
+          </script>
+          <details class="tbl">
+            <summary>Show as a table</summary>
+            <table>
+              <thead><tr><th>Year</th><th class="n">Nobody on the losing side</th><th class="n">Divided</th><th class="n">Total</th></tr></thead>
+              <tbody>
+                <tr><td>2018</td><td class="n">97</td><td class="n">114</td><td class="n">211</td></tr>
+                <tr><td>2019</td><td class="n">54</td><td class="n">88</td><td class="n">142</td></tr>
+                <tr><td>2020</td><td class="n">111</td><td class="n">190</td><td class="n">301</td></tr>
+                <tr><td>2021</td><td class="n">62</td><td class="n">59</td><td class="n">121</td></tr>
+                <tr><td>2022</td><td class="n">105</td><td class="n">55</td><td class="n">160</td></tr>
+                <tr><td>2023</td><td class="n">31</td><td class="n">39</td><td class="n">70</td></tr>
+                <tr><td>2024</td><td class="n">66</td><td class="n">67</td><td class="n">133</td></tr>
+                <tr><td>2025</td><td class="n">27</td><td class="n">89</td><td class="n">116</td></tr>
+                <tr><td>2026</td><td class="n">43</td><td class="n">76</td><td class="n">119</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </div>
+        <p style="margin-top:24px">A body of 160 people, legislating for seven million, leaves roughly 150 recorded votes in a year, and on 43 percent of those nobody at all is on the losing side. That is not a chamber that fails to disagree. It is a chamber whose rules move disagreement to the places where the rules do not require a record.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="clock">
+    <div class="grid">
+      <div class="gut"><span class="big sm" style="font-style:italic">Clock</span><span class="lab">When the votes<br>are taken</span></div>
+      <div>
+        <h2>The House votes in the afternoon. The Senate keeps going.</h2>
+        <style>
+.clock{margin:8px 0 0}
+.clock .ttl{font-size:13px;font-weight:600;color:var(--ink);margin:0 0 2px;max-width:none}
+.clock .sub{font-size:12.5px;color:var(--ink-soft);margin:0 0 10px;max-width:none}
+.clock .legend{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 10px;font-size:12.5px;color:var(--ink-soft)}
+.clock .legend span{display:inline-flex;align-items:center;gap:8px}
+.clock .legend i{width:12px;height:12px;border-radius:2px;display:inline-block}
+.clock svg{display:block;width:100%;max-width:700px;height:auto}
+.clock .b1{fill:var(--c1)}.clock .b2{fill:var(--c2)}
+.clock .hit{fill:transparent}
+.clock g.h:hover rect.b1,.clock g.h:hover rect.b2{opacity:.72}
+.clock .ax{stroke:var(--rule);stroke-width:1}
+.clock .axl{font-family:var(--body);font-size:11px;fill:var(--ink-faint)}
+.clock .val{font-family:var(--disp);font-size:11.5px;fill:var(--ink-soft)}
+.clock .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:22px 0 0}
+.clock .fact{background:var(--paper);padding:16px 18px}
+.clock .fact b{display:block;font-family:var(--disp);font-weight:400;font-size:1.9rem;line-height:1;letter-spacing:.01em;margin-bottom:6px;font-variant-numeric:lining-nums tabular-nums}
+.clock .fact span{font-size:12.5px;line-height:1.45;color:var(--ink-soft)}
+.clock details{margin-top:12px;font-size:13px}
+.clock summary{cursor:pointer;font-family:var(--body);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+.clock table{border-collapse:collapse;margin-top:10px;font-variant-numeric:tabular-nums;font-size:12.5px}
+.clock th,.clock td{text-align:right;padding:3px 10px 3px 0;border-bottom:1px solid var(--rule-soft)}
+.clock th{font-family:var(--body);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);font-weight:400}
+</style><p>Every roll call the record dates to the hour: 1,370 in the House since 2018 and 1,817 in the Senate since 2013. The House's busiest hour is 14:00, the Senate's 16:00. The House takes almost nothing before 11 in the morning, which is Rule 1A's 10 AM floor and the informal-session habit together; the Senate has a morning. What both chambers vote on after midnight is mostly what the Constitution makes them record, borrowing and land takings, taken at the end of the last night because they cannot be skipped.</p><div class="clock"><p class="ttl">Recorded roll calls by hour of the day</p><p class="sub">Both chambers on one 24-hour clock. Hover an hour for both counts.</p><div class="legend"><span><i style="background:var(--c1)"></i>House, 2018 to 2026</span><span><i style="background:var(--c2)"></i>Senate, 2013 to 2026</span></div><svg viewBox="0 0 700 250" role="img" aria-label="Recorded roll calls by hour of day, House and Senate. House peak 14:00 with 238; Senate peak 16:00 with 263."><line class="ax" x1="40" y1="226" x2="690" y2="226"/><g class="h"><rect class="hit" x="40.0" y="14" width="27.1" height="212"><title>00:00 to 00:59 · House 13 · Senate 22</title></rect><rect class="b1" x="42.0" y="215.9" width="11.5" height="10.1"/><rect class="b2" x="55.5" y="208.9" width="11.5" height="17.1"/></g><g class="h"><rect class="hit" x="67.1" y="14" width="27.1" height="212"><title>01:00 to 01:59 · House 2 · Senate 15</title></rect><rect class="b1" x="69.1" y="224.4" width="11.5" height="1.6"/><rect class="b2" x="82.6" y="214.4" width="11.5" height="11.6"/></g><g class="h"><rect class="hit" x="94.2" y="14" width="27.1" height="212"><title>02:00 to 02:59 · House 6 · Senate 1</title></rect><rect class="b1" x="96.2" y="221.3" width="11.5" height="4.7"/><rect class="b2" x="109.7" y="225.2" width="11.5" height="0.8"/></g><g class="h"><rect class="hit" x="121.2" y="14" width="27.1" height="212"><title>03:00 to 03:59 · House 3 · Senate 1</title></rect><rect class="b1" x="123.2" y="223.7" width="11.5" height="2.3"/><rect class="b2" x="136.8" y="225.2" width="11.5" height="0.8"/></g><g class="h"><rect class="hit" x="148.3" y="14" width="27.1" height="212"><title>04:00 to 04:59 · House 1 · Senate 0</title></rect><rect class="b1" x="150.3" y="225.2" width="11.5" height="0.8"/><rect class="b2" x="163.9" y="226.0" width="11.5" height="0.0"/></g><g class="h"><rect class="hit" x="175.4" y="14" width="27.1" height="212"><title>05:00 to 05:59 · House 0 · Senate 0</title></rect><rect class="b1" x="177.4" y="226.0" width="11.5" height="0.0"/><rect class="b2" x="191.0" y="226.0" width="11.5" height="0.0"/></g><g class="h"><rect class="hit" x="202.5" y="14" width="27.1" height="212"><title>06:00 to 06:59 · House 0 · Senate 0</title></rect><rect class="b1" x="204.5" y="226.0" width="11.5" height="0.0"/><rect class="b2" x="218.0" y="226.0" width="11.5" height="0.0"/></g><g class="h"><rect class="hit" x="229.6" y="14" width="27.1" height="212"><title>07:00 to 07:59 · House 1 · Senate 0</title></rect><rect class="b1" x="231.6" y="225.2" width="11.5" height="0.8"/><rect class="b2" x="245.1" y="226.0" width="11.5" height="0.0"/></g><g class="h"><rect class="hit" x="256.7" y="14" width="27.1" height="212"><title>08:00 to 08:59 · House 3 · Senate 5</title></rect><rect class="b1" x="258.7" y="223.7" width="11.5" height="2.3"/><rect class="b2" x="272.2" y="222.1" width="11.5" height="3.9"/></g><g class="h"><rect class="hit" x="283.8" y="14" width="27.1" height="212"><title>09:00 to 09:59 · House 3 · Senate 8</title></rect><rect class="b1" x="285.8" y="223.7" width="11.5" height="2.3"/><rect class="b2" x="299.3" y="219.8" width="11.5" height="6.2"/></g><g class="h"><rect class="hit" x="310.8" y="14" width="27.1" height="212"><title>10:00 to 10:59 · House 1 · Senate 53</title></rect><rect class="b1" x="312.8" y="225.2" width="11.5" height="0.8"/><rect class="b2" x="326.4" y="184.9" width="11.5" height="41.1"/></g><g class="h"><rect class="hit" x="337.9" y="14" width="27.1" height="212"><title>11:00 to 11:59 · House 24 · Senate 41</title></rect><rect class="b1" x="339.9" y="207.4" width="11.5" height="18.6"/><rect class="b2" x="353.5" y="194.2" width="11.5" height="31.8"/></g><g class="h"><rect class="hit" x="365.0" y="14" width="27.1" height="212"><title>12:00 to 12:59 · House 60 · Senate 107</title></rect><rect class="b1" x="367.0" y="179.5" width="11.5" height="46.5"/><rect class="b2" x="380.5" y="143.0" width="11.5" height="83.0"/></g><g class="h"><rect class="hit" x="392.1" y="14" width="27.1" height="212"><title>13:00 to 13:59 · House 192 · Senate 93</title></rect><rect class="b1" x="394.1" y="77.1" width="11.5" height="148.9"/><rect class="b2" x="407.6" y="153.9" width="11.5" height="72.1"/></g><g class="h"><rect class="hit" x="419.2" y="14" width="27.1" height="212"><title>14:00 to 14:59 · House 238 · Senate 185</title></rect><rect class="b1" x="421.2" y="41.4" width="11.5" height="184.6"/><rect class="b2" x="434.7" y="82.5" width="11.5" height="143.5"/><text class="val" x="426.9" y="36.4" text-anchor="middle">238</text></g><g class="h"><rect class="hit" x="446.2" y="14" width="27.1" height="212"><title>15:00 to 15:59 · House 213 · Senate 246</title></rect><rect class="b1" x="448.2" y="60.8" width="11.5" height="165.2"/><rect class="b2" x="461.8" y="35.2" width="11.5" height="190.8"/></g><g class="h"><rect class="hit" x="473.3" y="14" width="27.1" height="212"><title>16:00 to 16:59 · House 182 · Senate 263</title></rect><rect class="b1" x="475.3" y="84.8" width="11.5" height="141.2"/><rect class="b2" x="488.9" y="22.0" width="11.5" height="204.0"/><text class="val" x="494.6" y="17.0" text-anchor="middle">263</text></g><g class="h"><rect class="hit" x="500.4" y="14" width="27.1" height="212"><title>17:00 to 17:59 · House 142 · Senate 190</title></rect><rect class="b1" x="502.4" y="115.9" width="11.5" height="110.1"/><rect class="b2" x="516.0" y="78.6" width="11.5" height="147.4"/></g><g class="h"><rect class="hit" x="527.5" y="14" width="27.1" height="212"><title>18:00 to 18:59 · House 70 · Senate 165</title></rect><rect class="b1" x="529.5" y="171.7" width="11.5" height="54.3"/><rect class="b2" x="543.0" y="98.0" width="11.5" height="128.0"/></g><g class="h"><rect class="hit" x="554.6" y="14" width="27.1" height="212"><title>19:00 to 19:59 · House 75 · Senate 133</title></rect><rect class="b1" x="556.6" y="167.8" width="11.5" height="58.2"/><rect class="b2" x="570.1" y="122.8" width="11.5" height="103.2"/></g><g class="h"><rect class="hit" x="581.7" y="14" width="27.1" height="212"><title>20:00 to 20:59 · House 69 · Senate 105</title></rect><rect class="b1" x="583.7" y="172.5" width="11.5" height="53.5"/><rect class="b2" x="597.2" y="144.6" width="11.5" height="81.4"/></g><g class="h"><rect class="hit" x="608.8" y="14" width="27.1" height="212"><title>21:00 to 21:59 · House 42 · Senate 76</title></rect><rect class="b1" x="610.8" y="193.4" width="11.5" height="32.6"/><rect class="b2" x="624.3" y="167.0" width="11.5" height="59.0"/></g><g class="h"><rect class="hit" x="635.8" y="14" width="27.1" height="212"><title>22:00 to 22:59 · House 17 · Senate 78</title></rect><rect class="b1" x="637.8" y="212.8" width="11.5" height="13.2"/><rect class="b2" x="651.4" y="165.5" width="11.5" height="60.5"/></g><g class="h"><rect class="hit" x="662.9" y="14" width="27.1" height="212"><title>23:00 to 23:59 · House 13 · Senate 30</title></rect><rect class="b1" x="664.9" y="215.9" width="11.5" height="10.1"/><rect class="b2" x="678.5" y="202.7" width="11.5" height="23.3"/></g><text class="axl" x="53.5" y="242" text-anchor="middle">00</text><text class="axl" x="134.8" y="242" text-anchor="middle">03</text><text class="axl" x="216.0" y="242" text-anchor="middle">06</text><text class="axl" x="297.3" y="242" text-anchor="middle">09</text><text class="axl" x="378.5" y="242" text-anchor="middle">12</text><text class="axl" x="459.8" y="242" text-anchor="middle">15</text><text class="axl" x="541.0" y="242" text-anchor="middle">18</text><text class="axl" x="622.3" y="242" text-anchor="middle">21</text><text class="axl" x="40" y="256">hour of the day, 24-hour clock</text></svg><details><summary>Show as a table</summary><table><thead><tr><th>Hour</th><th>House</th><th>Senate</th></tr></thead><tbody><tr><td>00:00</td><td>13</td><td>22</td></tr><tr><td>01:00</td><td>2</td><td>15</td></tr><tr><td>02:00</td><td>6</td><td>1</td></tr><tr><td>03:00</td><td>3</td><td>1</td></tr><tr><td>04:00</td><td>1</td><td>0</td></tr><tr><td>05:00</td><td>0</td><td>0</td></tr><tr><td>06:00</td><td>0</td><td>0</td></tr><tr><td>07:00</td><td>1</td><td>0</td></tr><tr><td>08:00</td><td>3</td><td>5</td></tr><tr><td>09:00</td><td>3</td><td>8</td></tr><tr><td>10:00</td><td>1</td><td>53</td></tr><tr><td>11:00</td><td>24</td><td>41</td></tr><tr><td>12:00</td><td>60</td><td>107</td></tr><tr><td>13:00</td><td>192</td><td>93</td></tr><tr><td>14:00</td><td>238</td><td>185</td></tr><tr><td>15:00</td><td>213</td><td>246</td></tr><tr><td>16:00</td><td>182</td><td>263</td></tr><tr><td>17:00</td><td>142</td><td>190</td></tr><tr><td>18:00</td><td>70</td><td>165</td></tr><tr><td>19:00</td><td>75</td><td>133</td></tr><tr><td>20:00</td><td>69</td><td>105</td></tr><tr><td>21:00</td><td>42</td><td>76</td></tr><tr><td>22:00</td><td>17</td><td>78</td></tr><tr><td>23:00</td><td>13</td><td>30</td></tr></tbody></table></details><div class="facts"><div class="fact"><b>4%</b><span>of House roll calls at 10 PM or later, or before 6 AM</span></div><div class="fact"><b>25</b><span>House roll calls after midnight, on 8 nights</span></div><div class="fact"><b>8%</b><span>the same figure for the Senate</span></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="grid">
+      <div class="gut"><span class="lab" style="margin-top:8px">Sources<br>Read it yourself</span></div>
+      <div>
+        <h2>Go and check</h2>
+        <p>Everything above comes from documents the Commonwealth publishes. None of it is behind a paywall or a records request.</p>
+        <div class="srcs">
+          <div class="src"><span class="st">The rules</span><a href="https://malegislature.gov/Laws/Rules/House">Rules of the House</a>, with the amendment date printed on every one.</div>
+          <div class="src"><span class="st">Roll calls</span>The House posts a bound volume of every recorded vote, one printed sheet per page, at <a href="https://malegislature.gov/Journal/House">Journal of the House</a>.</div>
+          <div class="src"><span class="st">Committee votes</span>On any bill page at malegislature.gov, the Committee Vote tab.</div>
+          <div class="src"><span class="st">Your representative</span><a href="https://malegislature.gov/Search/FindMyLegislator">Find My Legislator</a> will tell you who to look for on the sheet.</div>
+          <div class="src"><span class="st">The Senate</span>The companion page, <a href="../senate/rules.html">Answer to Your Name</a>, reads the Senate rules the same way.</div>
+        </div>
+        <p class="note">Vote counts are our own tally of the House's published roll call volumes for 2018 through 2026, checked sheet by sheet against the tally the Clerk printed at the top of each one. Volumes before 2018 are scanned images rather than text and are not included. Rule text is quoted from the Rules of the House as amended February 25, 2025. Rule numbers change between sessions, so an older citation may point somewhere else.</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body></html>

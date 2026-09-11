@@ -1,0 +1,116 @@
+
+/* Set in Caslon, as the Boston Gazette and the broadsides of 1770 were,
+   there being no type founded on this side of the water until 1839. Adobe
+   Caslon is the one drawn from Caslon's own 1734-1770 specimens; where it is
+   not installed the page falls back to Libre Caslon, which looks the part
+   and is actually drawn from 1960s lettering. */
+:root{--disp:"Adobe Caslon Pro","Libre Caslon Display",Georgia,"Times New Roman",serif;
+--body:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;
+--paper:#f1e8d6;--paper-2:#e8dcc4;--ink:#1c1814;--ink-soft:#4e4538;--ink-faint:#8a7d6a;--rule:#c9bda6;--rule-soft:#ddd2bc;--verdigris:#2f4f3f;--brass:#8a6a2c;--nay:#9b2b1f;--dem:#27497e;--rep:#9b2b1f}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#2a2420;--paper-2:#332c26;--ink:#efe6d5;--ink-soft:#c2b49c;--ink-faint:#9c8f7b;--rule:#4a4138;--rule-soft:#3b332c;--verdigris:#8fb89f;--brass:#d6b269;--nay:#e0796a;--dem:#8fadde;--rep:#e0796a}}
+:root[data-theme="dark"]{--paper:#2a2420;--paper-2:#332c26;--ink:#efe6d5;--ink-soft:#c2b49c;--ink-faint:#9c8f7b;--rule:#4a4138;--rule-soft:#3b332c;--verdigris:#8fb89f;--brass:#d6b269;--nay:#e0796a;--dem:#8fadde;--rep:#e0796a}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.55 var(--body)}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px 80px}
+
+.mast a{color:inherit;text-decoration:none}.mast b{color:var(--verdigris);font-weight:500}
+h1{font:400 clamp(1.7rem,4vw,2.6rem)/1.16 var(--disp);letter-spacing:.04em;
+  text-transform:uppercase;margin:30px 0 10px;text-wrap:balance}
+h2{font:400 13px/1.5 var(--disp);letter-spacing:.22em;text-transform:uppercase;
+  margin:40px 0 12px;color:var(--ink-soft)}
+.meta{font:400 14.5px/1.6 var(--body);color:var(--ink-soft);letter-spacing:.02em}
+/* .meta carries whole sentences as well as short labels, so it must not
+   be uppercased; only things that are actually labels are set in caps */
+.meta.label{letter-spacing:.16em;text-transform:uppercase;font-size:12px}
+.meta a{color:var(--ink)}
+.pill{display:inline-block;padding:1px 8px;border-radius:999px;font:400 11px/1.7 var(--body);letter-spacing:.1em;text-transform:uppercase;color:#fff;vertical-align:middle}
+.pill.d{background:var(--dem)}.pill.r{background:var(--rep)}.pill.o{background:var(--ink-faint)}
+table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}
+th,td{text-align:left;padding:7px 14px 7px 0;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+th{font:400 11.5px/1.4 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint)}
+td.n{font-family:var(--disp);font-variant-numeric:lining-nums tabular-nums;white-space:nowrap;
+  letter-spacing:.02em}
+.v{font:400 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase}
+.v.yea{color:var(--verdigris)}.v.nay{color:var(--nay)}.v.present,.v.not-voting,.v.absent{color:var(--brass)}
+.v.favorable{color:var(--verdigris)}.v.adverse{color:var(--nay)}.v.reserve-right,.v.no-action{color:var(--brass)}
+/* the clerk struck this line from the record; it is shown, ruled through,
+   because a struck action is part of what the record says happened */
+tr.struck td{text-decoration:line-through;color:var(--ink-faint)}
+a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--verdigris);text-underline-offset:3px;text-decoration-thickness:1px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px 28px;margin-top:8px}
+.cols h3{font:400 11.5px/1.4 var(--body);letter-spacing:.18em;text-transform:uppercase;margin:0 0 8px;color:var(--ink-faint)}
+.cols ul{list-style:none;margin:0;padding:0;font-size:14px;line-height:1.7}
+.amend{border-left:2.5px solid var(--brass);background:var(--paper-2);padding:12px 16px;margin:18px 0}
+.amend .amend-title{font-weight:600;font-size:15px;margin:6px 0 0;max-width:none}
+.amend .amend-text{font-size:13.5px;line-height:1.55;color:var(--ink-soft);margin:8px 0 0;max-width:80ch}
+.charge{background:var(--paper-2);padding:14px 18px;margin:18px 0;font-size:14px;line-height:1.6;max-width:75ch}
+.became{border-left:2.5px solid var(--verdigris);background:var(--paper-2);padding:12px 16px;margin:18px 0;font-size:15px}
+.became.study{border-left-color:var(--brass)}
+.note{margin-top:36px;padding-top:16px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--ink-faint);max-width:70ch}
+.cardwrap{overflow-x:auto;margin-top:6px}
+table.card th[scope=row]{font:400 15px/1.5 var(--body);color:var(--ink);text-transform:none;letter-spacing:0;white-space:nowrap}
+table.card td.n{text-align:right;padding-right:0;padding-left:14px}
+table.card th.n{text-align:right;padding-right:0;padding-left:14px}
+/* "Chamber range" wrapped onto two lines and its second word sat under the
+   next header, so the two read as one: "CHAMBERWHERE THIS MEMBER SITS".
+   Keeping each heading on one line fixes the wrap; the left padding is what
+   keeps this heading off the back of the numeric one before it, which sets
+   padding-right to 0 so its digits line up with the column. */
+table.card thead th{white-space:nowrap}
+/* a numeric column sets padding-right to 0 so its digits line up with the
+   heading, which leaves the cell after it with nothing in between: the
+   header read "CHAMBERWHERE THIS MEMBER SITS" and the body "every rowHouse".
+   The gap belongs on the following cell, in the head and the body alike. */
+table.card thead th:not(.n),
+table.card tbody td:not(.n){padding-left:18px}
+table.card thead th:first-child,
+table.card tbody td:first-child,
+table.card tbody th:first-child{padding-left:0}
+.den{color:var(--ink-faint);font-size:.85em}
+.sess{font:400 12px/1.5 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin:26px 0 4px}
+.strip{display:block}.strip .ax{stroke:var(--rule);stroke-width:1}.strip .tk{stroke:var(--ink-faint);stroke-width:1;opacity:.35}.strip .me{fill:var(--verdigris);stroke:var(--paper);stroke-width:2}
+.idx a{display:block;padding:6px 0;border-bottom:1px solid var(--rule-soft);text-decoration:none}
+.idx a:hover{color:var(--verdigris)}
+/* the front page's contents. With the prose gone these entries are the
+   whole page below the photograph, so they are set as a printed table of
+   contents: the name at reading size, what it is in italic under it. */
+.contents{margin:6px 0 0;border-top:1px solid var(--ink)}
+.contents a{display:flex;flex-wrap:wrap;gap:2px 20px;align-items:baseline;
+  justify-content:space-between;padding:13px 0 12px;border-bottom:1px solid var(--rule);
+  text-decoration:none;color:var(--ink)}
+.contents a:hover{background:var(--paper-2)}
+.contents .t{font:400 clamp(19px,2.6vw,25px)/1.2 var(--disp);letter-spacing:.03em}
+.contents .n{font:400 13px/1.4 var(--body);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-faint)}
+.secthead{font:400 12.5px/1.5 var(--body);letter-spacing:.26em;text-transform:uppercase;
+  color:var(--ink-faint);margin:40px 0 0;text-align:center}
+/* the front page says one thing at the foot and stops. Everything else it
+   used to caveat here is on the methods page, which is a row above. */
+.colophon{margin:34px 0 0;padding-top:15px;border-top:1px solid var(--ink);
+  font:italic 15px/1.5 var(--body);color:var(--ink-faint);text-align:center}
+/* ---- the broadside furniture. A printed sheet of 1770 had a heavy rule
+   under the title, letterspaced capitals, and its date on its own line. */
+.rule2{border-top:3px solid var(--ink);border-bottom:1px solid var(--ink);height:3px;margin:0}
+.mast{padding:18px 0 9px;border-bottom:0;display:flex;flex-wrap:wrap;gap:8px 20px;
+  justify-content:space-between;font:400 11.5px/1.5 var(--body);letter-spacing:.2em;
+  text-transform:uppercase;color:var(--ink-soft)}
+.mast a{color:inherit;text-decoration:none}
+.mast b{color:var(--ink);font-weight:400;letter-spacing:.14em}
+/* the front page wears the whole thing */
+.bigmast{text-align:center;padding:26px 0 16px}
+.bigmast .the{font:400 13px/1 var(--body);letter-spacing:.34em;text-transform:uppercase;
+  color:var(--ink-faint);margin:0 0 9px}
+.bigmast .name{font:400 clamp(25px,5.6vw,53px)/1.02 var(--disp);letter-spacing:.1em;
+  text-transform:uppercase;margin:0;white-space:nowrap}
+.bigmast .strap{margin:14px auto 0;font:400 13px/1.5 var(--body);letter-spacing:.22em;
+  text-transform:uppercase;color:var(--ink-soft);max-width:34em;text-wrap:balance}
+.statbar{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 34px;margin:16px 0 0;
+  font:400 12.5px/1.4 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.statbar b{font-family:var(--disp);font-weight:400;font-size:16px;letter-spacing:.02em;
+  color:var(--ink-soft);font-variant-numeric:lining-nums tabular-nums;margin-right:5px}
+.dateline{text-align:center;font:400 14px/1.5 var(--body);letter-spacing:.16em;
+  text-transform:uppercase;padding:15px 0 4px;color:var(--ink-soft)}
+.hero{margin:18px 0 0}
+.hero img{display:block;width:100%;height:auto;border:1px solid var(--ink-faint)}
+.hero figcaption{margin-top:7px;font:400 12px/1.5 var(--body);letter-spacing:.02em;
+  color:var(--ink-faint);text-align:center}
+.hero figcaption a{color:inherit}

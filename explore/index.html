@@ -1,0 +1,150 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Beacon Hill, the data</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root{--paper:#f1e8d6;--paper-2:#e8dcc4;--ink:#1c1814;--ink-soft:#4e4538;--ink-faint:#8a7d6a;--rule:#c9bda6;--rule-soft:#ddd2bc;--verdigris:#2f4f3f;--brass:#8a6a2c;--nay:#9b2b1f;--dem:#27497e;--rep:#9b2b1f}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#2a2420;--paper-2:#332c26;--ink:#efe6d5;--ink-soft:#c2b49c;--ink-faint:#9c8f7b;--rule:#4a4138;--rule-soft:#3b332c;--verdigris:#8fb89f;--brass:#d6b269;--nay:#e0796a;--dem:#8fadde;--rep:#e0796a}}
+:root[data-theme="dark"]{--paper:#2a2420;--paper-2:#332c26;--ink:#efe6d5;--ink-soft:#c2b49c;--ink-faint:#9c8f7b;--rule:#4a4138;--rule-soft:#3b332c;--verdigris:#8fb89f;--brass:#d6b269;--nay:#e0796a;--dem:#8fadde;--rep:#e0796a}
+*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;background:var(--paper);color:var(--ink);font:300 15px/1.55 "Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif"Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px 80px}
+.mast{padding:22px 0 10px;border-bottom:1.5px solid var(--ink);display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;font:400 11px/1.4 "Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.mast a{color:inherit;text-decoration:none}.mast b{color:var(--verdigris);font-weight:500}
+h1{font:200 clamp(2rem,4.5vw,3rem)/1.05 "Adobe Caslon Pro","Libre Caslon Display",Georgia,"Times New Roman",serif;letter-spacing:-.02em;margin:30px 0 6px}
+.lede{max-width:70ch;color:var(--ink-soft);margin:0 0 22px}
+.tabs{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--rule);margin:0 0 16px}
+.tabs button{background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:10px 16px;font:500 12px/1 "Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);cursor:pointer}
+.tabs button[aria-selected=true]{color:var(--ink);border-bottom-color:var(--verdigris)}
+.tabs button:focus-visible{outline:2px solid var(--verdigris);outline-offset:2px}
+.bar{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:0 0 12px}
+.bar input[type=search]{flex:1 1 260px;min-width:200px;padding:8px 10px;font:inherit;font-size:14px;color:var(--ink);background:var(--paper);border:1px solid var(--rule);border-radius:3px}
+.bar select,.bar label{font-size:13px;color:var(--ink-soft)}
+.bar select{padding:7px 8px;font:inherit;font-size:13px;color:var(--ink);background:var(--paper);border:1px solid var(--rule);border-radius:3px}
+.bar label{display:inline-flex;align-items:center;gap:6px}
+.bar .count{margin-left:auto;font:400 12px/1.4 "Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;color:var(--ink-faint)}
+.bar a.dl{font:400 11px/1.4 "Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);text-decoration:underline;text-decoration-color:var(--verdigris);text-underline-offset:3px}
+.tblwrap{overflow-x:auto;border-top:1px solid var(--rule)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{text-align:left;padding:7px 12px 7px 0;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+th{font:500 11px/1.4 "Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);white-space:nowrap;cursor:pointer;user-select:none}
+th.sorted{color:var(--ink)}th.sorted::after{content:" ▾";font-size:9px}th.sorted.asc::after{content:" ▴"}
+td.n,th.n{text-align:right;font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.mono{font-family:"Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;white-space:nowrap}
+td a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--verdigris);text-underline-offset:3px;text-decoration-thickness:1px}
+.pill{display:inline-block;padding:0 7px;border-radius:999px;font:500 10px/1.7 "Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;letter-spacing:.08em;text-transform:uppercase;color:#fff}
+.pill.d{background:var(--dem)}.pill.r{background:var(--rep)}.pill.o{background:var(--ink-faint)}
+.close{color:var(--brass);font-weight:600}
+.unread{color:var(--ink-faint)}
+.more{display:block;margin:14px 0 0;padding:9px 14px;font:500 12px/1 "Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;letter-spacing:.1em;text-transform:uppercase;background:none;border:1px solid var(--rule);color:var(--ink);cursor:pointer;border-radius:3px}
+.note{margin-top:30px;padding-top:14px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--ink-faint);max-width:80ch}
+.status{font:400 12px/1.4 "Adobe Caslon Pro","Libre Caslon Text",Georgia,"Times New Roman",serif;color:var(--ink-faint);padding:20px 0}
+</style></head><body><div class="wrap">
+<div class="mast"><div><a href="../index.html"><b>The Beacon Hill FYI</b></a></div><div><a href="../house/index.html">House</a> &nbsp;·&nbsp; <a href="../senate/index.html">Senate</a> &nbsp;·&nbsp; <a href="../methods.html">Methods</a></div></div>
+<h1>The data</h1>
+<p class="lede">Every recorded vote, every member, every bill and every committee vote the legislature has published, in tables you can search, sort and filter. Most rows link to a page here, and every page back to the legislature's own record. The 2011 to 2017 House sheets are scans, so those rows carry the Clerk's printed tally but no names, and are marked as such. Every table is also a CSV, and <a href="dictionary.html">what is in each column</a> says what the columns hold.</p>
+<div class="tabs" role="tablist">
+  <button role="tab" aria-selected="true" data-tab="rollcalls">Roll calls</button>
+  <button role="tab" aria-selected="false" data-tab="members">Members</button>
+  <button role="tab" aria-selected="false" data-tab="bills">Bills</button>
+  <button role="tab" aria-selected="false" data-tab="committee_votes">Committee votes</button>
+  <button role="tab" aria-selected="false" data-tab="amendments">Amendments</button>
+  <button role="tab" aria-selected="false" data-tab="hearings">Hearings</button>
+</div>
+<div class="bar">
+  <input type="search" id="q" placeholder="Search this table" aria-label="Search">
+  <select id="chamber" aria-label="Chamber"><option value="">Both chambers</option><option>House</option><option>Senate</option></select>
+  <select id="session" aria-label="Session"><option value="">All sessions</option></select>
+  <label id="closewrap"><input type="checkbox" id="close"> close votes only (within 60/40)</label>
+  <label id="sittingwrap" hidden><input type="checkbox" id="sitting"> sitting members only</label>
+  <span class="count" id="count"></span>
+  <a class="dl" id="dl" href="../data/rollcalls.csv" download>Download CSV</a>
+</div>
+<div class="tblwrap"><table><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
+<button class="more" id="more" hidden>Show 200 more</button>
+<div class="status" id="status">Loading…</div>
+<p class="note">Roll calls: the House's from the Clerk's printed sheets, reconciled to the printed tally; the Senate's from the legislature's data feed, dated from each bill's history. Sessions are General Courts: the 194th sits 2025 to 2026. House sheets before 2018 are scans and are not yet read; the Senate feed has no roll calls for 2011 to 2012. Committee vote counts are as the committee printed them. Nothing here ranks anyone.</p>
+</div>
+<script>
+(function(){
+  var PAGE=200, state={tab:'rollcalls',data:{},rows:[],shown:0,sort:null,asc:false};
+  var COLS={
+    rollcalls:[['when','When',false,'mono'],['chamber','Chamber'],['session','Session',true,'n'],['number','No.',true,'n'],['bill','Bill','','mono'],['question','Question'],['yeas','Yeas',true,'n'],['nays','Nays',true,'n'],['not_voting','N/V',true,'n'],['present','Present',true,'n'],['absent','Absent',true,'n'],['names','Names']],
+    members:[['name','Member'],['chamber','Chamber'],['party','Party'],['district','District'],['first_session','From',true,'n'],['last_session','To',true,'n'],['sitting','Sitting'],['roll_calls','Roll calls',true,'n'],['committee_votes','Committee votes',true,'n']],
+    bills:[['session','Session',true,'n'],['bill','Bill','','mono'],['title','Title'],['sponsor','Sponsor'],['cosponsors','Cosponsors',true,'n'],['committee_actions','Committee actions'],['committee_votes_recorded','Cttee votes',true,'n'],['roll_calls','Roll calls',true,'n']],
+    amendments:[['session','Session',true,'n'],['bill','Bill','','mono'],['branch','Branch'],['number','No.','','mono'],['title','Title'],['moved_by','Moved by'],['outcome','Outcome'],['roll_calls','Roll calls',true,'n']],
+    hearings:[['date','Date','','mono'],['session','Session',true,'n'],['committee','Committee','','mono'],['name','Committee name'],['location','Where'],['bills_heard','Bills heard',true,'n'],['status','Status']],
+    committee_votes:[['date','Date','','mono'],['session','Session',true,'n'],['bill','Bill','','mono'],['committee','Committee'],['question','Question'],['favorable','Favorable',true,'n'],['adverse','Adverse',true,'n'],['reserve_right','Reserve right',true,'n'],['no_action','No action',true,'n']]
+  };
+  var DEFAULT_SORT={rollcalls:['when',false],members:['name',true],bills:['bill',true],committee_votes:['date',false],amendments:['bill',true],hearings:['date',false]};
+  var $=function(id){return document.getElementById(id)};
+  function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+  function load(tab){
+    if(state.data[tab])return Promise.resolve(state.data[tab]);
+    $('status').textContent='Loading '+tab.replace('_',' ')+'…';$('status').hidden=false;
+    return fetch('../data/'+tab+'.json').then(function(r){return r.json()}).then(function(d){state.data[tab]=d;return d});
+  }
+  function isClose(r){var t=(r.yeas||0)+(r.nays||0);return t>0&&Math.min(r.yeas,r.nays)/t>=0.4}
+  function apply(){
+    var tab=state.tab,all=state.data[tab]||[],q=$('q').value.trim().toLowerCase(),ch=$('chamber').value,se=$('session').value,close=$('close').checked,sit=$('sitting').checked;
+    var rows=all.filter(function(r){
+      if(ch&&r.chamber!==ch)return false;
+      if(se&&String(r.session)!==se)return false;
+      if(tab==='rollcalls'&&close&&!isClose(r))return false;
+      if(tab==='members'&&sit&&!r.sitting)return false;
+      if(tab==='hearings'&&ch&&!(r.committee||'').startsWith(ch==='House'?'H':'S'))return false;
+      if(q){var hay=[];for(var k in r)hay.push(String(r[k]));if(hay.join(' ').toLowerCase().indexOf(q)<0)return false}
+      return true;
+    });
+    var s=state.sort||DEFAULT_SORT[tab][0],asc=state.sort?state.asc:DEFAULT_SORT[tab][1];
+    rows.sort(function(a,b){var x=a[s],y=b[s];if(x==null)x='';if(y==null)y='';if(typeof x==='number'&&typeof y==='number')return asc?x-y:y-x;x=String(x);y=String(y);return asc?x.localeCompare(y):y.localeCompare(x)});
+    state.rows=rows;state.shown=0;$('tbody').innerHTML='';renderMore();
+    $('count').textContent=rows.length.toLocaleString()+' of '+all.length.toLocaleString()+' rows';
+    renderHead();
+  }
+  function cell(tab,r,c){
+    var k=c[0],v=r[k];
+    if(tab==='rollcalls'&&k==='number')return r.page?'<a href="../'+esc(r.page)+'">'+esc(v)+'</a>':'<span class="unread">'+esc(v)+'</span>';
+    if(tab==='members'&&k==='name')return '<a href="../'+esc(r.page)+'">'+esc(v)+'</a>';
+    if((tab==='bills'||tab==='committee_votes'||tab==='amendments')&&k==='bill')return '<a href="../bills/'+esc(r.session)+'/'+esc(v)+'.html">'+esc(v)+'</a>';
+    if(tab==='rollcalls'&&k==='bill'&&v)return r.bill_page?'<a href="../bills/'+esc(r.session)+'/'+esc(v)+'.html">'+esc(v)+'</a>':'<span class="unread" title="No page here: this session\'s bills were not crawled, or the legislature\'s feed does not have this one">'+esc(v)+'</span>';
+    if(k==='party'){var cls=v==='Democrat'?'d':v==='Republican'?'r':'o';return '<span class="pill '+cls+'">'+esc(v||'Unenrolled')+'</span>'}
+    if(k==='sitting')return v?'yes':'';
+    if(k==='names')return v==='not read'?'<span class="pill o" title="The sheet is a scan; the Clerk\'s tally is shown, the names are not read">not read</span>':'';
+    if(tab==='rollcalls'&&(k==='yeas'||k==='nays')&&isClose(r))return '<span class="close">'+esc(v)+'</span>';
+    if(k==='absent'&&r.chamber==='House')return '';
+    if((k==='not_voting'||k==='present')&&r.chamber==='Senate')return '';
+    return esc(v);
+  }
+  function renderMore(){
+    var tab=state.tab,cols=COLS[tab],frag=[],end=Math.min(state.rows.length,state.shown+PAGE);
+    for(var i=state.shown;i<end;i++){var r=state.rows[i];frag.push('<tr>'+cols.map(function(c){return '<td class="'+(c[3]||'')+'">'+cell(tab,r,c)+'</td>'}).join('')+'</tr>')}
+    $('tbody').insertAdjacentHTML('beforeend',frag.join(''));state.shown=end;
+    $('more').hidden=state.shown>=state.rows.length;$('status').hidden=true;
+  }
+  function renderHead(){
+    var tab=state.tab,s=state.sort||DEFAULT_SORT[tab][0],asc=state.sort?state.asc:DEFAULT_SORT[tab][1];
+    $('thead').innerHTML='<tr>'+COLS[tab].map(function(c){return '<th class="'+(c[3]==='n'?'n ':'')+(c[0]===s?'sorted'+(asc?' asc':''):'')+'" data-k="'+c[0]+'">'+esc(c[1])+'</th>'}).join('')+'</tr>';
+  }
+  function sessions(rows){var set={};rows.forEach(function(r){if(r.session)set[r.session]=1});return Object.keys(set).sort()}
+  function show(tab){
+    state.tab=tab;state.sort=null;
+    document.querySelectorAll('.tabs button').forEach(function(b){b.setAttribute('aria-selected',b.dataset.tab===tab)});
+    $('closewrap').hidden=tab!=='rollcalls';$('sittingwrap').hidden=tab!=='members';$('chamber').hidden=(tab==='bills'||tab==='committee_votes'||tab==='amendments'||tab==='hearings');
+    $('dl').href='../data/'+tab+'.csv';
+    load(tab).then(function(d){
+      var sel=$('session'),cur=sel.value;sel.innerHTML='<option value="">All sessions</option>'+sessions(d).map(function(s){var y=1993+2*(s-178);return '<option value="'+s+'">'+s+'th, '+y+' to '+(y+1)+'</option>'}).join('');sel.value=cur;
+      apply();
+    });
+    try{localStorage.setItem('bh-tab',tab)}catch(e){}
+  }
+  document.querySelector('.tabs').addEventListener('click',function(e){var b=e.target.closest('button');if(b)show(b.dataset.tab)});
+  ['q','chamber','session','close','sitting'].forEach(function(id){$(id).addEventListener('input',apply);$(id).addEventListener('change',apply)});
+  $('thead').addEventListener('click',function(e){var th=e.target.closest('th');if(!th)return;var k=th.dataset.k;if(state.sort===k)state.asc=!state.asc;else{state.sort=k;state.asc=!(k==='when'||k==='date'||/yeas|nays|roll_calls|committee_votes|cosponsors/.test(k))}apply()});
+  $('more').addEventListener('click',renderMore);
+  var start=(location.search.match(/[?&]tab=([a-z_]+)/)||[])[1];
+  if(!start){try{start=localStorage.getItem('bh-tab')}catch(e){}}
+  if(!start)start='rollcalls';
+  if(!COLS[start])start='rollcalls';
+  show(start);
+})();
+</script>
+</body></html>
