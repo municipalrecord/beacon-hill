@@ -1,9 +1,9 @@
 chamber,code,name,party,district,sitting,first_session,last_session,roll_calls,committee_votes,page
-House,RAD1,Robert A. DeLeo,Democrat,19th Suffolk,no,189,190,212,0,house/members/RAD1.html
+House,RAD1,Robert A. DeLeo,Democrat,19th Suffolk,no,189,191,623,0,house/members/RAD1.html
 House,TFB1,Tricia Farley-Bouvier,Democrat,3rd Berkshire,yes,189,194,1374,374,house/members/TFB1.html
 House,P_M1,Paul McMurtry,Democrat,11th Norfolk,yes,189,194,1374,125,house/members/P_M1.html
 House,CJW1,Chris Walsh,Democrat,6th Middlesex,yes,189,194,481,432,house/members/CJW1.html
-House,R_M1,Ronald Mariano,Democrat,3rd Norfolk,yes,189,194,1785,0,house/members/R_M1.html
+House,R_M1,Ronald Mariano,Democrat,3rd Norfolk,yes,189,194,1374,0,house/members/R_M1.html
 House,DAF1,Dylan Fernandes,Democrat,"Barnstable, Dukes and Nantucket",no,190,193,1138,0,house/members/DAF1.html
 House,J_M1,Joan Meschino,Democrat,3rd Plymouth,yes,190,194,1373,122,house/members/J_M1.html
 House,TJW1,Thomas P. Walsh,Democrat,12th Essex,yes,189,194,1374,0,house/members/TJW1.html
