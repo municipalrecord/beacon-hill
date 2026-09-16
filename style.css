@@ -66,9 +66,10 @@ table.card tbody th:not(.n){padding-left:18px}
 table.card thead th:first-child,
 table.card tbody td:first-child,
 table.card tbody th:first-child{padding-left:0}
-.den{color:var(--ink-faint);font-size:.85em}
+.den{color:var(--ink-faint);font-size:.85em} td.n .under{display:block;line-height:1.2;margin-top:1px;letter-spacing:.01em}
 .tbar{display:inline-block;height:9px;background:var(--dem);vertical-align:middle}
 .sess{font:400 12px/1.5 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin:26px 0 4px}
+table.card.three th[scope=row]{white-space:normal;line-height:1.25}table.card.three tbody td,table.card.three tbody th{padding-top:9px;padding-bottom:9px;vertical-align:middle}
 .strip{display:block}.strip .ax{stroke:var(--rule);stroke-width:1}.strip .tk{stroke:var(--ink-faint);stroke-width:1;opacity:.35}.strip .me{fill:var(--verdigris);stroke:var(--paper);stroke-width:2}
 .idx a{display:block;padding:6px 0;border-bottom:1px solid var(--rule-soft);text-decoration:none}
 .idx a:hover{color:var(--verdigris)}

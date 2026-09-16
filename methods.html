@@ -18,12 +18,12 @@
 <tr><th>With own party</th><td>On divided roll calls, how often the member matched the majority of yea-or-nay voters from their own party on that roll call. An unenrolled member has no party majority and shows n/a.</td></tr>
 </tbody></table>
 <h2>The frame beside each number</h2>
-<p>A figure on its own says nothing; 97 percent with the majority is unremarkable in a chamber where the median is 98 and striking in one where it is 60. So each measure sits beside three things computed from the same session of the same chamber: the <strong>chamber median</strong>, the figure of the member in the middle when every member's figure is lined up; the <strong>own party median</strong>, the same for members of this member's party, shown only when at least three of them qualify; and the <strong>chamber range</strong>, the lowest and highest figures any member posted.</p>
-<p>The strip draws every qualifying member as a tick on a line from 0 to 100 percent and this member as a dot. It is a picture of the distribution, not an order: there is no first place on it, and no member is numbered. It answers "is this usual" without answering "who is best," which the record cannot say.</p>
-<p>A member enters the chamber's median, range and strip for a measure only with at least 20 roll calls (for participation measures) or 10 divided votes (for the agreement measures). Below that the member's own figure is still printed, marked "too few to place," because a rate over five votes is a coincidence with a percent sign on it.</p>
+<p>A figure on its own says nothing; 97 percent with the majority is unremarkable in a chamber where the median is 98 and striking in one where it is 60. So each measure sits beside two things computed from the same session of the same chamber: the <strong>typical member</strong>, which is the median, the figure of the member in the middle when every member's figure is lined up; and the <strong>typical member of the same party</strong>, the same figure among Democrats or among Republicans, shown only when at least three of them qualify.</p>
+<p>Two medians and nothing else: no range, no rank, no percentile. The card answers "is this usual" without answering "who is best," which the record cannot say. Read the party column with care in the House, where the Republican caucus has run between twenty and thirty members, and in the Senate, where it has run between three and seven.</p>
+<p>A member enters the chamber's typical-member figure for a measure only with at least 20 roll calls (for participation measures) or 10 divided votes (for the agreement measures). Below that the member's own figure is still printed, marked "too few to compare," because a rate over five votes is a coincidence with a percent sign on it.</p>
 <h2>What it cannot tell you</h2>
 <p>The House records roughly 150 votes a year and on about 43 percent of them nobody is on the losing side. The Senate records more and divides more. So a House member's "with majority" figure is computed over a few dozen votes a session, and the rules decide which votes those are: the ones sixteen members chose to force, or that Rule 33F required. The number is a fact about the member's answers on the record that exists. It is not a fact about the member's answers on everything the chamber decided, most of which left no names.</p>
-<p>House sheets from before 2018 are photographs of paper, so those roll calls carry the Clerk's tally but no names, and the Senate's data feed has no roll calls for 2011 to 2012. A member who served across those years has a record card that starts later than their service did.</p>
+<p>A few House roll calls carry the Clerk's tally but no names: the sheets from before 2018 that could not be reconciled to the printed tally, and the 2020 roll calls the legislature's feed lists without names. The Senate's data feed has no roll calls for 2011 to 2012 at all, so a senator who served those years has a record card that starts later than their service did.</p>
 <p>Committee votes, which sort members into Favorable, Adverse, Reserve Right and No Action, are not on the card yet. They will be listed as the committee printed them, in those four words, not folded into any of the columns above.</p>
 <h1 id="committee-votes">How committee votes get published, and when they started</h1>
 <p>Nearly every bill dies in committee, so for most bills the committee vote is the
@@ -134,21 +134,29 @@ bill it names is not, because the feed does not carry it.</p>
 because there is no page to link to. That is the honest rendering, and these are the
 state's gaps rather than this crawl's.</p>
 
-<h1 id="house-scans">The House roll calls this site cannot read</h1>
+<h1 id="house-scans">How the House roll calls before 2018 were read</h1>
 <p>The House does not publish its roll calls as data. It publishes them as one bound
 volume of printed sheets per year, and this site reads those sheets. From 2018 on the
-sheets are set as text and can be read directly. Before that they are photographs of
-paper, and a photograph of about a hundred and sixty names in four columns is not
-something a parser can read without optical character recognition.</p>
-<p>So for 2009 through 2017 this site has 2,257 roll call sheets and knows, for
-every one of them, the roll call number, the day it was taken, the question the House
-was voting on, and the tally the Clerk printed. What it does not know, on 2,256 of
-them, is who voted which way. That half is deliberately blank rather than estimated. Recognition on the
-vote column has so far disagreed with the Clerk's own tally, and a name list that
-cannot be reconciled to the printed count is not published here.</p>
-<p>Exactly one of the 2,257 was printed digitally rather than scanned. Its 160
-names are readable and reconcile to the Clerk's tally, so it appears on the site with
-the rest: No. 277 of 2016, on passing the energy diversity bill, 154 to 1.</p>
+sheets are set as text and can be read directly. Before that each sheet is a page whose
+heading is text and whose grid of names and votes is a single picture.</p>
+<p>That picture is not a photograph of paper. It is the Clerk's own typesetting, in one
+monospaced face at one size, so a letter is drawn the same way every time it appears.
+This site does not try to recognise the letters. It cuts each one out, keeps its exact
+shape, and looks that shape up in a small table of shapes labelled once by eye. The names
+are read the same way: each distinct name on the sheets was read once, and that reading
+is reused wherever the same shape recurs. Nothing is inferred from where a name sits,
+because the House orders its sheets by caucus and leadership and reorders them within a
+session.</p>
+<p>Nothing is trusted on its own. A sheet is published with names only when the letters
+counted off it equal the yeas, nays and not-voting the Clerk printed at its foot. For 2009
+through 2017 this site has 2,257 sheets, and 2,244 of them reconcile that
+way and appear with every name. The other 13 carry the Clerk's tally and nothing
+more: one was expunged by the House, one prints a not-voting count of zero above three
+not-voting marks, and the rest could not be read to a count that matched. None of them is
+estimated.</p>
+<p>One of the 2,257 was set digitally rather than as a picture: No. 277 of 2016, on
+passing the energy diversity bill, 154 to 1. It was the first check on the method and
+reads the same as the rest.</p>
 
 <h2>Where the oldest of them come from</h2>
 <p>The legislature's own site serves these volumes back to 2011 and no further. Ask it
@@ -159,7 +167,7 @@ free at its own repository, and its holdings include the Yea and Nay Supplement 
 186th General Court. That volume carries 513 roll call sheets from January 2009
 to July 2010 that the legislature does not serve at all. They are on this site, cited to
 the Library rather than to the legislature, because the Library is where that record
-actually is. Their names are photographs too.</p>
+actually is. They were read the same way.</p>
 
 <h2>What the printed headers show</h2>
 <p>Reading 2,257 headers turns up four things worth stating plainly, because each
@@ -179,11 +187,12 @@ nothing to reconcile and nothing is inferred.</li>
 <li><strong>3 sheets in 2015 were reissued as corrected</strong>
 by the House itself, and say so above the question.</li>
 </ul>
-<p>Two sheets, No. 117 of 2011 and No. 303 of 2014, carry dates that run backwards
-against their roll call numbers. In 2014 it looks like a transposed pair, but that is
-a guess, and a guess written into the record would stop the next person looking. Both
-are flagged and left exactly as printed, pending someone reading the House Journal for
-those days.</p>
+<p>Four sheets carry dates that run backwards against their roll call numbers: No. 78
+and No. 114 of 2009, No. 117 of 2011 and No. 303 of 2014. In 2014 it looks like a
+transposed pair, but that is a guess, and a guess written into the record would stop the
+next person looking. All four are flagged and left exactly as printed, pending someone
+reading the House Journal for those days. On those four sheets the Speaker's row, and any
+name that needs the date to tell two members apart, is left unjoined to a member.</p>
 
 <h1 id="hearings">Public hearings</h1>
 <p>Every bill page shows the public hearings the bill received, with the committee, the
