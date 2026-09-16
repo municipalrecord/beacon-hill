@@ -81,6 +81,8 @@ table.card.three th[scope=row]{white-space:normal;line-height:1.25}table.card.th
   justify-content:space-between;padding:13px 0 12px;border-bottom:1px solid var(--rule);
   text-decoration:none;color:var(--ink)}
 .contents a:hover{background:var(--paper-2)}
+.contents .tile{display:flex;flex-wrap:wrap;gap:2px 20px;align-items:baseline;justify-content:space-between;padding:13px 0 12px;border-bottom:1px solid var(--rule);color:var(--ink)}
+.contents .tile .n a{display:inline;padding:0;border:0;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 .contents .t{font:400 clamp(19px,2.6vw,25px)/1.2 var(--disp);letter-spacing:.03em}
 .contents .n{font:400 13px/1.4 var(--body);letter-spacing:.14em;text-transform:uppercase;
   color:var(--ink-faint)}

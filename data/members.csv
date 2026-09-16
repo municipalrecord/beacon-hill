@@ -208,7 +208,7 @@ House,MMD1,Michelle M. DuBois,Democrat,10th Plymouth,yes,189,194,2233,193,house/
 House,JFT1,Jose F. Tosado,Democrat,9th Hampden,no,189,191,1514,48,house/members/JFT1.html
 House,TRW1,Timothy R. Whelan,Republican,1st Barnstable,no,189,192,1795,0,house/members/TRW1.html
 House,PFT1,Paul Tucker,Democrat,7th Essex,no,189,192,1795,0,house/members/PFT1.html
-House,SLG1,Susannah M. Whipps Lee,Republican,2nd Franklin,yes,189,194,2233,77,house/members/SLG1.html
+House,SLG1,Susannah M. Whipps Lee,Unenrolled,2nd Franklin,yes,189,194,2233,77,house/members/SLG1.html
 House,jwm1,"Joseph W. McGonagle, Jr.",Democrat,28th Middlesex,yes,189,194,2233,31,house/members/jwm1.html
 House,S_G2,Steven Ultrino,Democrat,33rd Middlesex,yes,189,194,2233,136,house/members/S_G2.html
 House,HEK1,Hannah Kane,Republican,11th Worcester,yes,189,194,2206,519,house/members/HEK1.html
@@ -366,45 +366,45 @@ House,JRD1,Joseph R. Driscoll,,5th Norfolk,no,186,186,508,0,house/members/JRD1.h
 House,RJR1,Richard J. Ross,,,no,186,186,395,0,house/members/RJR1.html
 House,BAL1,Barbara A. L'Italien,,18th Essex,no,186,186,508,0,house/members/BAL1.html
 Senate,SAB0,Steven A. Baddour,,First Essex,no,186,186,28,0,senate/members/SAB0.html
-Senate,SMB0,Stephen M. Brewer,,"Worcester, Hampden, Hampshire and Middlesex",no,186,188,510,0,senate/members/SMB0.html
+Senate,SMB0,Stephen M. Brewer,Democrat,"Worcester, Hampden, Hampshire and Middlesex",no,186,188,510,0,senate/members/SMB0.html
 Senate,SJB0,Stephen J. Buoniconti,,Hampden,no,186,186,28,0,senate/members/SJB0.html
-Senate,GDC0,Gale D. Candaras,,First Hampden and Hampshire,no,186,188,513,33,senate/members/GDC0.html
-Senate,HLC0,Harriette L. Chandler,,First Worcester,no,186,192,2480,1,senate/members/HLC0.html
-Senate,SCD0,Sonia Chang-Díaz,,Second Suffolk,no,186,192,2471,679,senate/members/SCD0.html
-Senate,CSC0,Cynthia S. Creem,,First Middlesex and Norfolk,yes,186,194,2962,83,senate/members/CSC0.html
-Senate,KJD0,Kenneth J. Donnelly,,Fourth Middlesex,no,186,190,1193,173,senate/members/KJD0.html
-Senate,BBD0,Benjamin B. Downing,,"Berkshire, Hampshire, Franklin and Hampden",no,186,189,1185,211,senate/members/BBD0.html
-Senate,JBE0,James B. Eldridge,,Middlesex and Worcester,yes,186,194,2970,1082,senate/members/JBE0.html
+Senate,GDC0,Gale D. Candaras,Democrat,First Hampden and Hampshire,no,186,188,513,33,senate/members/GDC0.html
+Senate,HLC0,Harriette L. Chandler,Democrat,First Worcester,no,186,192,2480,1,senate/members/HLC0.html
+Senate,SCD0,Sonia Chang-Díaz,Democrat,Second Suffolk,no,186,192,2471,679,senate/members/SCD0.html
+Senate,CSC0,Cynthia S. Creem,Democrat,First Middlesex and Norfolk,yes,186,194,2962,83,senate/members/CSC0.html
+Senate,KJD0,Kenneth J. Donnelly,Democrat,Fourth Middlesex,no,186,190,1193,173,senate/members/KJD0.html
+Senate,BBD0,Benjamin B. Downing,Democrat,"Berkshire, Hampshire, Franklin and Hampden",no,186,189,1185,211,senate/members/BBD0.html
+Senate,JBE0,James B. Eldridge,Democrat,Middlesex and Worcester,yes,186,194,2970,1082,senate/members/JBE0.html
 Senate,SCF0,Susan C. Fargo,,Third Middlesex,no,186,186,30,0,senate/members/SCF0.html
-Senate,JLF0,Jennifer L. Flanagan,,Worcester and Middlesex,no,186,190,1258,98,senate/members/JLF0.html
-Senate,JAH0,John A. Hart,,First Suffolk,no,186,188,37,0,senate/members/JAH0.html
-Senate,RLH0,Robert L. Hedlund,,Plymouth and Norfolk,no,186,189,718,113,senate/members/RLH0.html
-Senate,PDJ0,Patricia D. Jehlen,,Second Middlesex,yes,186,194,2968,1112,senate/members/PDJ0.html
-Senate,BAJ0,Brian A. Joyce,,"Norfolk, Bristol and Plymouth",no,186,189,1180,2,senate/members/BAJ0.html
-Senate,TPK0,Thomas P. Kennedy,,Second Plymouth and Bristol,no,186,189,559,70,senate/members/TPK0.html
+Senate,JLF0,Jennifer L. Flanagan,Democrat,Worcester and Middlesex,no,186,190,1258,98,senate/members/JLF0.html
+Senate,JAH0,John A. Hart,Democrat,First Suffolk,no,186,188,37,0,senate/members/JAH0.html
+Senate,RLH0,Robert L. Hedlund,Republican,Plymouth and Norfolk,no,186,189,718,113,senate/members/RLH0.html
+Senate,PDJ0,Patricia D. Jehlen,Democrat,Second Middlesex,yes,186,194,2968,1112,senate/members/PDJ0.html
+Senate,BAJ0,Brian A. Joyce,Democrat,"Norfolk, Bristol and Plymouth",no,186,189,1180,2,senate/members/BAJ0.html
+Senate,TPK0,Thomas P. Kennedy,Democrat,Second Plymouth and Bristol,no,186,189,559,70,senate/members/TPK0.html
 Senate,MRK0,Michael R. Knapik,,Second Hampden and Hampshire,no,186,186,28,0,senate/members/MRK0.html
-Senate,TMM0,Thomas M. McGee,,Third Essex,no,186,190,1499,284,senate/members/TMM0.html
+Senate,TMM0,Thomas M. McGee,Democrat,Third Essex,no,186,190,1499,284,senate/members/TMM0.html
 Senate,JMM0,Joan M. Menard,,First Bristol and Plymouth,no,186,186,28,0,senate/members/JMM0.html
-Senate,MOM0,Michael O. Moore,,Second Worcester,yes,186,194,2967,1148,senate/members/MOM0.html
-Senate,RTM0,Richard T. Moore,,Worcester and Norfolk,no,186,188,503,0,senate/members/RTM0.html
+Senate,MOM0,Michael O. Moore,Democrat,Second Worcester,yes,186,194,2967,1148,senate/members/MOM0.html
+Senate,RTM0,Richard T. Moore,Democrat,Worcester and Norfolk,no,186,188,503,0,senate/members/RTM0.html
 Senate,MWM0,Michael W. Morrissey,,Norfolk and Plymouth,no,186,186,28,0,senate/members/MWM0.html
-Senate,T_M0,Therese Murray,,Plymouth and Barnstable,no,186,188,135,0,senate/members/T_M0.html
+Senate,T_M0,Therese Murray,Democrat,Plymouth and Barnstable,no,186,188,135,0,senate/members/T_M0.html
 Senate,ROL0,Robert A. O'Leary,,Cape and Islands,no,186,186,27,0,senate/members/ROL0.html
 Senate,MRP0,Marc R. Pacheco,Democrat,First Plymouth and Bristol,no,186,193,2712,85,senate/members/MRP0.html
 Senate,SCP0,Steven C. Panagiotakos,,First Middlesex,no,186,186,28,0,senate/members/SCP0.html
-Senate,AWP0,Anthony W. Petruccelli,,First Suffolk and Middlesex,no,186,189,735,55,senate/members/AWP0.html
-Senate,SCR0,Stanley C. Rosenberg,,"Hampshire, Franklin and Worcester",no,186,190,730,0,senate/members/SCR0.html
-Senate,KES0,Karen E. Spilka,,Second Middlesex and Norfolk,yes,186,194,1935,317,senate/members/KES0.html
-Senate,BET0,Bruce E. Tarr,,First Essex and Middlesex,yes,186,194,2965,527,senate/members/BET0.html
-Senate,JET0,James E. Timilty,,Bristol and Norfolk,no,186,190,1192,258,senate/members/JET0.html
+Senate,AWP0,Anthony W. Petruccelli,Democrat,First Suffolk and Middlesex,no,186,189,735,55,senate/members/AWP0.html
+Senate,SCR0,Stanley C. Rosenberg,Democrat,"Hampshire, Franklin and Worcester",no,186,190,730,0,senate/members/SCR0.html
+Senate,KES0,Karen E. Spilka,Democrat,Second Middlesex and Norfolk,yes,186,194,1935,317,senate/members/KES0.html
+Senate,BET0,Bruce E. Tarr,Republican,First Essex and Middlesex,yes,186,194,2965,527,senate/members/BET0.html
+Senate,JET0,James E. Timilty,Democrat,Bristol and Norfolk,no,186,190,1192,258,senate/members/JET0.html
 Senate,RRT0,Richard R. Tisei,,Fifth Middlesex,no,186,186,28,0,senate/members/RRT0.html
 Senate,SCT0,Susan C. Tucker,,Second Essex and Middlesex,no,186,186,28,0,senate/members/SCT0.html
 Senate,M_W0,Marian Walsh,,Norfolk and Suffolk,no,186,186,28,0,senate/members/M_W0.html
 Senate,FEB0,Frederick E. Berry,,Second Essex,no,186,186,28,0,senate/members/FEB0.html
-Senate,MCM0,Mark C. Montigny,,Second Bristol and Plymouth,yes,186,194,2970,180,senate/members/MCM0.html
+Senate,MCM0,Mark C. Montigny,Democrat,Second Bristol and Plymouth,yes,186,194,2970,180,senate/members/MCM0.html
 Senate,SAT0,Steven A. Tolman,,Second Suffolk and Middlesex,no,186,186,28,0,senate/members/SAT0.html
-Senate,RJR0,Richard J. Ross,,"Norfolk, Bristol and Middlesex",no,186,190,1740,348,senate/members/RJR0.html
-Senate,SND0,Sal N. DiDomenico,,Middlesex and Suffolk,yes,186,194,2967,659,senate/members/SND0.html
+Senate,RJR0,Richard J. Ross,Republican,"Norfolk, Bristol and Middlesex",no,186,190,1740,348,senate/members/RJR0.html
+Senate,SND0,Sal N. DiDomenico,Democrat,Middlesex and Suffolk,yes,186,194,2967,659,senate/members/SND0.html
 Senate,MJB0,Michael J. Barrett,Democrat,Third Middlesex,yes,188,194,2931,581,senate/members/MJB0.html
 Senate,WNB0,William N. Brownsberger,Democrat,Second Suffolk and Middlesex,yes,188,194,2968,606,senate/members/WNB0.html
 Senate,KMC0,Katherine M. Clark,Democrat,Fifth Middlesex,no,188,188,228,0,senate/members/KMC0.html
