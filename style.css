@@ -119,3 +119,25 @@ table.card.three th[scope=row]{white-space:normal;line-height:1.25}table.card.th
 .hero figcaption{margin-top:7px;font:400 12px/1.5 var(--body);letter-spacing:.02em;
   color:var(--ink-faint);text-align:center}
 .hero figcaption a{color:inherit}
+/* ---- phones. A table wider than the screen scrolls inside itself, so the
+   page never slides sideways; a bill's full title is set at reading size
+   in sentence case, because forty words of capitals filled the screen. */
+@media(max-width:640px){
+body{font-size:17px}
+.wrap{padding:0 18px 60px}
+h1{font-size:1.5rem;letter-spacing:.03em;margin-top:24px}
+h1.long{font-size:1.2rem;line-height:1.3;letter-spacing:0;text-transform:none}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+/* squeezed to the screen, a long question wrapped into a sliver six lines
+   deep; the table keeps its natural width instead, and scrolls */
+.tw table{width:max-content;min-width:100%}.tw td{max-width:19em}
+table{font-size:13.5px}
+th,td{padding-right:12px}
+table.card.three thead th{white-space:normal;letter-spacing:.08em;font-size:10.5px}
+table.card.three th[scope=row]{font-size:14px}
+table.card.three td.n,table.card.three th.n{padding-left:8px}
+.idx a{padding:9px 0}
+.idx a .meta{display:block;line-height:1.45;margin-top:2px}
+.amend,.became{padding:10px 13px}
+.charge{padding:12px 14px}
+}
