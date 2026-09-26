@@ -3148,7 +3148,7 @@ session,date,committee,name,location,status,bills_heard,event_id
 194,2026-07-30 16:00,J25,Joint Committee on State Administration and Regulatory Oversight,"A-1, 24 Beacon Street, Boston",Completed,1,5760
 194,2026-07-31 10:00,J19,Joint Committee on the Judiciary,"A-2, 24 Beacon Street, Boston",Completed,1,5756
 194,2026-09-09 11:00,J23,Joint Committee on Public Service,"A-1, 24 Beacon Street, Boston",Completed,12,5770
-194,2026-09-10 09:00,J17,Joint Committee on Consumer Protection and Professional Licensure,"Written Testimony Only, 24 Beacon Street, Boston",Underway,7,5769
-194,2026-09-15 13:00,J15,Joint Committee on Election Laws,"A-2, 24 Beacon Street, Boston",Confirmed,3,5775
-194,2026-09-21 13:00,Hxx,House Committee on Intergovernmental Affairs,"437, 24 Beacon Street, Boston",Confirmed,0,5696
-194,2026-10-20 13:00,Hxx,House Committee on Intergovernmental Affairs,"437, 24 Beacon Street, Boston",Confirmed,0,5697
+194,2026-09-10 09:00,J17,Joint Committee on Consumer Protection and Professional Licensure,"Written Testimony Only, 24 Beacon Street, Boston",Completed,7,5769
+194,2026-09-15 13:00,J15,Joint Committee on Election Laws,"A-2, 24 Beacon Street, Boston",Completed,3,5775
+194,2026-09-21 13:00,Hxx,House Committee on Intergovernmental Affairs,"437, 24 Beacon Street, Boston",Canceled,0,5696
+194,2026-10-20 13:00,Hxx,House Committee on Intergovernmental Affairs,"437, 24 Beacon Street, Boston",Canceled,0,5697
