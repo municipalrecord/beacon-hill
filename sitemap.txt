@@ -2982,6 +2982,7 @@ https://beaconhill.fyi/senate/members/MOM0.html
 https://beaconhill.fyi/senate/members/MCM0.html
 https://beaconhill.fyi/senate/members/CSC0.html
 https://beaconhill.fyi/senate/members/KAD0.html
+https://beaconhill.fyi/senate/members/SPB0.html
 https://beaconhill.fyi/senate/members/MWM0.html
 https://beaconhill.fyi/senate/members/RKK0.html
 https://beaconhill.fyi/senate/members/ROL0.html
@@ -3030,7 +3031,6 @@ https://beaconhill.fyi/senate/members/D_D0.html
 https://beaconhill.fyi/senate/members/KES0.html
 https://beaconhill.fyi/senate/members/RRT0.html
 https://beaconhill.fyi/senate/members/JMM0.html
-https://beaconhill.fyi/senate/members/BPC1.html
 https://beaconhill.fyi/senate/members/DAF0.html
 https://beaconhill.fyi/senate/members/N_C0.html
 https://beaconhill.fyi/senate/members/BBD0.html
@@ -3067,6 +3067,7 @@ https://beaconhill.fyi/senate/members/BAJ0.html
 https://beaconhill.fyi/senate/members/BET0.html
 https://beaconhill.fyi/senate/members/SCF0.html
 https://beaconhill.fyi/senate/members/jml0.html
+https://beaconhill.fyi/accuracy.html
 https://beaconhill.fyi/committees/192/J19.html
 https://beaconhill.fyi/committees/192/H34.html
 https://beaconhill.fyi/committees/192/S31.html
@@ -59596,6 +59597,7 @@ https://beaconhill.fyi/house/votes/2013/48.html
 https://beaconhill.fyi/house/votes/2013/106.html
 https://beaconhill.fyi/house/votes/2013/278.html
 https://beaconhill.fyi/house/votes/2013/151.html
+https://beaconhill.fyi/house/votes/2013/150.html
 https://beaconhill.fyi/house/votes/2013/279.html
 https://beaconhill.fyi/house/votes/2013/107.html
 https://beaconhill.fyi/house/votes/2013/111.html
@@ -60686,6 +60688,7 @@ https://beaconhill.fyi/house/votes/2012/269.html
 https://beaconhill.fyi/house/votes/2012/286.html
 https://beaconhill.fyi/house/votes/2012/357.html
 https://beaconhill.fyi/house/votes/2012/212.html
+https://beaconhill.fyi/house/votes/2012/183.html
 https://beaconhill.fyi/house/votes/2012/300.html
 https://beaconhill.fyi/house/votes/2012/245.html
 https://beaconhill.fyi/house/votes/2012/195.html
@@ -61059,8 +61062,10 @@ https://beaconhill.fyi/house/votes/2009/246.html
 https://beaconhill.fyi/house/votes/2009/196.html
 https://beaconhill.fyi/house/votes/2009/21.html
 https://beaconhill.fyi/house/votes/2009/179.html
+https://beaconhill.fyi/house/votes/2009/250.html
 https://beaconhill.fyi/house/votes/2009/99.html
 https://beaconhill.fyi/house/votes/2009/76.html
+https://beaconhill.fyi/house/votes/2009/207.html
 https://beaconhill.fyi/house/votes/2009/270.html
 https://beaconhill.fyi/house/votes/2009/159.html
 https://beaconhill.fyi/house/votes/2009/227.html
@@ -61077,6 +61082,7 @@ https://beaconhill.fyi/house/votes/2009/163.html
 https://beaconhill.fyi/house/votes/2009/175.html
 https://beaconhill.fyi/house/votes/2009/95.html
 https://beaconhill.fyi/house/votes/2009/122.html
+https://beaconhill.fyi/house/votes/2009/94.html
 https://beaconhill.fyi/house/votes/2009/123.html
 https://beaconhill.fyi/house/votes/2009/174.html
 https://beaconhill.fyi/house/votes/2009/162.html
@@ -61147,6 +61153,7 @@ https://beaconhill.fyi/house/votes/2017/15.html
 https://beaconhill.fyi/house/votes/2017/264.html
 https://beaconhill.fyi/house/votes/2017/42.html
 https://beaconhill.fyi/house/votes/2017/233.html
+https://beaconhill.fyi/house/votes/2017/54.html
 https://beaconhill.fyi/house/votes/2017/225.html
 https://beaconhill.fyi/house/votes/2017/272.html
 https://beaconhill.fyi/house/votes/2017/273.html
@@ -61420,6 +61427,7 @@ https://beaconhill.fyi/house/votes/2010/301.html
 https://beaconhill.fyi/house/votes/2010/497.html
 https://beaconhill.fyi/house/votes/2010/478.html
 https://beaconhill.fyi/house/votes/2010/356.html
+https://beaconhill.fyi/house/votes/2010/287.html
 https://beaconhill.fyi/house/votes/2010/454.html
 https://beaconhill.fyi/house/votes/2010/511.html
 https://beaconhill.fyi/house/votes/2010/395.html
@@ -61612,6 +61620,7 @@ https://beaconhill.fyi/house/votes/2010/362.html
 https://beaconhill.fyi/house/votes/2010/374.html
 https://beaconhill.fyi/house/votes/2010/323.html
 https://beaconhill.fyi/house/votes/2010/289.html
+https://beaconhill.fyi/house/votes/2010/358.html
 https://beaconhill.fyi/house/votes/2010/421.html
 https://beaconhill.fyi/house/votes/2010/476.html
 https://beaconhill.fyi/house/votes/2010/499.html
@@ -62033,6 +62042,7 @@ https://beaconhill.fyi/house/votes/2021/115.html
 https://beaconhill.fyi/house/votes/2021/103.html
 https://beaconhill.fyi/house/votes/2020/340.html
 https://beaconhill.fyi/house/votes/2020/205.html
+https://beaconhill.fyi/house/votes/2020/317.html
 https://beaconhill.fyi/house/votes/2020/252.html
 https://beaconhill.fyi/house/votes/2020/194.html
 https://beaconhill.fyi/house/votes/2020/301.html
@@ -62118,12 +62128,14 @@ https://beaconhill.fyi/house/votes/2020/327.html
 https://beaconhill.fyi/house/votes/2020/409.html
 https://beaconhill.fyi/house/votes/2020/235.html
 https://beaconhill.fyi/house/votes/2020/370.html
+https://beaconhill.fyi/house/votes/2020/223.html
 https://beaconhill.fyi/house/votes/2020/389.html
 https://beaconhill.fyi/house/votes/2020/366.html
 https://beaconhill.fyi/house/votes/2020/448.html
 https://beaconhill.fyi/house/votes/2020/274.html
 https://beaconhill.fyi/house/votes/2020/331.html
 https://beaconhill.fyi/house/votes/2020/346.html
+https://beaconhill.fyi/house/votes/2020/203.html
 https://beaconhill.fyi/house/votes/2020/311.html
 https://beaconhill.fyi/house/votes/2020/254.html
 https://beaconhill.fyi/house/votes/2020/192.html
@@ -62132,6 +62144,7 @@ https://beaconhill.fyi/house/votes/2020/307.html
 https://beaconhill.fyi/house/votes/2020/242.html
 https://beaconhill.fyi/house/votes/2020/184.html
 https://beaconhill.fyi/house/votes/2020/350.html
+https://beaconhill.fyi/house/votes/2020/215.html
 https://beaconhill.fyi/house/votes/2020/281.html
 https://beaconhill.fyi/house/votes/2020/452.html
 https://beaconhill.fyi/house/votes/2020/147.html
@@ -62211,7 +62224,9 @@ https://beaconhill.fyi/house/votes/2020/407.html
 https://beaconhill.fyi/house/votes/2020/391.html
 https://beaconhill.fyi/house/votes/2020/145.html
 https://beaconhill.fyi/house/votes/2020/450.html
+https://beaconhill.fyi/house/votes/2020/283.html
 https://beaconhill.fyi/house/votes/2020/329.html
+https://beaconhill.fyi/house/votes/2020/217.html
 https://beaconhill.fyi/house/votes/2020/352.html
 https://beaconhill.fyi/house/votes/2020/186.html
 https://beaconhill.fyi/house/votes/2020/169.html
@@ -62231,6 +62246,7 @@ https://beaconhill.fyi/house/votes/2020/241.html
 https://beaconhill.fyi/house/votes/2020/304.html
 https://beaconhill.fyi/house/votes/2020/187.html
 https://beaconhill.fyi/house/votes/2020/168.html
+https://beaconhill.fyi/house/votes/2020/216.html
 https://beaconhill.fyi/house/votes/2020/353.html
 https://beaconhill.fyi/house/votes/2020/282.html
 https://beaconhill.fyi/house/votes/2020/328.html
@@ -62270,6 +62286,7 @@ https://beaconhill.fyi/house/votes/2020/378.html
 https://beaconhill.fyi/house/votes/2020/397.html
 https://beaconhill.fyi/house/votes/2020/143.html
 https://beaconhill.fyi/house/votes/2020/456.html
+https://beaconhill.fyi/house/votes/2020/285.html
 https://beaconhill.fyi/house/votes/2020/211.html
 https://beaconhill.fyi/house/votes/2020/354.html
 https://beaconhill.fyi/house/votes/2020/180.html
@@ -62308,6 +62325,7 @@ https://beaconhill.fyi/house/votes/2020/267.html
 https://beaconhill.fyi/house/votes/2020/375.html
 https://beaconhill.fyi/house/votes/2020/230.html
 https://beaconhill.fyi/house/votes/2020/363.html
+https://beaconhill.fyi/house/votes/2020/226.html
 https://beaconhill.fyi/house/votes/2020/158.html
 https://beaconhill.fyi/house/votes/2020/334.html
 https://beaconhill.fyi/house/votes/2020/271.html
@@ -62551,6 +62569,7 @@ https://beaconhill.fyi/house/votes/2011/9.html
 https://beaconhill.fyi/house/votes/2011/141.html
 https://beaconhill.fyi/house/votes/2011/19.html
 https://beaconhill.fyi/house/votes/2011/116.html
+https://beaconhill.fyi/house/votes/2011/100.html
 https://beaconhill.fyi/house/votes/2011/58.html
 https://beaconhill.fyi/house/votes/2011/157.html
 https://beaconhill.fyi/house/votes/2011/120.html
@@ -62870,6 +62889,7 @@ https://beaconhill.fyi/house/votes/2016/501.html
 https://beaconhill.fyi/house/votes/2016/445.html
 https://beaconhill.fyi/house/votes/2016/500.html
 https://beaconhill.fyi/house/votes/2016/279.html
+https://beaconhill.fyi/house/votes/2016/296.html
 https://beaconhill.fyi/house/votes/2016/412.html
 https://beaconhill.fyi/house/votes/2016/557.html
 https://beaconhill.fyi/house/votes/2016/384.html
@@ -62923,6 +62943,7 @@ https://beaconhill.fyi/house/votes/2016/558.html
 https://beaconhill.fyi/house/votes/2016/372.html
 https://beaconhill.fyi/house/votes/2016/237.html
 https://beaconhill.fyi/house/votes/2016/325.html
+https://beaconhill.fyi/house/votes/2016/260.html
 https://beaconhill.fyi/house/votes/2016/519.html
 https://beaconhill.fyi/house/votes/2016/427.html
 https://beaconhill.fyi/house/votes/2016/309.html

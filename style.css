@@ -30,7 +30,7 @@ th{font:400 11.5px/1.4 var(--body);letter-spacing:.18em;text-transform:uppercase
 td.n{font-family:var(--disp);font-variant-numeric:lining-nums tabular-nums;white-space:nowrap;
   letter-spacing:.02em}
 .v{font:400 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase}
-.v.yea{color:var(--verdigris)}.v.nay{color:var(--nay)}.v.present,.v.not-voting,.v.absent{color:var(--brass)}
+.v.yea{color:var(--verdigris)}.v.nay{color:var(--nay)}.v.present,.v.not-voting,.v.absent,.v.paired{color:var(--brass)}
 .v.favorable{color:var(--verdigris)}.v.adverse{color:var(--nay)}.v.reserve-right,.v.no-action{color:var(--brass)}
 /* the clerk struck this line from the record; it is shown, ruled through,
    because a struck action is part of what the record says happened */
