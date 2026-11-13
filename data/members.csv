@@ -1,7 +1,7 @@
 chamber,code,name,party,district,sitting,first_session,last_session,roll_calls,committee_votes,page
-House,RAD1,Robert A. DeLeo,Democrat,19th Suffolk,no,186,191,2881,0,house/members/RAD1.html
+House,RAD1,Robert A. DeLeo,Democrat,19th Suffolk,no,186,191,2886,0,house/members/RAD1.html
 House,CGF1,Christopher G. Fallon,Democrat,33rd Middlesex,no,186,188,1389,1,house/members/CGF1.html
-House,MJM1,Michael J. Moran,Democrat,18th Suffolk,yes,186,194,3631,0,house/members/MJM1.html
+House,MJM1,Michael J. Moran,Democrat,18th Suffolk,yes,186,194,3665,0,house/members/MJM1.html
 House,DMT1,David M. Torrisi,Democrat,14th Essex,no,186,187,884,0,house/members/DMT1.html
 House,K_A1,Kevin Aguiar,Democrat,7th Bristol,no,186,187,884,0,house/members/K_A1.html
 House,RFF1,Robert F. Fennell,Democrat,10th Essex,no,186,189,1589,0,house/members/RFF1.html
@@ -9,323 +9,323 @@ House,CAM1,Charles A. Murphy,Democrat,21st Middlesex,no,186,187,884,0,house/memb
 House,CHT1,Cleon H. Turner,Democrat,1st Barnstable,no,186,188,1389,0,house/members/CHT1.html
 House,G_A1,Geraldo Alicea,Democrat,6th Worcester,no,186,187,588,0,house/members/G_A1.html
 House,JVF1,John V. Fernandes,Democrat,10th Worcester,no,186,189,1946,38,house/members/JVF1.html
-House,JMM1,James M. Murphy,Democrat,4th Norfolk,yes,186,194,3631,220,house/members/JMM1.html
+House,JMM1,James M. Murphy,Democrat,4th Norfolk,yes,186,194,3665,220,house/members/JMM1.html
 House,JEV1,James E. Vallee,Democrat,10th Norfolk,no,186,187,792,0,house/members/JEV1.html
 House,D_A1,Denise Andrews,Democrat,2nd Franklin,no,187,188,878,7,house/members/D_A1.html
-House,AMF1,Ann-Margaret Ferrante,Democrat,5th Essex,no,186,194,3512,60,house/members/AMF1.html
+House,AMF1,Ann-Margaret Ferrante,Democrat,5th Essex,no,186,194,3545,60,house/members/AMF1.html
 House,KJM1,Kevin J. Murphy,Democrat,18th Middlesex,no,186,188,1215,0,house/members/KJM1.html
-House,JFW1,Joseph F. Wagner,Democrat,8th Hampden,no,186,192,3193,2,house/members/JFW1.html
-House,J_A1,James Arciero,Democrat,2nd Middlesex,yes,186,194,3631,273,house/members/J_A1.html
-House,MJF1,Michael J. Finn,Democrat,6th Hampden,yes,187,194,3120,42,house/members/MJF1.html
-House,DMN1,David M. Nangle,Democrat,17th Middlesex,no,186,191,2913,0,house/members/DMN1.html
+House,JFW1,Joseph F. Wagner,Democrat,8th Hampden,no,186,192,3226,2,house/members/JFW1.html
+House,J_A1,James Arciero,Democrat,2nd Middlesex,yes,186,194,3665,273,house/members/J_A1.html
+House,MJF1,Michael J. Finn,Democrat,6th Hampden,yes,187,194,3154,42,house/members/MJF1.html
+House,DMN1,David M. Nangle,Democrat,17th Middlesex,no,186,191,2940,0,house/members/DMN1.html
 House,CJW1,Chris Walsh,Democrat,6th Middlesex,no,187,190,1781,38,house/members/CJW1.html
-House,BMA1,Brian M. Ashe,Democrat,2nd Hampden,yes,186,194,3631,32,house/members/BMA1.html
+House,BMA1,Brian M. Ashe,Democrat,2nd Hampden,yes,186,194,3665,32,house/members/BMA1.html
 House,LDF1,Linda Dorcena Forry,Democrat,12th Suffolk,no,186,188,1012,0,house/members/LDF1.html
-House,HPN1,"Harold P. Naughton, Jr.",Democrat,12th Worcester,no,186,191,2913,0,house/members/HPN1.html
+House,HPN1,"Harold P. Naughton, Jr.",Democrat,12th Worcester,no,186,191,2940,0,house/members/HPN1.html
 House,MJW1,Martin J. Walsh,Democrat,13th Suffolk,no,186,188,1163,0,house/members/MJW1.html
-House,C_A1,Cory Atkins,Democrat,14th Middlesex,no,186,190,2461,7,house/members/C_A1.html
+House,C_A1,Cory Atkins,Democrat,14th Middlesex,no,186,190,2466,7,house/members/C_A1.html
 House,GLF1,Gloria L. Fox,Democrat,7th Suffolk,no,186,189,1946,1,house/members/GLF1.html
 House,RLN1,Rhonda Nyman,Democrat,5th Plymouth,no,187,188,878,37,house/members/RLN1.html
 House,SMW1,Steven M. Walsh,Democrat,11th Essex,no,186,188,1181,0,house/members/SMW1.html
 House,DJA1,Demetrius J. Atsalis,Democrat,2nd Barnstable,no,186,187,884,0,house/members/DJA1.html
 House,JPF1,John P. Fresolo,Democrat,16th Worcester,no,186,188,1002,0,house/members/JPF1.html
-House,JJO1,James J. O'Day,Democrat,14th Worcester,yes,186,194,3631,8,house/members/JJO1.html
+House,JJO1,James J. O'Day,Democrat,14th Worcester,yes,186,194,3665,8,house/members/JJO1.html
 House,MMW1,Martha M. Walz,Democrat,8th Suffolk,no,186,188,924,0,house/members/MMW1.html
-House,BJA1,Bruce J. Ayers,Democrat,1st Norfolk,yes,186,194,3631,493,house/members/BJA1.html
-House,WCG1,William C. Galvin,Democrat,6th Norfolk,yes,186,194,3631,0,house/members/WCG1.html
+House,BJA1,Bruce J. Ayers,Democrat,1st Norfolk,yes,186,194,3665,493,house/members/BJA1.html
+House,WCG1,William C. Galvin,Democrat,6th Norfolk,yes,186,194,3665,0,house/members/WCG1.html
 House,ELO1,Eugene L. O'Flaherty,Democrat,2nd Suffolk,no,186,188,1171,0,house/members/ELO1.html
 House,AKW1,Alice K. Wolf,Democrat,25th Middlesex,no,186,187,884,0,house/members/AKW1.html
-House,RBB1,Ruth B. Balser,Democrat,12th Middlesex,no,186,193,3396,8,house/members/RBB1.html
-House,S_G1,Sean Garballey,Democrat,23rd Middlesex,yes,186,194,3631,25,house/members/S_G1.html
-House,JAP1,Jerald A. Parisella,Democrat,6th Essex,no,187,193,2885,31,house/members/JAP1.html
-House,BHJ1,"Bradley H. Jones, Jr.",Republican,20th Middlesex,yes,186,194,3631,29,house/members/BHJ1.html
+House,RBB1,Ruth B. Balser,Democrat,12th Middlesex,no,186,193,3429,8,house/members/RBB1.html
+House,S_G1,Sean Garballey,Democrat,23rd Middlesex,yes,186,194,3665,25,house/members/S_G1.html
+House,JAP1,Jerald A. Parisella,Democrat,6th Essex,no,187,193,2918,31,house/members/JAP1.html
+House,BHJ1,"Bradley H. Jones, Jr.",Republican,20th Middlesex,yes,186,194,3665,29,house/members/BHJ1.html
 House,CPB1,Carlo Basile,Democrat,1st Suffolk,no,186,188,1389,0,house/members/CPB1.html
-House,DCG1,Denise C. Garlick,Democrat,13th Norfolk,no,187,193,2885,0,house/members/DCG1.html
-House,SKP1,Sarah K. Peake,Democrat,4th Barnstable,no,186,193,3392,0,house/members/SKP1.html
+House,DCG1,Denise C. Garlick,Democrat,13th Norfolk,no,187,193,2918,0,house/members/DCG1.html
+House,SKP1,Sarah K. Peake,Democrat,4th Barnstable,no,186,193,3425,0,house/members/SKP1.html
 House,GNP1,"George N. Peterson, Jr.",Republican,9th Worcester,no,186,188,1389,0,house/members/GNP1.html
-House,JEB1,Jennifer E. Benson,Democrat,37th Middlesex,no,186,191,2603,75,house/members/JEB1.html
-House,CMG1,Colleen M. Garry,Democrat,36th Middlesex,yes,186,194,3631,424,house/members/CMG1.html
+House,JEB1,Jennifer E. Benson,Democrat,37th Middlesex,no,186,191,2608,75,house/members/JEB1.html
+House,CMG1,Colleen M. Garry,Democrat,36th Middlesex,yes,186,194,3665,424,house/members/CMG1.html
 House,VAP1,Vincent A. Pedone,Democrat,15th Worcester,no,186,187,696,0,house/members/VAP1.html
-House,BRH1,Bradford Hill,Republican,4th Essex,no,186,192,3002,0,house/members/BRH1.html
+House,BRH1,Bradford Hill,Republican,4th Essex,no,186,192,3029,0,house/members/BRH1.html
 House,JJB1,John J. Binienda,Democrat,17th Worcester,no,186,188,1389,0,house/members/JJB1.html
 House,AMG1,Anne M. Gobi,Democrat,5th Worcester,no,186,188,1389,25,house/members/AMG1.html
-House,AHP1,Alice Hanlon Peisch,Democrat,14th Norfolk,yes,186,194,3631,11,house/members/AHP1.html
-House,EAP1,Elizabeth A. Poirier,Republican,14th Bristol,no,186,191,2913,0,house/members/EAP1.html
+House,AHP1,Alice Hanlon Peisch,Democrat,14th Norfolk,yes,186,194,3665,11,house/members/AHP1.html
+House,EAP1,Elizabeth A. Poirier,Republican,14th Bristol,no,186,191,2940,0,house/members/EAP1.html
 House,GJB1,Garrett J. Bradley,Democrat,3rd Plymouth,no,186,189,1946,0,house/members/GJB1.html
-House,TAG1,"Thomas A. Golden, Jr.",Democrat,16th Middlesex,no,186,192,3094,27,house/members/TAG1.html
-House,TMP1,Thomas M. Petrolati,Democrat,7th Hampden,no,186,191,2913,1,house/members/TMP1.html
+House,TAG1,"Thomas A. Golden, Jr.",Democrat,16th Middlesex,no,186,192,3121,27,house/members/TAG1.html
+House,TMP1,Thomas M. Petrolati,Democrat,7th Hampden,no,186,191,2940,1,house/members/TMP1.html
 House,P_A1,Paul Adams,Republican,17th Essex,no,187,187,373,0,house/members/P_A1.html
 House,MDB1,Michael D. Brady,Democrat,9th Plymouth,no,186,189,1563,0,house/members/MDB1.html
-House,PAH1,Patricia A. Haddad,Democrat,5th Bristol,no,186,193,3396,0,house/members/PAH1.html
-House,WSP1,William Smitty Pignatelli,Democrat,4th Berkshire,no,186,193,3396,8,house/members/WSP1.html
-House,FJB1,F. Jay Barrows,Republican,1st Bristol,no,186,193,3396,0,house/members/FJB1.html
-House,P_B1,Paul Brodeur,Democrat,32nd Middlesex,no,187,191,2080,38,house/members/P_B1.html
-House,J_H1,Jonathan Hecht,Democrat,29th Middlesex,no,186,191,2913,418,house/members/J_H1.html
-House,D_P1,Denise Provost,Democrat,27th Middlesex,no,186,191,2913,1,house/members/D_P1.html
+House,PAH1,Patricia A. Haddad,Democrat,5th Bristol,no,186,193,3429,0,house/members/PAH1.html
+House,WSP1,William Smitty Pignatelli,Democrat,4th Berkshire,no,186,193,3429,8,house/members/WSP1.html
+House,FJB1,F. Jay Barrows,Republican,1st Bristol,no,186,193,3429,0,house/members/FJB1.html
+House,P_B1,Paul Brodeur,Democrat,32nd Middlesex,no,187,191,2085,38,house/members/P_B1.html
+House,J_H1,Jonathan Hecht,Democrat,29th Middlesex,no,186,191,2940,418,house/members/J_H1.html
+House,D_P1,Denise Provost,Democrat,27th Middlesex,no,186,191,2940,1,house/members/D_P1.html
 House,R_B1,Richard Bastien,Republican,2nd Worcester,no,187,187,373,0,house/members/R_B1.html
 House,WNB1,William N. Brownsberger,,24th Middlesex,no,186,187,696,0,house/members/WNB1.html
 House,CTH1,Carlos Henriquez,Democrat,5th Suffolk,no,187,188,663,0,house/members/CTH1.html
-House,AJP1,"Angelo J. Puppolo, Jr.",Democrat,12th Hampden,yes,186,194,3631,37,house/members/AJP1.html
+House,AJP1,"Angelo J. Puppolo, Jr.",Democrat,12th Hampden,yes,186,194,3665,37,house/members/AJP1.html
 House,MAB1,Matthew A. Beaton,Republican,11th Worcester,no,187,188,878,25,house/members/MAB1.html
-House,AFC1,Antonio F. D. Cabral,Democrat,13th Bristol,yes,186,194,3631,130,house/members/AFC1.html
-House,K_H1,Kate Hogan,Democrat,3rd Middlesex,yes,186,194,3631,12,house/members/K_H1.html
+House,AFC1,Antonio F. D. Cabral,Democrat,13th Bristol,yes,186,194,3665,130,house/members/AFC1.html
+House,K_H1,Kate Hogan,Democrat,3rd Middlesex,yes,186,194,3665,12,house/members/K_H1.html
 House,K_R1,Kathi-Anne Reinstein,Democrat,16th Suffolk,no,186,188,1165,0,house/members/K_R1.html
-House,NAG1,Nicholas A. Boldyga,Republican,3rd Hampden,yes,187,194,3120,207,house/members/NAG1.html
+House,NAG1,Nicholas A. Boldyga,Republican,3rd Hampden,yes,187,194,3154,207,house/members/NAG1.html
 House,TJC1,Thomas J. Calter,Democrat,12th Plymouth,no,186,190,2293,2,house/members/TJC1.html
-House,REH1,Russell E. Holmes,Democrat,6th Suffolk,yes,187,194,3120,130,house/members/REH1.html
-House,JHR1,John H. Rogers,Democrat,12th Norfolk,yes,186,194,3631,364,house/members/JHR1.html
+House,REH1,Russell E. Holmes,Democrat,6th Suffolk,yes,187,194,3154,130,house/members/REH1.html
+House,JHR1,John H. Rogers,Democrat,12th Norfolk,yes,186,194,3665,364,house/members/JHR1.html
 House,VMD1,Viriato Manuel deMacedo,Republican,1st Plymouth,no,186,188,1389,0,house/members/VMD1.html
-House,LDC1,Linda Campbell,Democrat,15th Essex,no,186,192,3193,1,house/members/LDC1.html
-House,KGH1,Kevin G. Honan,Democrat,17th Suffolk,yes,186,194,3631,1,house/members/KGH1.html
+House,LDC1,Linda Campbell,Democrat,15th Essex,no,186,192,3226,1,house/members/LDC1.html
+House,KGH1,Kevin G. Honan,Democrat,17th Suffolk,yes,186,194,3665,1,house/members/KGH1.html
 House,DAR1,Dennis A. Rosa,Democrat,4th Worcester,no,186,189,1946,0,house/members/DAR1.html
-House,ALD1,Angelo L. D'Emilia,Republican,8th Plymouth,no,187,193,2885,0,house/members/ALD1.html
+House,ALD1,Angelo L. D'Emilia,Republican,8th Plymouth,no,187,193,2918,0,house/members/ALD1.html
 House,CEC1,Christine E. Canavan,Democrat,10th Plymouth,no,186,188,1389,1,house/members/CEC1.html
-House,LLK1,Louis L. Kafka,Democrat,8th Norfolk,no,186,191,2913,0,house/members/LLK1.html
-House,B_R1,Byron Rushing,Democrat,9th Suffolk,no,186,190,2461,0,house/members/B_R1.html
-House,J_D1,Geoff Diehl,Republican,7th Plymouth,no,187,190,1950,1,house/members/J_D1.html
+House,LLK1,Louis L. Kafka,Democrat,8th Norfolk,no,186,191,2940,0,house/members/LLK1.html
+House,B_R1,Byron Rushing,Democrat,9th Suffolk,no,186,190,2466,0,house/members/B_R1.html
+House,J_D1,Geoff Diehl,Republican,7th Plymouth,no,187,190,1955,1,house/members/J_D1.html
 House,SRC1,Stephen R. Canessa,Democrat,12th Bristol,no,186,187,593,0,house/members/SRC1.html
 House,MFK1,Michael F. Kane,Democrat,5th Hampden,no,186,187,784,0,house/members/MFK1.html
-House,J_S1,Jeffrey Sánchez,Democrat,15th Suffolk,no,186,190,2461,0,house/members/J_S1.html
+House,J_S1,Jeffrey Sánchez,Democrat,15th Suffolk,no,186,190,2466,0,house/members/J_S1.html
 House,RCF1,Ryan C. Fattman,Republican,18th Worcester,no,187,188,878,1,house/members/RCF1.html
 House,JMC2,James M. Cantwell,Democrat,4th Plymouth,no,186,190,2268,1,house/members/JMC2.html
-House,JRK1,Jay R. Kaufman,Democrat,15th Middlesex,no,186,190,2461,1,house/members/JRK1.html
+House,JRK1,Jay R. Kaufman,Democrat,15th Middlesex,no,186,190,2466,1,house/members/JRK1.html
 House,T_S1,Tom Sannicandro,Democrat,7th Middlesex,no,186,189,1946,0,house/members/T_S1.html
-House,KNF1,Kimberly N. Ferguson,Republican,1st Worcester,yes,187,194,3120,357,house/members/KNF1.html
+House,KNF1,Kimberly N. Ferguson,Republican,1st Worcester,yes,187,194,3154,357,house/members/KNF1.html
 House,GMC1,Gailanne M. Cariddi,Democrat,1st Berkshire,no,187,190,1502,56,house/members/GMC1.html
 House,JDK1,John D. Keenan,Democrat,7th Essex,no,186,188,1389,26,house/members/JDK1.html
-House,AMS1,Angelo M. Scaccia,Democrat,14th Suffolk,no,186,191,2913,8,house/members/AMS1.html
-House,PKF1,Paul K. Frost,Republican,7th Worcester,yes,186,194,3631,185,house/members/PKF1.html
-House,T_C1,Tackey Chan,Democrat,2nd Norfolk,yes,187,194,3120,139,house/members/T_C1.html
-House,K_K1,Kay Khan,Democrat,11th Middlesex,no,186,193,3396,418,house/members/K_K1.html
-House,PAS1,"Paul A. Schmid, III",Democrat,8th Bristol,no,187,193,2885,145,house/members/PAS1.html
-House,SWG1,Susan Williams Gifford,Republican,2nd Plymouth,no,186,193,3392,25,house/members/SWG1.html
+House,AMS1,Angelo M. Scaccia,Democrat,14th Suffolk,no,186,191,2940,8,house/members/AMS1.html
+House,PKF1,Paul K. Frost,Republican,7th Worcester,yes,186,194,3665,185,house/members/PKF1.html
+House,T_C1,Tackey Chan,Democrat,2nd Norfolk,yes,187,194,3154,139,house/members/T_C1.html
+House,K_K1,Kay Khan,Democrat,11th Middlesex,no,186,193,3429,418,house/members/K_K1.html
+House,PAS1,"Paul A. Schmid, III",Democrat,8th Bristol,no,187,193,2918,145,house/members/PAS1.html
+House,SWG1,Susan Williams Gifford,Republican,2nd Plymouth,no,186,193,3425,25,house/members/SWG1.html
 House,CAR1,Cheryl A. Coakley-Rivera,Democrat,10th Hampden,no,186,188,1191,0,house/members/CAR1.html
 House,PVK1,Peter V. Kocot,Democrat,1st Hampshire,no,186,190,2257,0,house/members/PVK1.html
-House,JWS1,John W. Scibak,Democrat,2nd Hampshire,no,186,190,2461,39,house/members/JWS1.html
-House,SCH1,Sheila C. Harrington,Republican,1st Middlesex,no,187,192,2545,0,house/members/SCH1.html
+House,JWS1,John W. Scibak,Democrat,2nd Hampshire,no,186,190,2466,39,house/members/JWS1.html
+House,SCH1,Sheila C. Harrington,Republican,1st Middlesex,no,187,192,2572,0,house/members/SCH1.html
 House,N_C1,Nick Collins,Democrat,4th Suffolk,no,187,190,1781,108,house/members/N_C1.html
-House,RMK1,Robert M. Koczera,Democrat,11th Bristol,no,186,190,2461,27,house/members/RMK1.html
+House,RMK1,Robert M. Koczera,Democrat,11th Bristol,no,186,190,2466,27,house/members/RMK1.html
 House,CMS1,"Carl M. Sciortino, Jr.",Democrat,34th Middlesex,no,186,188,1205,0,house/members/CMS1.html
-House,SSH1,Steven S. Howitt,Republican,4th Bristol,yes,187,194,3120,360,house/members/SSH1.html
+House,SSH1,Steven S. Howitt,Republican,4th Bristol,yes,187,194,3154,360,house/members/SSH1.html
 House,TPC1,Thomas P. Conroy,Democrat,13th Middlesex,no,186,188,1389,0,house/members/TPC1.html
 House,PJK1,Peter J. Koutoujian,Democrat,10th Middlesex,no,186,187,529,0,house/members/PJK1.html
 House,SSS1,Stephen Stat Smith,Democrat,28th Middlesex,no,186,187,884,0,house/members/SSS1.html
 House,DFH1,"Donald F. Humason, Jr.",Republican,4th Hampden,no,186,188,1144,9,house/members/DFH1.html
-House,E_C1,Edward F. Coppinger,Democrat,10th Suffolk,no,187,193,2691,0,house/members/E_C1.html
-House,S_K1,Stephen Kulik,Democrat,1st Franklin,no,186,190,2461,0,house/members/S_K1.html
-House,FIS1,Frank I. Smizik,Democrat,15th Norfolk,no,186,190,2461,0,house/members/FIS1.html
-House,R_H1,Randy Hunt,Republican,5th Barnstable,no,187,191,2402,28,house/members/R_H1.html
+House,E_C1,Edward F. Coppinger,Democrat,10th Suffolk,no,187,193,2724,0,house/members/E_C1.html
+House,S_K1,Stephen Kulik,Democrat,1st Franklin,no,186,190,2466,0,house/members/S_K1.html
+House,FIS1,Frank I. Smizik,Democrat,15th Norfolk,no,186,190,2466,0,house/members/FIS1.html
+House,R_H1,Randy Hunt,Republican,5th Barnstable,no,187,191,2429,28,house/members/R_H1.html
 House,MAC1,Michael A. Costello,Democrat,1st Essex,no,186,188,1389,0,house/members/MAC1.html
 House,JML1,Jason M. Lewis,Democrat,31st Middlesex,no,186,188,1218,0,house/members/JML1.html
-House,TCS1,Theodore C. Speliotis,Democrat,13th Essex,no,186,191,2913,0,house/members/TCS1.html
-House,KJK1,Kevin J. Kuros,Republican,8th Worcester,no,187,190,1950,11,house/members/KJK1.html
+House,TCS1,Theodore C. Speliotis,Democrat,13th Essex,no,186,191,2940,0,house/members/TCS1.html
+House,KJK1,Kevin J. Kuros,Republican,8th Worcester,no,187,190,1955,11,house/members/KJK1.html
 House,G_C1,Geraldine M. Creedon,Democrat,11th Plymouth,no,186,187,884,0,house/members/G_C1.html
-House,DPL1,David Paul Linsky,Democrat,5th Middlesex,yes,186,194,3631,449,house/members/DPL1.html
+House,DPL1,David Paul Linsky,Democrat,5th Middlesex,yes,186,194,3665,449,house/members/DPL1.html
 House,CNS1,Christopher N. Speranzo,Democrat,3rd Berkshire,no,186,187,600,0,house/members/CNS1.html
 House,SLL1,Steven L. Levy,Republican,4th Middlesex,no,187,187,373,0,house/members/SLL1.html
 House,S_C1,Sean Curran,Democrat,9th Hampden,no,186,188,1389,1,house/members/S_C1.html
 House,TRM1,Timothy R. Madden,Democrat,"Barnstable, Dukes and Nantucket",no,186,189,1946,31,house/members/TRM1.html
 House,JAS1,Joyce A. Spiliotis,Democrat,12th Essex,no,186,187,884,0,house/members/JAS1.html
-House,MTL1,Marc T. Lombardo,Republican,22nd Middlesex,yes,187,194,3120,223,house/members/MTL1.html
-House,MJC1,Mark J. Cusack,Democrat,5th Norfolk,yes,187,194,3120,87,house/members/MJC1.html
-House,JJM2,John J. Mahoney,Democrat,13th Worcester,yes,187,194,3120,57,house/members/JJM2.html
+House,MTL1,Marc T. Lombardo,Republican,22nd Middlesex,yes,187,194,3154,223,house/members/MTL1.html
+House,MJC1,Mark J. Cusack,Democrat,5th Norfolk,yes,187,194,3154,87,house/members/MJC1.html
+House,JJM2,John J. Mahoney,Democrat,13th Worcester,yes,187,194,3154,57,house/members/JJM2.html
 House,HLS1,Harriett L. Stanley,Democrat,2nd Essex,no,186,187,884,0,house/members/HLS1.html
-House,JJL1,"James J. Lyons, Jr.",Republican,18th Essex,no,187,190,1950,0,house/members/JJL1.html
+House,JJL1,"James J. Lyons, Jr.",Republican,18th Essex,no,187,190,1955,0,house/members/JJL1.html
 House,BSD1,Brian S. Dempsey,Democrat,3rd Essex,no,186,190,2023,0,house/members/BSD1.html
-House,EAM1,Elizabeth A. Malia,Democrat,11th Suffolk,no,186,192,3193,0,house/members/EAM1.html
-House,TMS1,Thomas M. Stanley,Democrat,9th Middlesex,yes,186,194,3631,25,house/members/TMS1.html
-House,SLO1,Shaunna O'Connell,Republican,3rd Bristol,no,187,191,2092,304,house/members/SLO1.html
-House,MAD1,Marcos A. Devers,Democrat,16th Essex,no,186,192,2250,104,house/members/MAD1.html
-House,R_M1,Ronald Mariano,Democrat,3rd Norfolk,yes,186,194,3631,0,house/members/R_M1.html
+House,EAM1,Elizabeth A. Malia,Democrat,11th Suffolk,no,186,192,3226,0,house/members/EAM1.html
+House,TMS1,Thomas M. Stanley,Democrat,9th Middlesex,yes,186,194,3665,25,house/members/TMS1.html
+House,SLO1,Shaunna O'Connell,Republican,3rd Bristol,no,187,191,2097,304,house/members/SLO1.html
+House,MAD1,Marcos A. Devers,Democrat,16th Essex,no,186,192,2278,104,house/members/MAD1.html
+House,R_M1,Ronald Mariano,Democrat,3rd Norfolk,yes,186,194,3665,0,house/members/R_M1.html
 House,E_S1,Ellen Story,Democrat,3rd Hampshire,no,186,189,1946,0,house/members/E_S1.html
 House,GTR1,George T. Ross,Republican,2nd Bristol,no,187,187,373,0,house/members/GTR1.html
 House,SLD1,Stephen L. DiNatale,Democrat,3rd Worcester,no,186,189,1568,36,house/members/SLD1.html
-House,PWM1,Paul W. Mark,Democrat,2nd Berkshire,no,187,192,2682,32,house/members/PWM1.html
-House,WMS1,William M. Straus,Democrat,10th Bristol,no,186,193,3396,31,house/members/WMS1.html
-House,TMS2,Todd M. Smola,Republican,1st Hampden,yes,186,194,3631,305,house/members/TMS2.html
-House,PJD1,Paul J. Donato,Democrat,35th Middlesex,yes,186,194,3631,147,house/members/PJD1.html
-House,CMM1,Christopher M. Markey,Democrat,9th Bristol,yes,187,194,3120,334,house/members/CMM1.html
+House,PWM1,Paul W. Mark,Democrat,2nd Berkshire,no,187,192,2715,32,house/members/PWM1.html
+House,WMS1,William M. Straus,Democrat,10th Bristol,no,186,193,3429,31,house/members/WMS1.html
+House,TMS2,Todd M. Smola,Republican,1st Hampden,yes,186,194,3665,305,house/members/TMS2.html
+House,PJD1,Paul J. Donato,Democrat,35th Middlesex,yes,186,194,3665,147,house/members/PJD1.html
+House,CMM1,Christopher M. Markey,Democrat,9th Bristol,yes,187,194,3154,334,house/members/CMM1.html
 House,DBS1,David B. Sullivan,Democrat,6th Bristol,no,186,188,997,0,house/members/DBS1.html
-House,DTV1,David T. Vieira,Republican,3rd Barnstable,yes,187,194,3120,31,house/members/DTV1.html
-House,JJD1,James J. Dwyer,Democrat,30th Middlesex,no,186,190,2461,0,house/members/JJD1.html
-House,P_M1,Paul McMurtry,Democrat,11th Norfolk,yes,186,194,3631,125,house/members/P_M1.html
+House,DTV1,David T. Vieira,Republican,3rd Barnstable,yes,187,194,3154,31,house/members/DTV1.html
+House,JJD1,James J. Dwyer,Democrat,30th Middlesex,no,186,190,2466,0,house/members/JJD1.html
+House,P_M1,Paul McMurtry,Democrat,11th Norfolk,yes,186,194,3665,125,house/members/P_M1.html
 House,B_S1,Benjamin Swan,Democrat,11th Hampden,no,186,189,1946,0,house/members/B_S1.html
 House,DKW1,Daniel K. Webster,Republican,6th Plymouth,no,186,187,884,0,house/members/DKW1.html
-House,CCD1,Carolyn C. Dykema,Democrat,8th Middlesex,no,186,192,3056,229,house/members/CCD1.html
+House,CCD1,Carolyn C. Dykema,Democrat,8th Middlesex,no,186,192,3083,229,house/members/CCD1.html
 House,JRM1,James R. Miceli,Democrat,19th Middlesex,no,186,190,2270,0,house/members/JRM1.html
 House,WFT1,Walter F. Timilty,Democrat,7th Norfolk,no,186,189,1946,34,house/members/WFT1.html
 House,DBW1,Daniel B. Winslow,Republican,9th Norfolk,no,187,188,600,0,house/members/DBW1.html
-House,LAE1,Lori A. Ehrlich,Democrat,8th Essex,no,186,192,3053,0,house/members/LAE1.html
-House,AMM1,Aaron Michlewitz,Democrat,3rd Suffolk,yes,186,194,3467,97,house/members/AMM1.html
+House,LAE1,Lori A. Ehrlich,Democrat,8th Essex,no,186,192,3080,0,house/members/LAE1.html
+House,AMM1,Aaron Michlewitz,Democrat,3rd Suffolk,yes,186,194,3501,97,house/members/AMM1.html
 House,TJT1,"Timothy J. Toomey, Jr.",Democrat,26th Middlesex,no,186,189,1946,38,house/members/TJT1.html
-House,DHW1,Donald H. Wong,Republican,9th Essex,yes,187,194,3120,149,house/members/DHW1.html
-House,PJD2,Peter J. Durant,Republican,6th Worcester,no,187,193,2675,31,house/members/PJD2.html
-House,JJL2,"John J. Lawn, Jr.",Democrat,10th Middlesex,yes,187,194,3043,167,house/members/JJL2.html
-House,KMO1,Keiko M. Orrall,Republican,12th Bristol,no,187,190,1833,2,house/members/KMO1.html
-House,TFB1,Tricia Farley-Bouvier,Democrat,3rd Berkshire,yes,187,194,2981,374,house/members/TFB1.html
-House,A_V1,Aaron Vega,Democrat,5th Hampden,no,188,191,2029,206,house/members/A_V1.html
-House,FAM1,Frank A. Moran,Democrat,17th Essex,yes,188,194,2747,96,house/members/FAM1.html
-House,JDZ1,Jonathan D. Zlotnik,Democrat,2nd Worcester,yes,188,194,2747,224,house/members/JDZ1.html
-House,KIG1,Kenneth I. Gordon,Democrat,21st Middlesex,yes,188,194,2747,105,house/members/KIG1.html
-House,DWG1,Danielle W. Gregoire,Democrat,4th Middlesex,yes,186,194,3258,221,house/members/DWG1.html
+House,DHW1,Donald H. Wong,Republican,9th Essex,yes,187,194,3154,149,house/members/DHW1.html
+House,PJD2,Peter J. Durant,Republican,6th Worcester,no,187,193,2708,31,house/members/PJD2.html
+House,JJL2,"John J. Lawn, Jr.",Democrat,10th Middlesex,yes,187,194,3077,167,house/members/JJL2.html
+House,KMO1,Keiko M. Orrall,Republican,12th Bristol,no,187,190,1838,2,house/members/KMO1.html
+House,TFB1,Tricia Farley-Bouvier,Democrat,3rd Berkshire,yes,187,194,3015,374,house/members/TFB1.html
+House,A_V1,Aaron Vega,Democrat,5th Hampden,no,188,191,2056,206,house/members/A_V1.html
+House,FAM1,Frank A. Moran,Democrat,17th Essex,yes,188,194,2781,96,house/members/FAM1.html
+House,JDZ1,Jonathan D. Zlotnik,Democrat,2nd Worcester,yes,188,194,2781,224,house/members/JDZ1.html
+House,KIG1,Kenneth I. Gordon,Democrat,21st Middlesex,yes,188,194,2781,105,house/members/KIG1.html
+House,DWG1,Danielle W. Gregoire,Democrat,4th Middlesex,yes,186,194,3292,221,house/members/DWG1.html
 House,PRH1,Paul R. Heroux,Democrat,2nd Bristol,no,188,190,1366,108,house/members/PRH1.html
-House,DMR1,David M. Rogers,Democrat,24th Middlesex,yes,188,194,2747,130,house/members/DMR1.html
-House,JNR1,Jeffrey N. Roy,Democrat,10th Norfolk,yes,188,194,2747,2,house/members/JNR1.html
-House,MSK1,Mary S. Keefe,Democrat,15th Worcester,yes,188,194,2747,88,house/members/MSK1.html
-House,CDC1,Claire D. Cronin,Democrat,11th Plymouth,no,188,192,2150,3,house/members/CDC1.html
-House,JSC1,Josh S. Cutler,Democrat,6th Plymouth,no,188,193,2382,152,house/members/JSC1.html
-House,MCD1,Marjorie C. Decker,Democrat,25th Middlesex,yes,188,194,2747,248,house/members/MCD1.html
-House,A_S1,Alan Silvia,Democrat,7th Bristol,yes,188,194,2747,420,house/members/A_S1.html
-House,L_M1,Leonard Mirra,Republican,2nd Essex,no,188,193,2318,27,house/members/L_M1.html
-House,D_D1,Diana DiZoglio,Democrat,14th Essex,no,188,190,1577,0,house/members/D_D1.html
+House,DMR1,David M. Rogers,Democrat,24th Middlesex,yes,188,194,2781,130,house/members/DMR1.html
+House,JNR1,Jeffrey N. Roy,Democrat,10th Norfolk,yes,188,194,2781,2,house/members/JNR1.html
+House,MSK1,Mary S. Keefe,Democrat,15th Worcester,yes,188,194,2781,88,house/members/MSK1.html
+House,CDC1,Claire D. Cronin,Democrat,11th Plymouth,no,188,192,2177,3,house/members/CDC1.html
+House,JSC1,Josh S. Cutler,Democrat,6th Plymouth,no,188,193,2415,152,house/members/JSC1.html
+House,MCD1,Marjorie C. Decker,Democrat,25th Middlesex,yes,188,194,2781,248,house/members/MCD1.html
+House,A_S1,Alan Silvia,Democrat,7th Bristol,yes,188,194,2781,420,house/members/A_S1.html
+House,L_M1,Leonard Mirra,Republican,2nd Essex,no,188,193,2351,27,house/members/L_M1.html
+House,D_D1,Diana DiZoglio,Democrat,14th Essex,no,188,190,1582,0,house/members/D_D1.html
 House,BRM1,Brian R. Mannal,Democrat,2nd Barnstable,no,188,189,1062,7,house/members/BRM1.html
 House,WAM1,Wayne Matewsky,Democrat,28th Middlesex,no,188,188,392,0,house/members/WAM1.html
 House,L_C1,Leah Cole,Republican,12th Essex,no,188,189,548,0,house/members/L_C1.html
-House,J_L1,Jay Livingstone,Democrat,8th Suffolk,yes,188,194,2595,83,house/members/J_L1.html
-House,CAF1,Carole Fiola,Democrat,6th Bristol,yes,188,194,2523,34,house/members/CAF1.html
-House,D_C1,Daniel Cullinane,Democrat,12th Suffolk,no,188,191,1641,68,house/members/D_C1.html
-House,DMD1,Daniel M. Donahue,Democrat,16th Worcester,yes,188,194,2523,17,house/members/DMD1.html
-House,S_D1,Shawn Dooley,Republican,9th Norfolk,no,188,192,2028,30,house/members/S_D1.html
-House,jcv1,John Velis,Democrat,4th Hampden,no,188,191,1420,9,house/members/jcv1.html
-House,r_v1,RoseLee Vincent,Democrat,16th Suffolk,no,188,191,1698,49,house/members/r_v1.html
-House,djh1,Daniel Hunt,Democrat,13th Suffolk,yes,188,194,2416,90,house/members/djh1.html
-House,djr1,Daniel J. Ryan,Democrat,2nd Suffolk,yes,188,194,2416,228,house/members/djr1.html
-House,ecc1,Evandro Carvalho,Democrat,5th Suffolk,no,188,190,1209,48,house/members/ecc1.html
-House,R_M2,Rady Mom,Democrat,18th Middlesex,no,189,193,2007,1,house/members/R_M2.html
-House,CPB2,Christine P. Barber,Democrat,34th Middlesex,yes,189,194,2242,108,house/members/CPB2.html
-House,DRB1,"Donald R. Berthiaume, Jr.",Republican,5th Worcester,yes,189,194,2242,188,house/members/DRB1.html
-House,CLG1,Carmine L. Gentile,Democrat,13th Middlesex,yes,189,194,2242,493,house/members/CLG1.html
-House,KDC1,Kate D. Campanale,Republican,17th Worcester,no,189,190,1072,0,house/members/KDC1.html
-House,C_G1,Carlos Gonzalez,Democrat,10th Hampden,yes,189,194,2242,0,house/members/C_G1.html
-House,DFD1,David F. DeCoste,Republican,5th Plymouth,yes,189,194,2242,525,house/members/DFD1.html
+House,J_L1,Jay Livingstone,Democrat,8th Suffolk,yes,188,194,2629,83,house/members/J_L1.html
+House,CAF1,Carole Fiola,Democrat,6th Bristol,yes,188,194,2557,34,house/members/CAF1.html
+House,D_C1,Daniel Cullinane,Democrat,12th Suffolk,no,188,191,1646,68,house/members/D_C1.html
+House,DMD1,Daniel M. Donahue,Democrat,16th Worcester,yes,188,194,2557,17,house/members/DMD1.html
+House,S_D1,Shawn Dooley,Republican,9th Norfolk,no,188,192,2061,30,house/members/S_D1.html
+House,jcv1,John Velis,Democrat,4th Hampden,no,188,191,1425,9,house/members/jcv1.html
+House,r_v1,RoseLee Vincent,Democrat,16th Suffolk,no,188,191,1725,49,house/members/r_v1.html
+House,djh1,Daniel Hunt,Democrat,13th Suffolk,yes,188,194,2450,90,house/members/djh1.html
+House,djr1,Daniel J. Ryan,Democrat,2nd Suffolk,yes,188,194,2450,228,house/members/djr1.html
+House,ecc1,Evandro Carvalho,Democrat,5th Suffolk,no,188,190,1214,48,house/members/ecc1.html
+House,R_M2,Rady Mom,Democrat,18th Middlesex,no,189,193,2040,1,house/members/R_M2.html
+House,CPB2,Christine P. Barber,Democrat,34th Middlesex,yes,189,194,2276,108,house/members/CPB2.html
+House,DRB1,"Donald R. Berthiaume, Jr.",Republican,5th Worcester,yes,189,194,2276,188,house/members/DRB1.html
+House,CLG1,Carmine L. Gentile,Democrat,13th Middlesex,yes,189,194,2276,493,house/members/CLG1.html
+House,KDC1,Kate D. Campanale,Republican,17th Worcester,no,189,190,1077,0,house/members/KDC1.html
+House,C_G1,Carlos Gonzalez,Democrat,10th Hampden,yes,189,194,2276,0,house/members/C_G1.html
+House,DFD1,David F. DeCoste,Republican,5th Plymouth,yes,189,194,2276,525,house/members/DFD1.html
 House,BPC1,Brendan P. Crighton,Democrat,11th Essex,no,189,190,869,0,house/members/BPC1.html
-House,JMK1,James M. Kelcourse,Republican,1st Essex,no,189,192,1723,0,house/members/JMK1.html
-House,MSD1,Michael S. Day,Democrat,31st Middlesex,yes,189,194,2242,80,house/members/MSD1.html
-House,JDM1,Joseph D. McKenna,Republican,18th Worcester,yes,189,194,2242,178,house/members/JDM1.html
-House,DKM1,"David K. Muradian, Jr.",Republican,9th Worcester,yes,189,194,2242,160,house/members/DKM1.html
-House,MJM2,Mathew Muratore,Republican,1st Plymouth,no,189,193,2007,1,house/members/MJM2.html
-House,MMD1,Michelle M. DuBois,Democrat,10th Plymouth,yes,189,194,2242,193,house/members/MMD1.html
-House,JFT1,Jose F. Tosado,Democrat,9th Hampden,no,189,191,1524,48,house/members/JFT1.html
-House,TRW1,Timothy R. Whelan,Republican,1st Barnstable,no,189,192,1804,0,house/members/TRW1.html
-House,PFT1,Paul Tucker,Democrat,7th Essex,no,189,192,1804,0,house/members/PFT1.html
-House,SLG1,Susannah M. Whipps Lee,Unenrolled,2nd Franklin,yes,189,194,2242,77,house/members/SLG1.html
-House,jwm1,"Joseph W. McGonagle, Jr.",Democrat,28th Middlesex,yes,189,194,2242,31,house/members/jwm1.html
-House,S_G2,Steven Ultrino,Democrat,33rd Middlesex,yes,189,194,2242,136,house/members/S_G2.html
-House,HEK1,Hannah Kane,Republican,11th Worcester,yes,189,194,2215,519,house/members/HEK1.html
-House,ACM1,Adrian Madaro,Democrat,1st Suffolk,yes,189,194,2215,151,house/members/ACM1.html
-House,TJW1,Thomas P. Walsh,Democrat,12th Essex,yes,189,194,2039,0,house/members/TJW1.html
-House,S_H1,Stephan Hay,Democrat,3rd Worcester,no,189,191,1321,1,house/members/S_H1.html
-House,G_C2,Gerard Cassidy,Democrat,9th Plymouth,no,189,193,1804,0,house/members/G_C2.html
-House,DFC1,Daniel Cahill,Democrat,10th Essex,yes,189,194,1994,69,house/members/DFC1.html
-House,J_M1,Joan Meschino,Democrat,3rd Plymouth,yes,190,194,1685,122,house/members/J_M1.html
-House,BLW1,Bud Williams,Democrat,11th Hampden,yes,190,194,1685,0,house/members/BLW1.html
-House,SIG1,Solomon Goldstein-Rose,Unenrolled,3rd Hampshire,no,190,190,515,0,house/members/SIG1.html
-House,BWM1,Brian Murray,Democrat,10th Worcester,yes,190,194,1685,0,house/members/BWM1.html
-House,WLC1,"William L. Crocker, Jr.",Republican,2nd Barnstable,no,190,191,967,118,house/members/WLC1.html
-House,N_H1,Natalie Higgins,Democrat,4th Worcester,yes,190,194,1685,403,house/members/N_H1.html
-House,M_C1,Mike Connolly,Democrat,26th Middlesex,yes,190,194,1685,226,house/members/M_C1.html
-House,JPL1,Jack Lewis,Democrat,7th Middlesex,yes,190,194,1685,429,house/members/JPL1.html
-House,WJD1,William Driscoll,Democrat,7th Norfolk,no,190,193,1450,16,house/members/WJD1.html
-House,C_T1,Chynah Tyler,Democrat,7th Suffolk,yes,190,194,1685,399,house/members/C_T1.html
-House,DAF1,Dylan Fernandes,Democrat,"Barnstable, Dukes and Nantucket",no,190,193,1450,0,house/members/DAF1.html
-House,JBM2,Juana B. Matias,Democrat,16th Essex,no,190,190,515,0,house/members/JBM2.html
-House,J_B1,John Barrett,Democrat,1st Berkshire,yes,190,194,1389,0,house/members/J_B1.html
-House,AXV1,Andres X. Vargas,Democrat,3rd Essex,yes,190,194,1389,14,house/members/AXV1.html
-House,JKH1,James K. Hawkins,Democrat,2nd Bristol,yes,190,194,1363,358,house/members/JKH1.html
-House,CAM2,Christina A. Minicucci,Democrat,14th Essex,no,191,192,732,0,house/members/CAM2.html
-House,T_V1,Tommy Vitolo,Democrat,15th Norfolk,yes,191,194,1170,313,house/members/T_V1.html
-House,L_M2,Liz Miranda,Democrat,5th Suffolk,no,191,192,732,0,house/members/L_M2.html
-House,D_B1,David Biele,Democrat,4th Suffolk,yes,191,194,1170,337,house/members/D_B1.html
-House,NMB1,Natalie M. Blais,Democrat,1st Franklin,no,191,194,1051,28,house/members/NMB1.html
-House,TLG1,Tami L. Gouveia,Democrat,14th Middlesex,no,191,192,732,114,house/members/TLG1.html
-House,TTN1,Tram T. Nguyen,Democrat,18th Essex,yes,191,194,1170,220,house/members/TTN1.html
-House,RMH1,Richard M. Haggerty,Democrat,30th Middlesex,yes,191,194,1170,76,house/members/RMH1.html
-House,PLC1,Peter Capano,Democrat,11th Essex,no,191,193,935,0,house/members/PLC1.html
-House,DRC1,Daniel R. Carey,Democrat,2nd Hampshire,no,191,193,935,15,house/members/DRC1.html
-House,C_H1,Christopher Hendricks,Democrat,11th Bristol,yes,191,194,1170,256,house/members/C_H1.html
-House,M_C2,Michelle L. Ciccolo,Democrat,15th Middlesex,yes,191,194,1170,332,house/members/M_C2.html
-House,D_R1,David Allen Robertson,Democrat,19th Middlesex,yes,191,194,1170,279,house/members/D_R1.html
-House,MDR1,Maria Duaime Robinson,Democrat,6th Middlesex,no,191,192,665,0,house/members/MDR1.html
-House,PJK1-191,Patrick Joseph Kearney,Democrat,4th Plymouth,yes,191,194,1170,142,house/members/PJK1-191.html
-House,KPL1,Kathleen R. LaNatra,Democrat,12th Plymouth,yes,191,194,1170,15,house/members/KPL1.html
-House,L_S1,Lindsay N. Sabadosa,Democrat,1st Hampshire,yes,191,194,1170,668,house/members/L_S1.html
-House,J_S2,Jon Santiago,Democrat,9th Suffolk,no,191,193,741,0,house/members/J_S2.html
-House,M_D2,Mindy Domb,Democrat,3rd Hampshire,yes,191,194,1170,17,house/members/M_D2.html
-House,DAL1,David Henry Argosky LeBoeuf,Democrat,17th Worcester,yes,191,194,1170,299,house/members/DAL1.html
-House,NJO1,Norman J. Orrall,Republican,12th Bristol,yes,191,194,1170,417,house/members/NJO1.html
-House,MJS3,Michael J. Soter,Republican,8th Worcester,yes,191,194,1170,183,house/members/MJS3.html
-House,N_E1,Nika C. Elugardo,Democrat,15th Suffolk,no,191,192,732,114,house/members/N_E1.html
-House,AMS2,Alyson M. Sullivan,Republican,7th Plymouth,yes,191,194,1170,353,house/members/AMS2.html
-House,KLG1,Kate Lipper-Garabedian,Democrat,32nd Middlesex,yes,191,194,1006,220,house/members/KLG1.html
-House,CAD1,Carol A. Doherty,Democrat,3rd Bristol,no,191,194,762,0,house/members/CAD1.html
-House,DAS1,Danillo A. Sena,Democrat,37th Middlesex,yes,191,194,986,110,house/members/DAS1.html
-House,E_U1,Erika Uyterhoeven,Democrat,27th Middlesex,yes,192,194,718,21,house/members/E_U1.html
-House,BFO1,Brandy Fluker Oakley,Democrat,12th Suffolk,no,192,193,483,0,house/members/BFO1.html
-House,JAG1,Jessica Ann Giannino,Democrat,16th Suffolk,yes,192,194,718,34,house/members/JAG1.html
-House,JRO1,Jacob R. Oliveira,Democrat,7th Hampden,no,192,192,280,0,house/members/JRO1.html
-House,SCO1,Steven C. Owens,Democrat,29th Middlesex,yes,192,194,718,348,house/members/SCO1.html
-House,R_C1,Rob Consalvo,Democrat,14th Suffolk,yes,192,194,718,201,house/members/R_C1.html
-House,ERP1,Edward R. Philips,Democrat,8th Norfolk,yes,192,194,718,363,house/members/ERP1.html
-House,V_H1,Vanna Howard,Democrat,17th Middlesex,no,192,194,624,87,house/members/V_H1.html
-House,O_R1,Orlando Ramos,Democrat,9th Hampden,yes,192,194,718,331,house/members/O_R1.html
-House,KAD1,Kip A. Diggs,Democrat,2nd Barnstable,yes,192,194,718,316,house/members/KAD1.html
-House,SPK1,Sally P. Kerans,Democrat,13th Essex,yes,192,194,718,563,house/members/SPK1.html
-House,M_K1,Meghan Kilcoyne,Democrat,12th Worcester,yes,192,194,718,309,house/members/M_K1.html
-House,MPK1,Michael P. Kushmerek,Democrat,3rd Worcester,yes,192,194,718,160,house/members/MPK1.html
-House,KWP1,Kelly W. Pease,Republican,4th Hampden,yes,192,194,718,136,house/members/KWP1.html
-House,AJS1,Adam J. Scanlon,Democrat,14th Bristol,yes,192,194,718,29,house/members/AJS1.html
-House,PAD1,Patricia A. Duffy,Democrat,5th Hampden,yes,192,194,718,136,house/members/PAD1.html
-House,SGX1,Steven G. Xiarhos,Republican,5th Barnstable,yes,192,194,718,186,house/members/SGX1.html
-House,JRT1,Jeffrey Rosario Turco,Democrat,19th Suffolk,yes,192,194,701,63,house/members/JRT1.html
-House,JZB1,Jamie Zahlaway Belsito,Democrat,4th Essex,no,192,192,159,0,house/members/JZB1.html
-House,PSS1,Priscila S. Sousa,Democrat,6th Middlesex,yes,193,194,438,490,house/members/PSS1.html
-House,JCD1,James C. Arena-DeRosa,Democrat,8th Middlesex,yes,193,194,438,343,house/members/JCD1.html
-House,JBA1,Jennifer Balinsky Armini,Democrat,8th Essex,yes,193,194,438,454,house/members/JBA1.html
-House,CRF1,Christopher Richard Flanagan,Democrat,1st Barnstable,yes,193,194,438,49,house/members/CRF1.html
-House,SBA1,Shirley B. Arriaga,Democrat,8th Hampden,yes,193,194,438,409,house/members/SBA1.html
-House,RAM1,Rita A. Mendes,Democrat,11th Plymouth,yes,193,194,438,208,house/members/RAM1.html
-House,JAG2,Judith A. Garcia,Democrat,11th Suffolk,yes,193,194,438,427,house/members/JAG2.html
-House,S_M1,Samantha Montaño,Democrat,15th Suffolk,yes,193,194,438,557,house/members/S_M1.html
-House,CJW1-193,Christopher J. Worrell,Democrat,5th Suffolk,yes,193,194,438,394,house/members/CJW1-193.html
-House,S_C1-193,Simon Cataldo,Democrat,14th Middlesex,yes,193,194,438,502,house/members/S_C1-193.html
-House,RMH2,Ryan M. Hamilton,Democrat,15th Essex,yes,193,194,438,484,house/members/RMH2.html
-House,FEP1,Francisco E. Paulino,Democrat,16th Essex,yes,193,194,438,151,house/members/FEP1.html
-House,M_C3,Manny Cruz,Democrat,7th Essex,yes,193,194,438,236,house/members/M_C3.html
-House,APR1,Adrianne Pusateri Ramos,Democrat,14th Essex,yes,193,194,438,270,house/members/APR1.html
-House,EAR1,Estela A. Reyes,Democrat,4th Essex,yes,193,194,438,191,house/members/EAR1.html
-House,K_D1,Kate Donaghue,Democrat,19th Worcester,yes,193,194,438,113,house/members/K_D1.html
-House,ALS1,Aaron L. Saunders,Democrat,7th Hampden,yes,193,194,438,114,house/members/ALS1.html
-House,MRS1,Margaret R. Scarsdale,Democrat,1st Middlesex,yes,193,194,438,251,house/members/MRS1.html
-House,MSV1,Marcus S. Vaughn,Republican,9th Norfolk,yes,193,194,438,192,house/members/MSV1.html
-House,RME1,Rodney M. Elliott,Democrat,16th Middlesex,yes,193,194,438,399,house/members/RME1.html
-House,D_S1,Dawne Shand,Democrat,1st Essex,yes,193,194,438,263,house/members/D_S1.html
-House,K_K2,Kristin E. Kassner,Democrat,2nd Essex,yes,193,194,429,549,house/members/K_K2.html
-House,WFM1,William F. MacGregor,Democrat,10th Suffolk,yes,193,194,413,283,house/members/WFM1.html
-House,JFM1,John Francis Moran,Democrat,9th Suffolk,yes,193,194,413,465,house/members/JFM1.html
-House,JJM1,John J. Marsi,Republican,6th Worcester,yes,193,194,357,500,house/members/JJM1.html
-House,MDS1,Mark D. Sylvia,Democrat,10th Bristol,yes,194,194,235,233,house/members/MDS1.html
-House,J_T1,Joshua Tarsky,Democrat,13th Norfolk,yes,194,194,235,436,house/members/J_T1.html
-House,TWM1,Thomas W. Moakley,Democrat,"Barnstable, Dukes and Nantucket",yes,194,194,235,186,house/members/TWM1.html
-House,H_G1,Homar Gómez,Democrat,2nd Hampshire,yes,194,194,235,441,house/members/H_G1.html
-House,MLB1,Michelle L. Badger,Democrat,1st Plymouth,yes,194,194,235,114,house/members/MLB1.html
-House,RGW1,"Richard G. Wells, Jr.",Democrat,7th Norfolk,yes,194,194,235,448,house/members/RGW1.html
-House,SJO1,Steven J. Ouellette,Democrat,8th Bristol,yes,194,194,235,49,house/members/SJO1.html
-House,TTH1,Tara T. Hong,Democrat,18th Middlesex,yes,194,194,235,199,house/members/TTH1.html
-House,BMP1,Bridget Plouffe,Democrat,9th Plymouth,yes,194,194,235,329,house/members/BMP1.html
-House,MSC1,Michael S. Chaisson,Republican,1st Bristol,yes,194,194,235,658,house/members/MSC1.html
-House,JRG2,John R. Gaskey,Republican,2nd Plymouth,yes,194,194,235,157,house/members/JRG2.html
-House,LSD1,Leigh Davis,Democrat,3rd Berkshire,yes,194,194,235,172,house/members/LSD1.html
-House,S_R1,Sean Reid,Democrat,11th Essex,yes,194,194,235,292,house/members/S_R1.html
-House,AMS3,Amy Mah Sangiolo,Democrat,11th Middlesex,yes,194,194,235,342,house/members/AMS3.html
-House,KPS1,Kenneth P. Sweezey,Republican,6th Plymouth,yes,194,194,235,327,house/members/KPS1.html
-House,J_T2,Justin Thurber,Republican,5th Bristol,yes,194,194,235,291,house/members/J_T2.html
-House,H_L1,Hadley Luddy,Democrat,4th Barnstable,yes,194,194,235,49,house/members/H_L1.html
-House,G_S1,Greg Schwartz,Democrat,12th Middlesex,yes,194,194,235,41,house/members/G_S1.html
-House,BFR1,Brandy Fluker-Reid,Democrat,12th Suffolk,yes,194,194,235,77,house/members/BFR1.html
-House,DCG2,Dennis C. Gallagher,Democrat,8th Plymouth,yes,194,194,235,255,house/members/DCG2.html
-House,HLB1,Hannah Bowen,Democrat,6th Essex,yes,194,194,187,547,house/members/HLB1.html
-House,LMF1,Lisa Field,Democrat,3rd Bristol,yes,194,194,173,130,house/members/LMF1.html
-House,AFT1,Andrew Tarr,Democrat,5th Essex,yes,194,194,79,0,house/members/AFT1.html
+House,JMK1,James M. Kelcourse,Republican,1st Essex,no,189,192,1756,0,house/members/JMK1.html
+House,MSD1,Michael S. Day,Democrat,31st Middlesex,yes,189,194,2276,80,house/members/MSD1.html
+House,JDM1,Joseph D. McKenna,Republican,18th Worcester,yes,189,194,2276,178,house/members/JDM1.html
+House,DKM1,"David K. Muradian, Jr.",Republican,9th Worcester,yes,189,194,2276,160,house/members/DKM1.html
+House,MJM2,Mathew Muratore,Republican,1st Plymouth,no,189,193,2040,1,house/members/MJM2.html
+House,MMD1,Michelle M. DuBois,Democrat,10th Plymouth,yes,189,194,2276,193,house/members/MMD1.html
+House,JFT1,Jose F. Tosado,Democrat,9th Hampden,no,189,191,1551,48,house/members/JFT1.html
+House,TRW1,Timothy R. Whelan,Republican,1st Barnstable,no,189,192,1837,0,house/members/TRW1.html
+House,PFT1,Paul Tucker,Democrat,7th Essex,no,189,192,1837,0,house/members/PFT1.html
+House,SLG1,Susannah M. Whipps Lee,Unenrolled,2nd Franklin,yes,189,194,2276,77,house/members/SLG1.html
+House,jwm1,"Joseph W. McGonagle, Jr.",Democrat,28th Middlesex,yes,189,194,2276,31,house/members/jwm1.html
+House,S_G2,Steven Ultrino,Democrat,33rd Middlesex,yes,189,194,2276,136,house/members/S_G2.html
+House,HEK1,Hannah Kane,Republican,11th Worcester,yes,189,194,2249,519,house/members/HEK1.html
+House,ACM1,Adrian Madaro,Democrat,1st Suffolk,yes,189,194,2249,151,house/members/ACM1.html
+House,TJW1,Thomas P. Walsh,Democrat,12th Essex,yes,189,194,2073,0,house/members/TJW1.html
+House,S_H1,Stephan Hay,Democrat,3rd Worcester,no,189,191,1348,1,house/members/S_H1.html
+House,G_C2,Gerard Cassidy,Democrat,9th Plymouth,no,189,193,1837,0,house/members/G_C2.html
+House,DFC1,Daniel Cahill,Democrat,10th Essex,yes,189,194,2028,69,house/members/DFC1.html
+House,J_M1,Joan Meschino,Democrat,3rd Plymouth,yes,190,194,1719,122,house/members/J_M1.html
+House,BLW1,Bud Williams,Democrat,11th Hampden,yes,190,194,1719,0,house/members/BLW1.html
+House,SIG1,Solomon Goldstein-Rose,Unenrolled,3rd Hampshire,no,190,190,520,0,house/members/SIG1.html
+House,BWM1,Brian Murray,Democrat,10th Worcester,yes,190,194,1719,0,house/members/BWM1.html
+House,WLC1,"William L. Crocker, Jr.",Republican,2nd Barnstable,no,190,191,994,118,house/members/WLC1.html
+House,N_H1,Natalie Higgins,Democrat,4th Worcester,yes,190,194,1719,403,house/members/N_H1.html
+House,M_C1,Mike Connolly,Democrat,26th Middlesex,yes,190,194,1719,226,house/members/M_C1.html
+House,JPL1,Jack Lewis,Democrat,7th Middlesex,yes,190,194,1719,429,house/members/JPL1.html
+House,WJD1,William Driscoll,Democrat,7th Norfolk,no,190,193,1483,16,house/members/WJD1.html
+House,C_T1,Chynah Tyler,Democrat,7th Suffolk,yes,190,194,1719,399,house/members/C_T1.html
+House,DAF1,Dylan Fernandes,Democrat,"Barnstable, Dukes and Nantucket",no,190,193,1483,0,house/members/DAF1.html
+House,JBM2,Juana B. Matias,Democrat,16th Essex,no,190,190,520,0,house/members/JBM2.html
+House,J_B1,John Barrett,Democrat,1st Berkshire,yes,190,194,1423,0,house/members/J_B1.html
+House,AXV1,Andres X. Vargas,Democrat,3rd Essex,yes,190,194,1423,14,house/members/AXV1.html
+House,JKH1,James K. Hawkins,Democrat,2nd Bristol,yes,190,194,1397,358,house/members/JKH1.html
+House,CAM2,Christina A. Minicucci,Democrat,14th Essex,no,191,192,760,0,house/members/CAM2.html
+House,T_V1,Tommy Vitolo,Democrat,15th Norfolk,yes,191,194,1199,313,house/members/T_V1.html
+House,L_M2,Liz Miranda,Democrat,5th Suffolk,no,191,192,760,0,house/members/L_M2.html
+House,D_B1,David Biele,Democrat,4th Suffolk,yes,191,194,1199,337,house/members/D_B1.html
+House,NMB1,Natalie M. Blais,Democrat,1st Franklin,no,191,194,1079,28,house/members/NMB1.html
+House,TLG1,Tami L. Gouveia,Democrat,14th Middlesex,no,191,192,760,114,house/members/TLG1.html
+House,TTN1,Tram T. Nguyen,Democrat,18th Essex,yes,191,194,1199,220,house/members/TTN1.html
+House,RMH1,Richard M. Haggerty,Democrat,30th Middlesex,yes,191,194,1199,76,house/members/RMH1.html
+House,PLC1,Peter Capano,Democrat,11th Essex,no,191,193,963,0,house/members/PLC1.html
+House,DRC1,Daniel R. Carey,Democrat,2nd Hampshire,no,191,193,963,15,house/members/DRC1.html
+House,C_H1,Christopher Hendricks,Democrat,11th Bristol,yes,191,194,1199,256,house/members/C_H1.html
+House,M_C2,Michelle L. Ciccolo,Democrat,15th Middlesex,yes,191,194,1199,332,house/members/M_C2.html
+House,D_R1,David Allen Robertson,Democrat,19th Middlesex,yes,191,194,1199,279,house/members/D_R1.html
+House,MDR1,Maria Duaime Robinson,Democrat,6th Middlesex,no,191,192,693,0,house/members/MDR1.html
+House,PJK1-191,Patrick Joseph Kearney,Democrat,4th Plymouth,yes,191,194,1199,142,house/members/PJK1-191.html
+House,KPL1,Kathleen R. LaNatra,Democrat,12th Plymouth,yes,191,194,1199,15,house/members/KPL1.html
+House,L_S1,Lindsay N. Sabadosa,Democrat,1st Hampshire,yes,191,194,1199,668,house/members/L_S1.html
+House,J_S2,Jon Santiago,Democrat,9th Suffolk,no,191,193,769,0,house/members/J_S2.html
+House,M_D2,Mindy Domb,Democrat,3rd Hampshire,yes,191,194,1199,17,house/members/M_D2.html
+House,DAL1,David Henry Argosky LeBoeuf,Democrat,17th Worcester,yes,191,194,1199,299,house/members/DAL1.html
+House,NJO1,Norman J. Orrall,Republican,12th Bristol,yes,191,194,1199,417,house/members/NJO1.html
+House,MJS3,Michael J. Soter,Republican,8th Worcester,yes,191,194,1199,183,house/members/MJS3.html
+House,N_E1,Nika C. Elugardo,Democrat,15th Suffolk,no,191,192,760,114,house/members/N_E1.html
+House,AMS2,Alyson M. Sullivan,Republican,7th Plymouth,yes,191,194,1199,353,house/members/AMS2.html
+House,KLG1,Kate Lipper-Garabedian,Democrat,32nd Middlesex,yes,191,194,1035,220,house/members/KLG1.html
+House,CAD1,Carol A. Doherty,Democrat,3rd Bristol,no,191,194,790,0,house/members/CAD1.html
+House,DAS1,Danillo A. Sena,Democrat,37th Middlesex,yes,191,194,1015,110,house/members/DAS1.html
+House,E_U1,Erika Uyterhoeven,Democrat,27th Middlesex,yes,192,194,725,21,house/members/E_U1.html
+House,BFO1,Brandy Fluker Oakley,Democrat,12th Suffolk,no,192,193,489,0,house/members/BFO1.html
+House,JAG1,Jessica Ann Giannino,Democrat,16th Suffolk,yes,192,194,725,34,house/members/JAG1.html
+House,JRO1,Jacob R. Oliveira,Democrat,7th Hampden,no,192,192,286,0,house/members/JRO1.html
+House,SCO1,Steven C. Owens,Democrat,29th Middlesex,yes,192,194,725,348,house/members/SCO1.html
+House,R_C1,Rob Consalvo,Democrat,14th Suffolk,yes,192,194,725,201,house/members/R_C1.html
+House,ERP1,Edward R. Philips,Democrat,8th Norfolk,yes,192,194,725,363,house/members/ERP1.html
+House,V_H1,Vanna Howard,Democrat,17th Middlesex,no,192,194,630,87,house/members/V_H1.html
+House,O_R1,Orlando Ramos,Democrat,9th Hampden,yes,192,194,725,331,house/members/O_R1.html
+House,KAD1,Kip A. Diggs,Democrat,2nd Barnstable,yes,192,194,725,316,house/members/KAD1.html
+House,SPK1,Sally P. Kerans,Democrat,13th Essex,yes,192,194,725,563,house/members/SPK1.html
+House,M_K1,Meghan Kilcoyne,Democrat,12th Worcester,yes,192,194,725,309,house/members/M_K1.html
+House,MPK1,Michael P. Kushmerek,Democrat,3rd Worcester,yes,192,194,725,160,house/members/MPK1.html
+House,KWP1,Kelly W. Pease,Republican,4th Hampden,yes,192,194,725,136,house/members/KWP1.html
+House,AJS1,Adam J. Scanlon,Democrat,14th Bristol,yes,192,194,725,29,house/members/AJS1.html
+House,PAD1,Patricia A. Duffy,Democrat,5th Hampden,yes,192,194,725,136,house/members/PAD1.html
+House,SGX1,Steven G. Xiarhos,Republican,5th Barnstable,yes,192,194,725,186,house/members/SGX1.html
+House,JRT1,Jeffrey Rosario Turco,Democrat,19th Suffolk,yes,192,194,708,63,house/members/JRT1.html
+House,JZB1,Jamie Zahlaway Belsito,Democrat,4th Essex,no,192,192,165,0,house/members/JZB1.html
+House,PSS1,Priscila S. Sousa,Democrat,6th Middlesex,yes,193,194,439,490,house/members/PSS1.html
+House,JCD1,James C. Arena-DeRosa,Democrat,8th Middlesex,yes,193,194,439,343,house/members/JCD1.html
+House,JBA1,Jennifer Balinsky Armini,Democrat,8th Essex,yes,193,194,439,454,house/members/JBA1.html
+House,CRF1,Christopher Richard Flanagan,Democrat,1st Barnstable,yes,193,194,439,49,house/members/CRF1.html
+House,SBA1,Shirley B. Arriaga,Democrat,8th Hampden,yes,193,194,439,409,house/members/SBA1.html
+House,RAM1,Rita A. Mendes,Democrat,11th Plymouth,yes,193,194,439,208,house/members/RAM1.html
+House,JAG2,Judith A. Garcia,Democrat,11th Suffolk,yes,193,194,439,427,house/members/JAG2.html
+House,S_M1,Samantha Montaño,Democrat,15th Suffolk,yes,193,194,439,557,house/members/S_M1.html
+House,CJW1-193,Christopher J. Worrell,Democrat,5th Suffolk,yes,193,194,439,394,house/members/CJW1-193.html
+House,S_C1-193,Simon Cataldo,Democrat,14th Middlesex,yes,193,194,439,502,house/members/S_C1-193.html
+House,RMH2,Ryan M. Hamilton,Democrat,15th Essex,yes,193,194,439,484,house/members/RMH2.html
+House,FEP1,Francisco E. Paulino,Democrat,16th Essex,yes,193,194,439,151,house/members/FEP1.html
+House,M_C3,Manny Cruz,Democrat,7th Essex,yes,193,194,439,236,house/members/M_C3.html
+House,APR1,Adrianne Pusateri Ramos,Democrat,14th Essex,yes,193,194,439,270,house/members/APR1.html
+House,EAR1,Estela A. Reyes,Democrat,4th Essex,yes,193,194,439,191,house/members/EAR1.html
+House,K_D1,Kate Donaghue,Democrat,19th Worcester,yes,193,194,439,113,house/members/K_D1.html
+House,ALS1,Aaron L. Saunders,Democrat,7th Hampden,yes,193,194,439,114,house/members/ALS1.html
+House,MRS1,Margaret R. Scarsdale,Democrat,1st Middlesex,yes,193,194,439,251,house/members/MRS1.html
+House,MSV1,Marcus S. Vaughn,Republican,9th Norfolk,yes,193,194,439,192,house/members/MSV1.html
+House,RME1,Rodney M. Elliott,Democrat,16th Middlesex,yes,193,194,439,399,house/members/RME1.html
+House,D_S1,Dawne Shand,Democrat,1st Essex,yes,193,194,439,263,house/members/D_S1.html
+House,K_K2,Kristin E. Kassner,Democrat,2nd Essex,yes,193,194,430,549,house/members/K_K2.html
+House,WFM1,William F. MacGregor,Democrat,10th Suffolk,yes,193,194,414,283,house/members/WFM1.html
+House,JFM1,John Francis Moran,Democrat,9th Suffolk,yes,193,194,414,465,house/members/JFM1.html
+House,JJM1,John J. Marsi,Republican,6th Worcester,yes,193,194,358,500,house/members/JJM1.html
+House,MDS1,Mark D. Sylvia,Democrat,10th Bristol,yes,194,194,236,233,house/members/MDS1.html
+House,J_T1,Joshua Tarsky,Democrat,13th Norfolk,yes,194,194,236,436,house/members/J_T1.html
+House,TWM1,Thomas W. Moakley,Democrat,"Barnstable, Dukes and Nantucket",yes,194,194,236,186,house/members/TWM1.html
+House,H_G1,Homar Gómez,Democrat,2nd Hampshire,yes,194,194,236,441,house/members/H_G1.html
+House,MLB1,Michelle L. Badger,Democrat,1st Plymouth,yes,194,194,236,114,house/members/MLB1.html
+House,RGW1,"Richard G. Wells, Jr.",Democrat,7th Norfolk,yes,194,194,236,448,house/members/RGW1.html
+House,SJO1,Steven J. Ouellette,Democrat,8th Bristol,yes,194,194,236,49,house/members/SJO1.html
+House,TTH1,Tara T. Hong,Democrat,18th Middlesex,yes,194,194,236,199,house/members/TTH1.html
+House,BMP1,Bridget Plouffe,Democrat,9th Plymouth,yes,194,194,236,329,house/members/BMP1.html
+House,MSC1,Michael S. Chaisson,Republican,1st Bristol,yes,194,194,236,658,house/members/MSC1.html
+House,JRG2,John R. Gaskey,Republican,2nd Plymouth,yes,194,194,236,157,house/members/JRG2.html
+House,LSD1,Leigh Davis,Democrat,3rd Berkshire,yes,194,194,236,172,house/members/LSD1.html
+House,S_R1,Sean Reid,Democrat,11th Essex,yes,194,194,236,292,house/members/S_R1.html
+House,AMS3,Amy Mah Sangiolo,Democrat,11th Middlesex,yes,194,194,236,342,house/members/AMS3.html
+House,KPS1,Kenneth P. Sweezey,Republican,6th Plymouth,yes,194,194,236,327,house/members/KPS1.html
+House,J_T2,Justin Thurber,Republican,5th Bristol,yes,194,194,236,291,house/members/J_T2.html
+House,H_L1,Hadley Luddy,Democrat,4th Barnstable,yes,194,194,236,49,house/members/H_L1.html
+House,G_S1,Greg Schwartz,Democrat,12th Middlesex,yes,194,194,236,41,house/members/G_S1.html
+House,BFR1,Brandy Fluker-Reid,Democrat,12th Suffolk,yes,194,194,236,77,house/members/BFR1.html
+House,DCG2,Dennis C. Gallagher,Democrat,8th Plymouth,yes,194,194,236,255,house/members/DCG2.html
+House,HLB1,Hannah Bowen,Democrat,6th Essex,yes,194,194,188,547,house/members/HLB1.html
+House,LMF1,Lisa Field,Democrat,3rd Bristol,yes,194,194,174,130,house/members/LMF1.html
+House,AFT1,Andrew Tarr,Democrat,5th Essex,yes,194,194,80,0,house/members/AFT1.html
 House,SFD1,Salvatore F. DiMasi,,,no,186,186,3,0,house/members/SFD1.html
 House,JHF1,James H. Fagan,,3rd Bristol,no,186,186,511,0,house/members/JHF1.html
 House,RPS1,Robert P.. Spellane,,13th Worcester,no,186,186,511,0,house/members/RPS1.html
